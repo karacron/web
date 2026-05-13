@@ -181,10 +181,10 @@ export function CookieConsentBanner() {
             },
           },
         },
-        onConsent: ({ cookie }) => {
+        onConsent: ({ cookie }: { cookie: CookieConsentCategoryCookie }) => {
           syncGoogleAnalytics(cookie);
         },
-        onChange: ({ cookie }) => {
+        onChange: ({ cookie }: { cookie: CookieConsentCategoryCookie }) => {
           syncGoogleAnalytics(cookie);
         },
       });
