@@ -1,17 +1,16 @@
-import { defineConfig } from "prisma/config";
+import { defineConfig, env } from 'prisma/config';
 
-const databaseUrl = process.env.DATABASE_URL;
+const loadEnvFile = (process as NodeJS.Process & { loadEnvFile?: () => void })
+	.loadEnvFile;
 
-if (!databaseUrl) {
-  throw new Error("Missing required environment variable: DATABASE_URL");
-}
+loadEnvFile?.();
 
 export default defineConfig({
-  schema: "prisma/schema.prisma",
-  migrations: {
-    path: "prisma/migrations",
-  },
-  datasource: {
-    url: databaseUrl,
-  },
+	schema: 'prisma/schema.prisma',
+	migrations: {
+		path: 'prisma/migrations',
+	},
+	datasource: {
+		url: env('DATABASE_URL'),
+	},
 });
