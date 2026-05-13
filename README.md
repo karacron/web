@@ -34,3 +34,18 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Release
+
+This repository uses a tag-based release flow in GitHub Actions.
+
+1. Create and push a semantic version tag:
+
+```bash
+git tag v0.1.1
+git push origin v0.1.1
+```
+
+2. The workflow in `.github/workflows/release.yml` creates a GitHub Release automatically with generated notes.
+
+You can also run the workflow manually from GitHub using `workflow_dispatch`.

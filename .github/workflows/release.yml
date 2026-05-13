@@ -1,20 +1,22 @@
-name: Release Please
+name: Release
 
 on:
   push:
-    branches: [main]
+    tags:
+      - "v*"
+  workflow_dispatch:
 
 permissions:
   contents: write
-  pull-requests: write
 
 jobs:
-  release-please:
+  release:
     name: Release
     runs-on: ubuntu-latest
     steps:
-      - uses: google-github-actions/release-please-action@v4
+      - uses: actions/checkout@v4
+
+      - name: Create GitHub release
+        uses: softprops/action-gh-release@v2
         with:
-          release-type: node
-          config-file: release-please-config.json
-          manifest-file: .release-please-manifest.json
+          generate_release_notes: true
