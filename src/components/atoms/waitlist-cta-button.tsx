@@ -1,14 +1,17 @@
 "use client";
 
-import { useModal } from "@/components/molecules/modal/use-modal";
-import { WaitlistForm } from "@/components/molecules/forms/waitlist-form";
+import { WaitlistForm } from "@molecule/forms/waitlist-form";
+import { useModal } from "@molecule/modal/use-modal";
 
 interface WaitlistCtaButtonProps {
   label: string;
   variant?: "primary" | "secondary";
 }
 
-export function WaitlistCtaButton({ label, variant = "primary" }: WaitlistCtaButtonProps) {
+export function WaitlistCtaButton({
+  label,
+  variant = "primary",
+}: WaitlistCtaButtonProps) {
   const { openModal, closeModal } = useModal();
 
   const handleOpenWaitlistModal = () => {

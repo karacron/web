@@ -1,8 +1,7 @@
 "use client";
 
+import { useLocale, useTranslations } from "next-intl";
 import { useState } from "react";
-import { useTranslations } from "next-intl";
-import { useLocale } from "next-intl";
 
 export interface WaitlistFormProps {
   closeModal: () => void;
@@ -28,14 +27,17 @@ export function WaitlistForm({ closeModal }: WaitlistFormProps) {
   });
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >,
   ) => {
     const target = e.currentTarget;
     const { name } = target;
-    const value = target instanceof HTMLInputElement && target.type === "checkbox" 
-      ? (target as HTMLInputElement).checked 
-      : target.value;
-    
+    const value =
+      target instanceof HTMLInputElement && target.type === "checkbox"
+        ? (target as HTMLInputElement).checked
+        : target.value;
+
     setFormData((prev) => ({
       ...prev,
       [name]: value,
@@ -112,11 +114,18 @@ export function WaitlistForm({ closeModal }: WaitlistFormProps) {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
-      {error && <div className="rounded-md bg-red-50 p-3 text-sm text-red-600">{error}</div>}
+      {error && (
+        <div className="rounded-md bg-red-50 p-3 text-sm text-red-600">
+          {error}
+        </div>
+      )}
 
       {/* Name */}
       <div>
-        <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+        <label
+          htmlFor="name"
+          className="block text-sm font-medium text-gray-700"
+        >
           {t("nameLabel")} <span className="text-red-500">*</span>
         </label>
         <input
@@ -129,7 +138,9 @@ export function WaitlistForm({ closeModal }: WaitlistFormProps) {
           className="mt-1 block w-full rounded-md border-gray-300 px-3 py-2 text-gray-900 shadow-sm border focus:border-indigo-500 focus:ring-indigo-500"
           placeholder={t("namePlaceholder")}
         />
-        {fieldErrors.name && <p className="mt-1 text-sm text-red-500">{fieldErrors.name}</p>}
+        {fieldErrors.name && (
+          <p className="mt-1 text-sm text-red-500">{fieldErrors.name}</p>
+        )}
       </div>
 
       {/* Type */}
@@ -147,7 +158,9 @@ export function WaitlistForm({ closeModal }: WaitlistFormProps) {
               onChange={handleChange}
               className="h-4 w-4 text-indigo-600"
             />
-            <span className="ml-2 text-sm text-gray-700">{t("typePersonal")}</span>
+            <span className="ml-2 text-sm text-gray-700">
+              {t("typePersonal")}
+            </span>
           </label>
           <label className="flex items-center">
             <input
@@ -158,7 +171,9 @@ export function WaitlistForm({ closeModal }: WaitlistFormProps) {
               onChange={handleChange}
               className="h-4 w-4 text-indigo-600"
             />
-            <span className="ml-2 text-sm text-gray-700">{t("typeCompany")}</span>
+            <span className="ml-2 text-sm text-gray-700">
+              {t("typeCompany")}
+            </span>
           </label>
         </div>
       </div>
@@ -166,7 +181,10 @@ export function WaitlistForm({ closeModal }: WaitlistFormProps) {
       {/* Company Name (conditional) */}
       {formData.type === "company" && (
         <div>
-          <label htmlFor="companyName" className="block text-sm font-medium text-gray-700">
+          <label
+            htmlFor="companyName"
+            className="block text-sm font-medium text-gray-700"
+          >
             {t("companyNameLabel")} <span className="text-red-500">*</span>
           </label>
           <input
@@ -179,7 +197,9 @@ export function WaitlistForm({ closeModal }: WaitlistFormProps) {
             placeholder={t("companyNamePlaceholder")}
           />
           {fieldErrors.companyName && (
-            <p className="mt-1 text-sm text-red-500">{fieldErrors.companyName}</p>
+            <p className="mt-1 text-sm text-red-500">
+              {fieldErrors.companyName}
+            </p>
           )}
         </div>
       )}
@@ -187,7 +207,10 @@ export function WaitlistForm({ closeModal }: WaitlistFormProps) {
       {/* Employee Range (conditional) */}
       {formData.type === "company" && (
         <div>
-          <label htmlFor="employeeRange" className="block text-sm font-medium text-gray-700">
+          <label
+            htmlFor="employeeRange"
+            className="block text-sm font-medium text-gray-700"
+          >
             {t("employeeRangeLabel")}
           </label>
           <select
@@ -209,7 +232,10 @@ export function WaitlistForm({ closeModal }: WaitlistFormProps) {
 
       {/* Email */}
       <div>
-        <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+        <label
+          htmlFor="email"
+          className="block text-sm font-medium text-gray-700"
+        >
           {t("emailLabel")} <span className="text-red-500">*</span>
         </label>
         <input
@@ -222,12 +248,17 @@ export function WaitlistForm({ closeModal }: WaitlistFormProps) {
           className="mt-1 block w-full rounded-md border-gray-300 px-3 py-2 text-gray-900 shadow-sm border focus:border-indigo-500 focus:ring-indigo-500"
           placeholder={t("emailPlaceholder")}
         />
-        {fieldErrors.email && <p className="mt-1 text-sm text-red-500">{fieldErrors.email}</p>}
+        {fieldErrors.email && (
+          <p className="mt-1 text-sm text-red-500">{fieldErrors.email}</p>
+        )}
       </div>
 
       {/* Message */}
       <div>
-        <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+        <label
+          htmlFor="message"
+          className="block text-sm font-medium text-gray-700"
+        >
           {t("messageLabel")} <span className="text-red-500">*</span>
         </label>
         <textarea
@@ -240,7 +271,9 @@ export function WaitlistForm({ closeModal }: WaitlistFormProps) {
           className="mt-1 block w-full rounded-md border-gray-300 px-3 py-2 text-gray-900 shadow-sm border focus:border-indigo-500 focus:ring-indigo-500"
           placeholder={t("messagePlaceholder")}
         />
-        {fieldErrors.message && <p className="mt-1 text-sm text-red-500">{fieldErrors.message}</p>}
+        {fieldErrors.message && (
+          <p className="mt-1 text-sm text-red-500">{fieldErrors.message}</p>
+        )}
       </div>
 
       {/* Consent */}
@@ -253,7 +286,10 @@ export function WaitlistForm({ closeModal }: WaitlistFormProps) {
           onChange={handleChange}
           className="h-4 w-4 rounded text-indigo-600"
         />
-        <label htmlFor="consentPrivacy" className="ml-2 block text-sm text-gray-700">
+        <label
+          htmlFor="consentPrivacy"
+          className="ml-2 block text-sm text-gray-700"
+        >
           {t("consentLabel")} <span className="text-red-500">*</span>
         </label>
       </div>

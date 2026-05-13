@@ -1,6 +1,6 @@
+import { WaitlistCtaButton } from "@atom/waitlist-cta-button";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
-import { WaitlistCtaButton } from "@/components/atoms/waitlist-cta-button";
 
 const TEAM_MAILTO =
   "mailto:sgonzalez@authuser.org?subject=Kara%20for%20my%20team";

@@ -1,9 +1,9 @@
 "use client";
 
+import { WaitlistForm } from "@molecule/forms/waitlist-form";
+import { useModal } from "@molecule/modal/use-modal";
 import { motion, type Variants } from "framer-motion";
 import { FaApple, FaDocker, FaLinux, FaWindows } from "react-icons/fa";
-import { useModal } from "@/components/molecules/modal/use-modal";
-import { WaitlistForm } from "@/components/molecules/forms/waitlist-form";
 
 const PLATFORM_ICONS = [
   { name: "Windows", Icon: FaWindows },
