@@ -28,7 +28,8 @@
 			"@hook/*": ["./src/hooks/*"],
 			"@provider/*": ["./src/providers/*"],
 			"@lib/*": ["./src/libs/*", "./lib/*"],
-			"@lib/i18n": ["./i18n/request.ts"]
+			"@lib/i18n": ["./i18n/request.ts"],
+			"@i18n/*": ["./i18n/*", "./src/i18n/*"]
 		}
 	},
 	"include": [
