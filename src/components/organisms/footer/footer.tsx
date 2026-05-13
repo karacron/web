@@ -19,7 +19,7 @@ export async function Footer() {
     { key: "integrations", href: "#integrations" },
     { key: "execution", href: "#execution" },
   ] as const;
-  const companyLinks = ["about", "roadmap", "privacy", "contact"] as const;
+  const companyLinks = ["about", "roadmap", "contact"] as const;
 
   return (
     <div className="bg-gray-900 pb-20 sm:pb-24">

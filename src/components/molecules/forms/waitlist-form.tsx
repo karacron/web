@@ -1,13 +1,24 @@
 "use client";
 
+import { EmployeeRangeSheet } from "@molecule/forms/employee-range-sheet";
 import { useLocale, useTranslations } from "next-intl";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export interface WaitlistFormProps {
   closeModal: () => void;
 }
 
 const EMPLOYEE_RANGES = ["1-10", "11-50", "51-200", "201-500", "500+"];
+const fieldLabelClassName = "mb-2 block text-sm font-medium text-white";
+const textFieldClassName =
+  "mt-1 block w-full rounded-xl border border-white/15 bg-white/5 px-3 py-2.5 text-sm text-white placeholder:text-white/45 shadow-sm outline-none transition focus:border-indigo-400 focus:bg-white/8 focus:ring-2 focus:ring-indigo-500/30";
+const selectFieldClassName =
+  "mt-1 block w-full min-h-12 rounded-xl border border-white/15 bg-white/5 px-3 py-3 text-base text-white shadow-sm outline-none transition focus:border-indigo-400 focus:bg-white/8 focus:ring-2 focus:ring-indigo-500/30 sm:min-h-0 sm:py-2.5 sm:text-sm";
+const mobileSelectorClassName =
+  "mt-1 flex w-full min-h-12 items-center justify-between rounded-xl border border-white/15 bg-white/5 px-4 py-2 text-left text-base text-white shadow-sm outline-none transition focus:border-indigo-400 focus:bg-white/8 focus:ring-2 focus:ring-indigo-500/30 sm:hidden";
+const choiceLabelClassName =
+  "flex items-center rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-sm text-white/90 transition hover:border-white/20 hover:bg-white/8";
+const helperErrorClassName = "mt-1 text-sm text-rose-300";
 
 export function WaitlistForm({ closeModal }: WaitlistFormProps) {
   const t = useTranslations("waitlist");
@@ -15,6 +26,8 @@ export function WaitlistForm({ closeModal }: WaitlistFormProps) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
+  const [isEmployeeRangeSheetOpen, setIsEmployeeRangeSheetOpen] =
+    useState(false);
 
   const [formData, setFormData] = useState({
     name: "",
@@ -112,20 +125,26 @@ export function WaitlistForm({ closeModal }: WaitlistFormProps) {
     }
   };
 
+  useEffect(() => {
+    if (formData.type !== "company") {
+      setIsEmployeeRangeSheetOpen(false);
+    }
+  }, [formData.type]);
+
+  const selectedEmployeeRangeLabel =
+    formData.employeeRange || t("employeeRangeDefault");
+
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
       {error && (
-        <div className="rounded-md bg-red-50 p-3 text-sm text-red-600">
+        <div className="rounded-xl border border-rose-400/30 bg-rose-500/10 p-3 text-sm text-rose-100">
           {error}
         </div>
       )}
 
       {/* Name */}
       <div>
-        <label
-          htmlFor="name"
-          className="block text-sm font-medium text-gray-700"
-        >
+        <label htmlFor="name" className={fieldLabelClassName}>
           {t("nameLabel")} <span className="text-red-500">*</span>
         </label>
         <input
@@ -135,43 +154,43 @@ export function WaitlistForm({ closeModal }: WaitlistFormProps) {
           required
           value={formData.name}
           onChange={handleChange}
-          className="mt-1 block w-full rounded-md border-gray-300 px-3 py-2 text-gray-900 shadow-sm border focus:border-indigo-500 focus:ring-indigo-500"
+          className={textFieldClassName}
           placeholder={t("namePlaceholder")}
         />
         {fieldErrors.name && (
-          <p className="mt-1 text-sm text-red-500">{fieldErrors.name}</p>
+          <p className={helperErrorClassName}>{fieldErrors.name}</p>
         )}
       </div>
 
       {/* Type */}
       <div>
-        <label className="block text-sm font-medium text-gray-700 mb-2">
+        <label className={fieldLabelClassName}>
           {t("typeLabel")} <span className="text-red-500">*</span>
         </label>
-        <div className="flex gap-4">
-          <label className="flex items-center">
+        <div className="flex flex-col gap-3 sm:flex-row">
+          <label className={choiceLabelClassName}>
             <input
               type="radio"
               name="type"
               value="personal"
               checked={formData.type === "personal"}
               onChange={handleChange}
-              className="h-4 w-4 text-indigo-600"
+              className="h-4 w-4 border-white/30 bg-transparent text-indigo-400 focus:ring-indigo-500/40"
             />
-            <span className="ml-2 text-sm text-gray-700">
+            <span className="ml-2 text-sm text-white/90">
               {t("typePersonal")}
             </span>
           </label>
-          <label className="flex items-center">
+          <label className={choiceLabelClassName}>
             <input
               type="radio"
               name="type"
               value="company"
               checked={formData.type === "company"}
               onChange={handleChange}
-              className="h-4 w-4 text-indigo-600"
+              className="h-4 w-4 border-white/30 bg-transparent text-indigo-400 focus:ring-indigo-500/40"
             />
-            <span className="ml-2 text-sm text-gray-700">
+            <span className="ml-2 text-sm text-white/90">
               {t("typeCompany")}
             </span>
           </label>
@@ -181,10 +200,7 @@ export function WaitlistForm({ closeModal }: WaitlistFormProps) {
       {/* Company Name (conditional) */}
       {formData.type === "company" && (
         <div>
-          <label
-            htmlFor="companyName"
-            className="block text-sm font-medium text-gray-700"
-          >
+          <label htmlFor="companyName" className={fieldLabelClassName}>
             {t("companyNameLabel")} <span className="text-red-500">*</span>
           </label>
           <input
@@ -193,13 +209,11 @@ export function WaitlistForm({ closeModal }: WaitlistFormProps) {
             type="text"
             value={formData.companyName}
             onChange={handleChange}
-            className="mt-1 block w-full rounded-md border-gray-300 px-3 py-2 text-gray-900 shadow-sm border focus:border-indigo-500 focus:ring-indigo-500"
+            className={textFieldClassName}
             placeholder={t("companyNamePlaceholder")}
           />
           {fieldErrors.companyName && (
-            <p className="mt-1 text-sm text-red-500">
-              {fieldErrors.companyName}
-            </p>
+            <p className={helperErrorClassName}>{fieldErrors.companyName}</p>
           )}
         </div>
       )}
@@ -207,10 +221,7 @@ export function WaitlistForm({ closeModal }: WaitlistFormProps) {
       {/* Employee Range (conditional) */}
       {formData.type === "company" && (
         <div>
-          <label
-            htmlFor="employeeRange"
-            className="block text-sm font-medium text-gray-700"
-          >
+          <label htmlFor="employeeRange" className={fieldLabelClassName}>
             {t("employeeRangeLabel")}
           </label>
           <select
@@ -218,7 +229,7 @@ export function WaitlistForm({ closeModal }: WaitlistFormProps) {
             name="employeeRange"
             value={formData.employeeRange}
             onChange={handleChange}
-            className="mt-1 block w-full rounded-md border-gray-300 px-3 py-2 text-gray-900 shadow-sm border focus:border-indigo-500 focus:ring-indigo-500"
+            className={`${selectFieldClassName} hidden sm:block`}
           >
             <option value="">{t("employeeRangeDefault")}</option>
             {EMPLOYEE_RANGES.map((range) => (
@@ -227,15 +238,51 @@ export function WaitlistForm({ closeModal }: WaitlistFormProps) {
               </option>
             ))}
           </select>
+
+          <button
+            type="button"
+            aria-controls="employee-range-sheet"
+            aria-expanded={isEmployeeRangeSheetOpen}
+            onClick={() => setIsEmployeeRangeSheetOpen(true)}
+            className={`${mobileSelectorClassName} sm:hidden`}
+          >
+            <span className="flex min-w-0 flex-col items-start text-left">
+              <span className="mt-1 text-base font-semibold text-white">
+                {selectedEmployeeRangeLabel}
+              </span>
+            </span>
+          </button>
+
+          {fieldErrors.employeeRange && (
+            <p className={helperErrorClassName}>{fieldErrors.employeeRange}</p>
+          )}
+
+          <EmployeeRangeSheet
+            open={isEmployeeRangeSheetOpen}
+            value={formData.employeeRange}
+            title={t("employeeRangeLabel")}
+            closeLabel={t("employeeRangeDefault")}
+            optionLabel={t("employeeRangeDefault")}
+            onClose={() => setIsEmployeeRangeSheetOpen(false)}
+            onSelect={(nextValue) => {
+              setFormData((prev) => ({ ...prev, employeeRange: nextValue }));
+              setIsEmployeeRangeSheetOpen(false);
+
+              if (fieldErrors.employeeRange) {
+                setFieldErrors((prev) => {
+                  const next = { ...prev };
+                  delete next.employeeRange;
+                  return next;
+                });
+              }
+            }}
+          />
         </div>
       )}
 
       {/* Email */}
       <div>
-        <label
-          htmlFor="email"
-          className="block text-sm font-medium text-gray-700"
-        >
+        <label htmlFor="email" className={fieldLabelClassName}>
           {t("emailLabel")} <span className="text-red-500">*</span>
         </label>
         <input
@@ -245,20 +292,17 @@ export function WaitlistForm({ closeModal }: WaitlistFormProps) {
           required
           value={formData.email}
           onChange={handleChange}
-          className="mt-1 block w-full rounded-md border-gray-300 px-3 py-2 text-gray-900 shadow-sm border focus:border-indigo-500 focus:ring-indigo-500"
+          className={textFieldClassName}
           placeholder={t("emailPlaceholder")}
         />
         {fieldErrors.email && (
-          <p className="mt-1 text-sm text-red-500">{fieldErrors.email}</p>
+          <p className={helperErrorClassName}>{fieldErrors.email}</p>
         )}
       </div>
 
       {/* Message */}
       <div>
-        <label
-          htmlFor="message"
-          className="block text-sm font-medium text-gray-700"
-        >
+        <label htmlFor="message" className={fieldLabelClassName}>
           {t("messageLabel")} <span className="text-red-500">*</span>
         </label>
         <textarea
@@ -268,33 +312,35 @@ export function WaitlistForm({ closeModal }: WaitlistFormProps) {
           value={formData.message}
           onChange={handleChange}
           rows={4}
-          className="mt-1 block w-full rounded-md border-gray-300 px-3 py-2 text-gray-900 shadow-sm border focus:border-indigo-500 focus:ring-indigo-500"
+          className={textFieldClassName}
           placeholder={t("messagePlaceholder")}
         />
         {fieldErrors.message && (
-          <p className="mt-1 text-sm text-red-500">{fieldErrors.message}</p>
+          <p className={helperErrorClassName}>{fieldErrors.message}</p>
         )}
       </div>
 
       {/* Consent */}
-      <div className="flex items-center">
-        <input
-          id="consentPrivacy"
-          name="consentPrivacy"
-          type="checkbox"
-          checked={formData.consentPrivacy}
-          onChange={handleChange}
-          className="h-4 w-4 rounded text-indigo-600"
-        />
-        <label
-          htmlFor="consentPrivacy"
-          className="ml-2 block text-sm text-gray-700"
-        >
-          {t("consentLabel")} <span className="text-red-500">*</span>
-        </label>
+      <div className="rounded-lg border border-white/10 bg-white/5 px-3 py-3">
+        <div className="flex items-start gap-3">
+          <input
+            id="consentPrivacy"
+            name="consentPrivacy"
+            type="checkbox"
+            checked={formData.consentPrivacy}
+            onChange={handleChange}
+            className="mt-0.5 h-4 w-4 rounded border-white/30 bg-transparent text-indigo-400 focus:ring-indigo-500/40"
+          />
+          <label
+            htmlFor="consentPrivacy"
+            className="block text-sm leading-6 text-white/90"
+          >
+            {t("consentLabel")} <span className="text-red-500">*</span>
+          </label>
+        </div>
       </div>
       {fieldErrors.consentPrivacy && (
-        <p className="text-sm text-red-500">{fieldErrors.consentPrivacy}</p>
+        <p className={helperErrorClassName}>{fieldErrors.consentPrivacy}</p>
       )}
 
       {/* Submit Button */}

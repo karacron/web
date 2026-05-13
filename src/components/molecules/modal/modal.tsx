@@ -13,11 +13,11 @@ type ModalProps = {
 };
 
 const sizeClassMap: Record<ResolvedModalOptions["size"], string> = {
-  sm: "max-w-sm",
-  md: "max-w-xl",
-  lg: "max-w-2xl",
-  xl: "max-w-4xl",
-  full: "max-w-[min(96vw,1200px)]",
+  sm: "sm:max-w-sm",
+  md: "sm:max-w-xl",
+  lg: "sm:max-w-2xl",
+  xl: "sm:max-w-4xl",
+  full: "sm:max-w-[min(96vw,1200px)]",
 };
 
 export function Modal({ isOpen, options, onClose }: ModalProps) {
@@ -67,7 +67,7 @@ export function Modal({ isOpen, options, onClose }: ModalProps) {
     <AnimatePresence>
       {isOpen && options ? (
         <motion.div
-          className="fixed inset-0 z-[120] flex items-center justify-center p-4"
+          className="fixed inset-0 z-120 flex items-stretch justify-stretch p-0 sm:items-center sm:justify-center sm:p-4"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -90,7 +90,7 @@ export function Modal({ isOpen, options, onClose }: ModalProps) {
             aria-label={
               typeof options.title === "string" ? options.title : undefined
             }
-            className={`relative z-10 w-full ${sizeClassMap[options.size]} rounded-2xl border border-white/10 bg-gray-900 p-6 text-white shadow-2xl shadow-black/50 ${options.className ?? ""}`}
+            className={`relative z-10 h-dvh w-full max-w-none overflow-y-auto rounded-none border-0 bg-gray-900 p-4 text-white shadow-none sm:h-auto sm:max-h-[calc(100dvh-2rem)] sm:rounded-2xl sm:border sm:border-white/10 sm:p-6 sm:shadow-2xl sm:shadow-black/50 ${sizeClassMap[options.size]} ${options.className ?? ""}`}
             initial={{ opacity: 0, y: 18, scale: 0.97 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 12, scale: 0.98 }}
