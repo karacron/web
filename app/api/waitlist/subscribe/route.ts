@@ -130,10 +130,7 @@ export async function POST(request: NextRequest) {
 		return NextResponse.json(
 			{
 				ok: false,
-				error: getLocalizedErrorMessage(
-					'internal_server_error',
-					body.locale || 'en',
-				),
+				error: getLocalizedErrorMessage('internal_server_error', 'en'),
 			},
 			{
 				status: 500,
