@@ -1,6 +1,7 @@
 import { prisma } from "@lib/prisma";
 import { checkRateLimit, getClientIp } from "@lib/rate-limit";
 import { validateWaitlistForm } from "@lib/validations";
+import { sendWaitlistEmails } from "@lib/waitlist-email";
 import { NextResponse, type NextRequest } from "next/server";
 
 export async function POST(request: NextRequest) {
@@ -71,9 +72,20 @@ export async function POST(request: NextRequest) {
         employeeRange: body.employeeRange || null,
         message: body.message,
         consentPrivacy: body.consentPrivacy === true,
-        locale: body.locale || "es",
+        locale: body.locale || "en",
         ipHash,
       },
+    });
+
+    // Best effort: si el correo falla, no bloquea el alta en waitlist.
+    await sendWaitlistEmails({
+      name: body.name,
+      email: body.email,
+      type: body.type,
+      companyName: body.companyName || null,
+      employeeRange: body.employeeRange || null,
+      message: body.message,
+      locale: body.locale || "en",
     });
 
     return NextResponse.json(
