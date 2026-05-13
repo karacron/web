@@ -1,215 +1,217 @@
 {
-  "meta": {
-    "title": "Kara — Trabaja menos y disfruta más.",
-    "description": "Kara es un asistente de escritorio con IA local-first para negocios, PYMEs y gente normal que quiere automatizar sin perder privacidad ni control."
-  },
-  "nav": {
-    "features": "Por qué Kara",
-    "orchestration": "Flujo local",
-    "integrations": "Acceso anticipado",
-    "execution": "Privacidad",
-    "cta": "Únete a la lista"
-  },
-  "hero": {
-    "badge": "En desarrollo. Lanzamiento en 2026.",
-    "badgeLink": "Recibir novedades de acceso anticipado",
-    "title": "Trabaja menos y disfruta más.",
-    "subtitle": "Kara es el asistente de escritorio con IA local-first que ayuda a negocios, equipos pequeños y gente normal a sacar trabajo real adelante sin ir regalando sus datos privados por internet.",
-    "primary": "Únete a la lista",
-    "secondary": "Ver qué hace diferente a Kara"
-  },
-  "features": {
-    "eyebrow": "Por qué Kara",
-    "title": "IA privada que sigue siendo rápida, útil y humana",
-    "subtitle": "Pensada primero para negocios y PYMEs, pero lo bastante cercana para cualquiera que quiera menos pestañas, menos tareas pesadas y más cosas hechas antes de comer.",
-    "items": {
-      "privacy": {
-        "title": "Privada por defecto",
-        "description": "Notas sensibles, contexto de clientes y documentos internos se quedan más cerca de tu equipo en vez de acabar repartidos por herramientas aleatorias."
-      },
-      "business": {
-        "title": "Hecha para trabajo real",
-        "description": "Desde seguimientos y operaciones hasta documentación y soporte, Kara apunta a tareas que mueven el negocio, no a demos de adorno."
-      },
-      "teams": {
-        "title": "Perfecta para equipos lean",
-        "description": "Los equipos pequeños y las empresas que crecen pueden automatizar trabajo repetitivo sin montar un mini departamento de IA para vigilarlo."
-      },
-      "everyday": {
-        "title": "También sirve para la vida normal",
-        "description": "Kara te ayuda a planificar, escribir, ordenar y quitarte de encima esos recados digitales que nadie quiere hacer a mano."
-      }
-    }
-  },
-  "orchestration": {
-    "eyebrow": "Flujo local",
-    "title": "Un asistente. Tus reglas.",
-    "subtitle": "Kara mantiene el flujo principal cerca de tu escritorio, sabe cuándo quedarse en local y solo tira de servicios externos cuando la tarea de verdad necesita más potencia.",
-    "items": {
-      "local": {
-        "title": "Local primero.",
-        "description": "El trabajo privado empieza en tu equipo, así que borradores, notas de clientes y contexto interno no tienen por qué salir fuera en cada petición."
-      },
-      "teams": {
-        "title": "Pensada para equipos de negocio.",
-        "description": "Founders, ops, ventas, soporte y equipos pequeños tienen un sitio tranquilo para automatizar lo repetitivo sin pegar cinco apps con cinta adhesiva."
-      },
-      "escalation": {
-        "title": "Nube solo cuando aporta.",
-        "description": "Si una tarea necesita más alcance, Kara puede llamar a servicios y modelos con intención, en lugar de convertir todo en cloud-first por defecto."
-      }
-    },
-    "imageAlt": "Vista previa del espacio de trabajo de Kara"
-  },
-  "integrations": {
-    "eyebrow": "Acceso anticipado",
-    "title": "Kara está en el horno. ¿Quieres entrar antes que nadie?",
-    "subtitle": "Estamos construyendo la experiencia de escritorio ahora mismo. Únete a la lista para recibir novedades, previews privadas y acceso anticipado antes del lanzamiento público previsto para finales de 2026, o antes si aceleramos.",
-    "primary": "Únete a la lista",
-    "secondary": "Habla con nosotros",
-    "imageAlt": "Vista previa del acceso anticipado de Kara",
-    "marquee": {
-      "googleDrive": {
-        "description": "Archivos y documentos compartidos"
-      },
-      "github": {
-        "description": "Repos, PRs y issues"
-      },
-      "notion": {
-        "description": "Notas, wikis y tareas"
-      },
-      "discord": {
-        "description": "Mensajeria y comunidades"
-      },
-      "dropbox": {
-        "description": "Sincronizacion de carpetas"
-      },
-      "linear": {
-        "description": "Tracking de producto"
-      },
-      "trello": {
-        "description": "Tableros Kanban simples"
-      },
-      "slack": {
-        "description": "Canales y automatizacion interna"
-      },
-      "figma": {
-        "description": "Diseno y handoff colaborativo"
-      },
-      "jira": {
-        "description": "Tickets y roadmap de desarrollo"
-      },
-      "asana": {
-        "description": "Gestion de proyectos y tareas"
-      },
-      "hubspot": {
-        "description": "CRM y seguimiento comercial"
-      },
-      "zendesk": {
-        "description": "Soporte y atencion al cliente"
-      },
-      "stripe": {
-        "description": "Pagos y suscripciones"
-      },
-      "shopify": {
-        "description": "Ecommerce y catalogo online"
-      },
-      "airtable": {
-        "description": "Bases de datos sin codigo"
-      },
-      "clickup": {
-        "description": "Operaciones y productividad"
-      }
-    }
-  },
-  "execution": {
-    "eyebrow": "Privacidad sin drama",
-    "title": "Controla el trabajo, no solo la ventana",
-    "cards": {
-      "interface": {
-        "title": "Interfaz tranquila",
-        "description": "Una experiencia de escritorio pensada para que puedas pensar claro, moverte rápido y no vivir ahogado en paneles."
-      },
-      "speed": {
-        "title": "Velocidad local",
-        "description": "Menos saltos entre servicios significa respuestas más rápidas y un flujo de trabajo que se siente cerca de la tarea."
-      },
-      "privacy": {
-        "title": "Privacidad primero",
-        "description": "Kara está diseñada para que el trabajo sensible pueda quedarse privado por defecto, con el control justo donde importa."
-      },
-      "stack": {
-        "title": "Lista para tu stack",
-        "description": "Usa Kara como app de escritorio y capa de servicio conectada a la forma en la que ya trabaja tu equipo."
-      }
-    }
-  },
-  "cta": {
-    "title": "IA privada para trabajo que de verdad avanza.",
-    "subtitle": "Kara ayuda a equipos, PYMEs y gente curiosa a automatizar la parte pesada sin perder el control.",
-    "action": "Únete a la lista"
-  },
-  "footer": {
-    "title": "IA privada para trabajo que de verdad avanza.",
-    "subtitle": "Kara ayuda a equipos, PYMEs y gente curiosa a automatizar la parte pesada sin perder el control.",
-    "sections": {
-      "product": "Explorar",
-      "company": "Compañía"
-    },
-    "links": {
-      "features": "Por qué Kara",
-      "orchestration": "Flujo local",
-      "integrations": "Acceso anticipado",
-      "execution": "Privacidad",
-      "about": "Sobre Kara",
-      "roadmap": "Hoja de ruta",
-      "privacy": "Privacidad",
-      "contact": "Contacto"
-    },
-    "language": {
-      "button": "Idioma",
-      "modalTitle": "Elige tu idioma",
-      "close": "Cerrar",
-      "modal": {
-        "heading": "Idioma",
-        "description": "Elige tu idioma de interfaz preferido.",
-        "searchPlaceholder": "Buscar idiomas",
-        "clearSearchLabel": "Limpiar busqueda",
-        "activeLabel": "Activo",
-        "updatingLabel": "Actualizando...",
-        "noResultsTitle": "No se encontraron idiomas.",
-        "noResultsHint": "Prueba con otro nombre o codigo de idioma."
-      },
-      "options": {
-        "en": "Inglés",
-        "es": "Español"
-      }
-    },
-    "cookies": "Cookies",
-    "rights": "Todos los derechos reservados. Desarrollado por AuthUser."
-  },
-  "waitlist": {
-    "nameLabel": "Nombre",
-    "namePlaceholder": "Tu nombre",
-    "typeLabel": "¿Eres una persona o una empresa?",
-    "typePersonal": "Persona individual",
-    "typeCompany": "Empresa",
-    "companyNameLabel": "Nombre de la empresa",
-    "companyNamePlaceholder": "Ej: Acme Corp",
-    "employeeRangeLabel": "Rango de empleados",
-    "employeeRangeDefault": "Selecciona un rango",
-    "employees": "empleados",
-    "emailLabel": "Correo electrónico",
-    "emailPlaceholder": "tu@email.com",
-    "messageLabel": "Mensaje o comentarios",
-    "messagePlaceholder": "Cuéntanos qué desafíos enfrenta tu equipo o por qué estás interesado en Kara",
-    "consentLabel": "Acepto la política de privacidad y deseo recibir actualizaciones sobre Kara",
-    "submitButton": "Unirme a la lista",
-    "submitting": "Enviando...",
-    "validationError": "Por favor revisa los errores en el formulario",
-    "rateLimitError": "Demasiadas solicitudes. Por favor intenta más tarde.",
-    "duplicateEmailError": "Este email ya está registrado en nuestra lista de espera",
-    "genericError": "Algo salió mal. Por favor intenta de nuevo.",
-    "networkError": "Error de conexión. Por favor revisa tu conexión a internet."
-  }
+	"meta": {
+		"title": "Kara — Trabaja menos y disfruta más.",
+		"description": "Kara es un asistente de escritorio con IA local-first para negocios, PYMEs y gente normal que quiere automatizar sin perder privacidad ni control."
+	},
+	"nav": {
+		"features": "Por qué Kara",
+		"orchestration": "Flujo local",
+		"featureContent": "Funciones clave",
+		"integrations": "Acceso anticipado",
+		"execution": "Privacidad",
+		"cta": "Únete a la lista"
+	},
+	"hero": {
+		"badge": "En desarrollo. Lanzamiento en 2026.",
+		"badgeLink": "Recibir novedades de acceso anticipado",
+		"title": "Trabaja menos y disfruta más.",
+		"subtitle": "Kara es el asistente de escritorio con IA local-first que ayuda a negocios, equipos pequeños y gente normal a sacar trabajo real adelante sin ir regalando sus datos privados por internet.",
+		"primary": "Únete a la lista",
+		"secondary": "Ver qué hace diferente a Kara"
+	},
+	"features": {
+		"eyebrow": "Por qué Kara",
+		"title": "IA privada que sigue siendo rápida, útil y humana",
+		"subtitle": "Pensada primero para negocios y PYMEs, pero lo bastante cercana para cualquiera que quiera menos pestañas, menos tareas pesadas y más cosas hechas antes de comer.",
+		"items": {
+			"privacy": {
+				"title": "Privada por defecto",
+				"description": "Notas sensibles, contexto de clientes y documentos internos se quedan más cerca de tu equipo en vez de acabar repartidos por herramientas aleatorias."
+			},
+			"business": {
+				"title": "Hecha para trabajo real",
+				"description": "Desde seguimientos y operaciones hasta documentación y soporte, Kara apunta a tareas que mueven el negocio, no a demos de adorno."
+			},
+			"teams": {
+				"title": "Perfecta para equipos lean",
+				"description": "Los equipos pequeños y las empresas que crecen pueden automatizar trabajo repetitivo sin montar un mini departamento de IA para vigilarlo."
+			},
+			"everyday": {
+				"title": "También sirve para la vida normal",
+				"description": "Kara te ayuda a planificar, escribir, ordenar y quitarte de encima esos recados digitales que nadie quiere hacer a mano."
+			}
+		}
+	},
+	"orchestration": {
+		"eyebrow": "Flujo local",
+		"title": "Un asistente. Tus reglas.",
+		"subtitle": "Kara mantiene el flujo principal cerca de tu escritorio, sabe cuándo quedarse en local y solo tira de servicios externos cuando la tarea de verdad necesita más potencia.",
+		"items": {
+			"local": {
+				"title": "Local primero.",
+				"description": "El trabajo privado empieza en tu equipo, así que borradores, notas de clientes y contexto interno no tienen por qué salir fuera en cada petición."
+			},
+			"teams": {
+				"title": "Pensada para equipos de negocio.",
+				"description": "Founders, ops, ventas, soporte y equipos pequeños tienen un sitio tranquilo para automatizar lo repetitivo sin pegar cinco apps con cinta adhesiva."
+			},
+			"escalation": {
+				"title": "Nube solo cuando aporta.",
+				"description": "Si una tarea necesita más alcance, Kara puede llamar a servicios y modelos con intención, en lugar de convertir todo en cloud-first por defecto."
+			}
+		},
+		"imageAlt": "Vista previa del espacio de trabajo de Kara"
+	},
+	"integrations": {
+		"eyebrow": "Acceso anticipado",
+		"title": "Kara está en el horno. ¿Quieres entrar antes que nadie?",
+		"subtitle": "Estamos construyendo la experiencia de escritorio ahora mismo. Únete a la lista para recibir novedades, previews privadas y acceso anticipado antes del lanzamiento público previsto para finales de 2026, o antes si aceleramos.",
+		"primary": "Únete a la lista",
+		"secondary": "Habla con nosotros",
+		"imageAlt": "Vista previa del acceso anticipado de Kara",
+		"marquee": {
+			"googleDrive": {
+				"description": "Archivos y documentos compartidos"
+			},
+			"github": {
+				"description": "Repos, PRs y issues"
+			},
+			"notion": {
+				"description": "Notas, wikis y tareas"
+			},
+			"discord": {
+				"description": "Mensajeria y comunidades"
+			},
+			"dropbox": {
+				"description": "Sincronizacion de carpetas"
+			},
+			"linear": {
+				"description": "Tracking de producto"
+			},
+			"trello": {
+				"description": "Tableros Kanban simples"
+			},
+			"slack": {
+				"description": "Canales y automatizacion interna"
+			},
+			"figma": {
+				"description": "Diseno y handoff colaborativo"
+			},
+			"jira": {
+				"description": "Tickets y roadmap de desarrollo"
+			},
+			"asana": {
+				"description": "Gestion de proyectos y tareas"
+			},
+			"hubspot": {
+				"description": "CRM y seguimiento comercial"
+			},
+			"zendesk": {
+				"description": "Soporte y atencion al cliente"
+			},
+			"stripe": {
+				"description": "Pagos y suscripciones"
+			},
+			"shopify": {
+				"description": "Ecommerce y catalogo online"
+			},
+			"airtable": {
+				"description": "Bases de datos sin codigo"
+			},
+			"clickup": {
+				"description": "Operaciones y productividad"
+			}
+		}
+	},
+	"execution": {
+		"eyebrow": "Privacidad sin drama",
+		"title": "Controla el trabajo, no solo la ventana",
+		"cards": {
+			"interface": {
+				"title": "Interfaz tranquila",
+				"description": "Una experiencia de escritorio pensada para que puedas pensar claro, moverte rápido y no vivir ahogado en paneles."
+			},
+			"speed": {
+				"title": "Velocidad local",
+				"description": "Menos saltos entre servicios significa respuestas más rápidas y un flujo de trabajo que se siente cerca de la tarea."
+			},
+			"privacy": {
+				"title": "Privacidad primero",
+				"description": "Kara está diseñada para que el trabajo sensible pueda quedarse privado por defecto, con el control justo donde importa."
+			},
+			"stack": {
+				"title": "Lista para tu stack",
+				"description": "Usa Kara como app de escritorio y capa de servicio conectada a la forma en la que ya trabaja tu equipo."
+			}
+		}
+	},
+	"cta": {
+		"title": "IA privada para trabajo que de verdad avanza.",
+		"subtitle": "Kara ayuda a equipos, PYMEs y gente curiosa a automatizar la parte pesada sin perder el control.",
+		"action": "Únete a la lista"
+	},
+	"footer": {
+		"title": "IA privada para trabajo que de verdad avanza.",
+		"subtitle": "Kara ayuda a equipos, PYMEs y gente curiosa a automatizar la parte pesada sin perder el control.",
+		"sections": {
+			"product": "Explorar",
+			"company": "Compañía"
+		},
+		"links": {
+			"features": "Por qué Kara",
+			"featureContent": "Funciones clave",
+			"orchestration": "Flujo local",
+			"integrations": "Acceso anticipado",
+			"execution": "Privacidad",
+			"about": "Sobre Kara",
+			"roadmap": "Hoja de ruta",
+			"privacy": "Privacidad",
+			"contact": "Contacto"
+		},
+		"language": {
+			"button": "Idioma",
+			"modalTitle": "Elige tu idioma",
+			"close": "Cerrar",
+			"modal": {
+				"heading": "Idioma",
+				"description": "Elige tu idioma de interfaz preferido.",
+				"searchPlaceholder": "Buscar idiomas",
+				"clearSearchLabel": "Limpiar busqueda",
+				"activeLabel": "Activo",
+				"updatingLabel": "Actualizando...",
+				"noResultsTitle": "No se encontraron idiomas.",
+				"noResultsHint": "Prueba con otro nombre o codigo de idioma."
+			},
+			"options": {
+				"en": "Inglés",
+				"es": "Español"
+			}
+		},
+		"cookies": "Cookies",
+		"rights": "Todos los derechos reservados. Desarrollado por AuthUser."
+	},
+	"waitlist": {
+		"nameLabel": "Nombre",
+		"namePlaceholder": "Tu nombre",
+		"typeLabel": "¿Eres una persona o una empresa?",
+		"typePersonal": "Persona individual",
+		"typeCompany": "Empresa",
+		"companyNameLabel": "Nombre de la empresa",
+		"companyNamePlaceholder": "Ej: Acme Corp",
+		"employeeRangeLabel": "Rango de empleados",
+		"employeeRangeDefault": "Selecciona un rango",
+		"employees": "empleados",
+		"emailLabel": "Correo electrónico",
+		"emailPlaceholder": "tu@email.com",
+		"messageLabel": "Mensaje o comentarios",
+		"messagePlaceholder": "Cuéntanos qué desafíos enfrenta tu equipo o por qué estás interesado en Kara",
+		"consentLabel": "Acepto la política de privacidad y deseo recibir actualizaciones sobre Kara",
+		"submitButton": "Unirme a la lista",
+		"submitting": "Enviando...",
+		"validationError": "Por favor revisa los errores en el formulario",
+		"rateLimitError": "Demasiadas solicitudes. Por favor intenta más tarde.",
+		"duplicateEmailError": "Este email ya está registrado en nuestra lista de espera",
+		"genericError": "Algo salió mal. Por favor intenta de nuevo.",
+		"networkError": "Error de conexión. Por favor revisa tu conexión a internet."
+	}
 }
