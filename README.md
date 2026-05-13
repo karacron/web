@@ -52,7 +52,7 @@ You can also run the workflow manually from GitHub using `workflow_dispatch`.
 
 ## Database (Prisma 7 + PostgreSQL)
 
-1. Create a local environment file from the example and set your DigitalOcean credentials:
+1. Create a local environment file from the example and set your:
 
 ```bash
 cp .env.example .env
@@ -75,4 +75,23 @@ pnpm db:migrate --name init
 
 ```bash
 pnpm db:studio
+```
+
+## Waitlist emails
+
+The waitlist endpoint can send two emails when a contact is created:
+
+1. Internal notification
+2. Thank-you email to the contact in the correct locale (`es` or `en`)
+
+Set these environment variables:
+
+```bash
+SMTP_HOST=
+SMTP_PORT=
+SMTP_SECURE=
+SMTP_USER=
+SMTP_PASS=
+WAITLIST_FROM_EMAIL=
+WAITLIST_NOTIFY_EMAIL=
 ```
