@@ -5,7 +5,7 @@ import { FooterLanguageSwitcher } from "./language-switcher";
 const SOCIAL_LINKS = [
   {
     label: "GitHub",
-    href: "https://github.com/authuser-dev/karacron",
+    href: "https://github.com/karacron/app",
     target: "_blank",
     Icon: FaGithub,
   },
