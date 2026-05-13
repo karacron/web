@@ -17,9 +17,7 @@ de los canales que ya usas — correo, mensajería, llamadas, calendarios,
 terminales remotas, webhooks, etc. — y traduce esos mensajes en acciones sobre
 tu máquina y tus servicios.
 
-El proyecto se inspira fuertemente en [OpenClaw](https://openclaw.ai/) y su
-modelo de integraciones ([openclaw.ai/integrations](https://openclaw.ai/integrations)),
-con el objetivo explícito de **replicar ese nivel de conectividad** pero
+El objetivo explícito es ofrecer un **alto nivel de conectividad multicanal**,
 enfocado en un asistente personal instalable, local-first, que el usuario
 controla por completo.
 
@@ -32,12 +30,12 @@ controla por completo.
   equipo. Sólo escala a un LLM en la nube cuando la tarea lo justifica
   (razonamiento complejo, generación extensa). Objetivo: **menos latencia,
   más privacidad y menor coste cloud**.
-- **Determinismo por defecto**: los flujos son declarativos. La IA *decide*,
+- **Determinismo por defecto**: los flujos son declarativos. La IA _decide_,
   pero quien ejecuta acciones es siempre el motor determinista, auditable y
   reversible.
 - **Multicanal por diseño**: la misma acción puede dispararse desde Telegram,
   desde la CLI, desde un webhook de GitHub o desde la UI de escritorio.
-- **Extensible**: cada capacidad es una *integración* con un contrato claro.
+- **Extensible**: cada capacidad es una _integración_ con un contrato claro.
 - **Auditable**: cada evento entra, se procesa y queda registrado, con la
   ruta completa (quién lo clasificó local, si escaló a la nube, qué flujo
   ejecutó).
@@ -48,11 +46,11 @@ controla por completo.
 
 Kara es **una sola aplicación distribuida en tres presentaciones**:
 
-| Presentación       | Qué es                                                                 | Para quién                              |
-| ------------------ | ---------------------------------------------------------------------- | --------------------------------------- |
+| Presentación          | Qué es                                                               | Para quién                              |
+| --------------------- | -------------------------------------------------------------------- | --------------------------------------- |
 | **App de escritorio** | Electron que embebe el frontal Next.js y levanta el core localmente. | Usuario final, configuración visual.    |
-| **CLI**            | Cliente de terminal para disparar acciones y administrar el core.       | Power users, scripts, automatizaciones. |
-| **Core (servidor)**| API NestJS + Fastify con Prisma/SQLite, encargada de integraciones.     | Motor compartido por escritorio y CLI.  |
+| **CLI**               | Cliente de terminal para disparar acciones y administrar el core.    | Power users, scripts, automatizaciones. |
+| **Core (servidor)**   | API NestJS + Fastify con Prisma/SQLite, encargada de integraciones.  | Motor compartido por escritorio y CLI.  |
 
 Las tres presentaciones **hablan con el mismo core**. El core puede correr:
 
@@ -115,7 +113,7 @@ Las tres presentaciones **hablan con el mismo core**. El core puede correr:
   (OpenAI, Anthropic, etc.), aplica presupuesto y rate limits, y registra
   coste por petición.
 - **Integrations Registry**: catálogo de integraciones instalables. Cada una
-  expone *triggers* (eventos que emite) y *actions* (operaciones que puede
+  expone _triggers_ (eventos que emite) y _actions_ (operaciones que puede
   ejecutar).
 - **Workflow Engine**: ejecuta flujos declarados (JSON/YAML) que encadenan
   triggers → condiciones → acciones. Es determinista: la IA propone, el
@@ -164,7 +162,7 @@ y evitar llamadas innecesarias a proveedores cloud.
    - Si hay una respuesta cacheada equivalente → la reutiliza.
    - Si la confianza es baja o la tarea requiere razonamiento/generación
      extensa → escala al **Cloud LLM Gateway**.
-5. **Aprendizaje barato**: guarda pares *(intención → flujo)* validados por
+5. **Aprendizaje barato**: guarda pares _(intención → flujo)_ validados por
    el usuario para resolverlos localmente la próxima vez.
 
 ### Cloud LLM Gateway (slow path)
@@ -178,7 +176,7 @@ Cuando sí hace falta un LLM grande:
   canal origen.
 - Permite **políticas de datos**: qué campos pueden viajar, redacción
   automática de PII antes de enviar.
-- Puede usarse en modo *streaming* hacia la UI o CLI.
+- Puede usarse en modo _streaming_ hacia la UI o CLI.
 
 ### Estimación de ahorro
 
@@ -186,7 +184,7 @@ El orquestador local está diseñado para absorber la mayor parte del tráfico
 repetitivo. En un uso típico de asistente personal, ese tráfico suele ser
 dominante, con lo que el gasto en la nube queda reservado a las peticiones
 que realmente necesitan un LLM grande. El panel de la UI muestra el ratio
-*local vs. cloud* y el coste acumulado para que el usuario lo controle.
+_local vs. cloud_ y el coste acumulado para que el usuario lo controle.
 
 ---
 
@@ -231,7 +229,7 @@ docs/         → Documentación (este archivo)
   - Panel de control visual: integraciones, workflows, logs, eventos.
   - Editor de flujos declarativos.
   - Chat composer para interactuar con Kara desde la propia UI.
-- Se renderiza *dentro* de Electron, pero también puede servirse de forma
+- Se renderiza _dentro_ de Electron, pero también puede servirse de forma
   independiente apuntando a un core remoto.
 
 ### 4.3 `apps/electron` — Escritorio
@@ -255,12 +253,10 @@ docs/         → Documentación (este archivo)
 
 ---
 
-## 5. Modelo de integraciones (inspirado en OpenClaw)
+## 5. Modelo de integraciones
 
-La pieza central de Kara es su sistema de integraciones. Se toma como
-referencia directa el catálogo de
-[OpenClaw Integrations](https://openclaw.ai/integrations): queremos cubrir el
-**mismo tipo de canales y servicios**, adaptados a una app personal.
+La pieza central de Kara es su sistema de integraciones. El objetivo es cubrir
+un catálogo amplio de canales y servicios, adaptados a una app personal.
 
 ### 5.1 Categorías objetivo
 
@@ -277,7 +273,7 @@ referencia directa el catálogo de
 - **Audio/voz**: captura de voz local, TTS externo, transcripción vía API.
 - **IA externa (opcional)**: OpenAI, Anthropic, modelos self-hosted — se
   invocan mediante el **Cloud LLM Gateway** sólo cuando el orquestador local
-  no resuelve. La IA siempre *propone* (clasifica, sugiere flujos, rellena
+  no resuelve. La IA siempre _propone_ (clasifica, sugiere flujos, rellena
   parámetros); nunca ejecuta por sí misma.
 
 ### 5.2 Contrato de una integración
@@ -286,12 +282,12 @@ Cada integración es un paquete con una forma común:
 
 ```ts
 export interface Integration {
-  id: string;                       // "telegram"
-  name: string;                     // "Telegram"
+  id: string; // "telegram"
+  name: string; // "Telegram"
   version: string;
-  triggers?: TriggerDefinition[];   // eventos que emite
-  actions?: ActionDefinition[];     // acciones que expone
-  config: ConfigSchema;             // credenciales / settings
+  triggers?: TriggerDefinition[]; // eventos que emite
+  actions?: ActionDefinition[]; // acciones que expone
+  config: ConfigSchema; // credenciales / settings
   lifecycle: {
     onInstall?(): Promise<void>;
     onEnable?(ctx: Ctx): Promise<void>;
@@ -307,9 +303,9 @@ export interface Integration {
 
 ### 5.3 Ejemplo conceptual
 
-> *"Cuando reciba un email con la etiqueta `factura`, guarda el adjunto en
+> _"Cuando reciba un email con la etiqueta `factura`, guarda el adjunto en
 > `~/Documentos/Facturas/YYYY/MM`, envíame un Telegram con el total y añade
-> una tarea a Todoist."*
+> una tarea a Todoist."_
 
 Eso se traduce en un workflow declarativo:
 
@@ -336,10 +332,10 @@ steps:
       dueString: "friday"
 ```
 
-El flujo en sí es determinista. La IA local sólo interviene *antes*: traduce
+El flujo en sí es determinista. La IA local sólo interviene _antes_: traduce
 el mensaje entrante (“guarda esta factura”) a este flujo, y — si hiciera
 falta extraer el importe del PDF — puede invocar el **Cloud LLM Gateway**
-como una *action* más, sujeta a política de datos.
+como una _action_ más, sujeta a política de datos.
 
 ---
 
@@ -365,21 +361,21 @@ Cada canal pasa por la misma tubería:
 
 ## 7. Stack técnico
 
-| Capa             | Tecnología                                           |
-| ---------------- | ----------------------------------------------------- |
-| Lenguaje         | TypeScript                                            |
-| Runtime          | Node.js 22 LTS                                        |
-| Gestor paquetes  | pnpm 10 (workspaces)                                  |
-| Orquestador      | Turborepo                                             |
-| Backend          | NestJS 11 + Fastify                                   |
-| Persistencia     | Prisma 7 + SQLite (`better-sqlite3`)                  |
-| Frontend         | Next.js (App Router) + React 19 + Tailwind            |
-| Escritorio       | Electron                                              |
-| CLI              | Node + TypeScript                                     |
-| Validación       | `class-validator`, `zod` (según capa)                 |
-| Documentación API| Swagger                                               |
-| Testing          | Jest                                                  |
-| Lint/format      | ESLint + Prettier                                     |
+| Capa              | Tecnología                                 |
+| ----------------- | ------------------------------------------ |
+| Lenguaje          | TypeScript                                 |
+| Runtime           | Node.js 22 LTS                             |
+| Gestor paquetes   | pnpm 10 (workspaces)                       |
+| Orquestador       | Turborepo                                  |
+| Backend           | NestJS 11 + Fastify                        |
+| Persistencia      | Prisma 7 + SQLite (`better-sqlite3`)       |
+| Frontend          | Next.js (App Router) + React 19 + Tailwind |
+| Escritorio        | Electron                                   |
+| CLI               | Node + TypeScript                          |
+| Validación        | `class-validator`, `zod` (según capa)      |
+| Documentación API | Swagger                                    |
+| Testing           | Jest                                       |
+| Lint/format       | ESLint + Prettier                          |
 
 ---
 
@@ -422,9 +418,9 @@ Cada canal pasa por la misma tubería:
 
 ---
 
-## 10. Relación con OpenClaw
+## 10. Diferenciales de Kara
 
-Kara **no** es un clon de OpenClaw, pero comparte tres ideas clave:
+Kara se apoya en tres ideas clave:
 
 1. **Integraciones como ciudadano de primera clase**: todo lo interesante
    pasa en las conexiones con otros sistemas.
@@ -432,16 +428,13 @@ Kara **no** es un clon de OpenClaw, pero comparte tres ideas clave:
    no al revés.
 3. **Transparencia**: el usuario ve qué disparó qué y puede inspeccionarlo.
 
-Diferencias intencionales:
+Además, se diferencia por:
 
-- Kara es **instalable** en tu máquina y **local-first**.
-- Kara tiene un **orquestador local con IA** que resuelve la mayoría de
+- Ser **instalable** en tu máquina y **local-first**.
+- Tener un **orquestador local con IA** que resuelve la mayoría de
   peticiones sin salir del equipo, reservando el LLM en la nube para lo
   realmente complejo. Esto baja coste y latencia y sube privacidad.
-- Kara **unifica** escritorio, CLI y servidor en una sola base de código.
-
-El catálogo de integraciones objetivo se toma como referencia directa de
-[openclaw.ai/integrations](https://openclaw.ai/integrations).
+- **Unificar** escritorio, CLI y servidor en una sola base de código.
 
 ---
 
@@ -466,11 +459,13 @@ El catálogo de integraciones objetivo se toma como referencia directa de
 ## 12. Roadmap propuesto
 
 ### Fase 1 — Fundaciones
+
 - Estabilizar core, CLI y Electron en Windows, macOS y Linux.
 - Definir contrato `Integration` y cargarlas dinámicamente.
 - Event bus + auditoría persistente.
 
 ### Fase 2 — Primer núcleo de integraciones
+
 - Telegram (trigger + action).
 - Email IMAP/SMTP.
 - Webhooks entrantes firmados.
@@ -478,19 +473,22 @@ El catálogo de integraciones objetivo se toma como referencia directa de
 - Cron interno.
 
 ### Fase 3 — Workflow engine + IA local
+
 - DSL declarativo (YAML).
 - Editor visual en la UI.
 - Plantillas listas para usar.
 - Orquestador local: clasificador de intenciones, embeddings,
   cache semántica y reglas de enrutado.
 
-### Fase 4 — Expansión tipo OpenClaw + Cloud LLM Gateway
+### Fase 4 — Expansión de integraciones + Cloud LLM Gateway
+
 - Slack, Discord, WhatsApp.
 - GitHub, Linear, Notion, Todoist.
 - Home Assistant / MQTT.
 - Gateway multi-proveedor con presupuesto, rate limit y política de datos.
 
 ### Fase 5 — Distribución
+
 - Instaladores firmados (dmg, msi, AppImage).
 - Auto-update.
 - Marketplace de integraciones y workflows.
