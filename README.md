@@ -95,3 +95,11 @@ SMTP_PASS=
 WAITLIST_FROM_EMAIL=
 WAITLIST_NOTIFY_EMAIL=
 ```
+
+## DigitalOcean build notes
+
+If your build fails during `pnpm install` with a Prisma error for `DATABASE_URL`, make sure these variables are set in App Platform:
+
+- `DATABASE_URL`
+
+Set both variables to be available at **Build Time** and **Runtime**.
