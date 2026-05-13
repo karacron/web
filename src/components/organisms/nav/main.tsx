@@ -1,7 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
-
-const WAITLIST_MAILTO = "mailto:sgonzalez@authuser.org?subject=Kara%20waitlist";
+import { NavWaitlistButton } from "./nav-waitlist-button";
 
 export async function MainNav() {
   const t = await getTranslations("nav");
@@ -40,12 +39,7 @@ export async function MainNav() {
           ))}
         </div>
 
-        <a
-          href={WAITLIST_MAILTO}
-          className="hidden items-center whitespace-nowrap rounded-xl bg-indigo-500 px-3 py-2 text-xs font-semibold text-white shadow-lg shadow-indigo-900/30 transition hover:bg-indigo-400 sm:inline-flex sm:px-4 sm:text-sm"
-        >
-          {t("cta")}
-        </a>
+        <NavWaitlistButton label={t("cta")} />
       </div>
     </nav>
   );

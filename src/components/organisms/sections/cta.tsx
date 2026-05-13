@@ -1,4 +1,4 @@
-import { WaitlistCtaButton } from "@atom/waitlist-cta-button";
+import { WaitlistCtaButton } from "@/components/atoms/waitlist-cta-button";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 
@@ -24,13 +24,6 @@ export async function CtaSection() {
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
               <WaitlistCtaButton label={t("primary")} variant="primary" />
-              <a
-                href={TEAM_MAILTO}
-                className="text-sm/6 font-semibold text-white hover:text-gray-100"
-              >
-                {t("secondary")}
-                <span aria-hidden="true">→</span>
-              </a>
             </div>
           </div>
           <div className="relative mt-16 h-72 sm:h-80 lg:mt-8">
