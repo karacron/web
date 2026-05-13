@@ -6,42 +6,6 @@ datasource db {
   provider = "postgresql"
 }
 
-model User {
-  id          String       @id @default(cuid())
-  email       String       @unique
-  name        String?
-  createdAt   DateTime     @default(now())
-  updatedAt   DateTime     @updatedAt
-  preferences Preference[]
-  auditEvents AuditEvent[]
-}
-
-model Preference {
-  id        String   @id @default(cuid())
-  userId    String
-  key       String
-  value     String
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-
-  @@unique([userId, key])
-  @@index([key])
-}
-
-model AuditEvent {
-  id        String   @id @default(cuid())
-  userId    String?
-  action    String
-  channel   String?
-  payload   Json?
-  createdAt DateTime @default(now())
-  user      User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
-
-  @@index([action])
-  @@index([createdAt])
-}
-
 model WaitlistSignup {
   id                String   @id @default(cuid())
   email             String   @unique
