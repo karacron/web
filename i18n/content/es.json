@@ -170,6 +170,16 @@
       "button": "Idioma",
       "modalTitle": "Elige tu idioma",
       "close": "Cerrar",
+      "modal": {
+        "heading": "Idioma",
+        "description": "Elige tu idioma de interfaz preferido.",
+        "searchPlaceholder": "Buscar idiomas",
+        "clearSearchLabel": "Limpiar busqueda",
+        "activeLabel": "Activo",
+        "updatingLabel": "Actualizando...",
+        "noResultsTitle": "No se encontraron idiomas.",
+        "noResultsHint": "Prueba con otro nombre o codigo de idioma."
+      },
       "options": {
         "en": "Inglés",
         "es": "Español"

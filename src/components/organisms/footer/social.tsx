@@ -1,6 +1,9 @@
 import { Cookie, Mail } from "lucide-react";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { FooterLanguageSwitcher } from "./language-switcher";
+import {
+  FooterLanguageSwitcher,
+  type LanguageModalI18n,
+} from "./language-switcher";
 
 const SOCIAL_LINKS = [
   {
@@ -28,6 +31,7 @@ type FooterSocialProps = {
   cookies: string;
   languageTitle: string;
   languageClose: string;
+  languageModalI18n: LanguageModalI18n;
   currentLocale: "en" | "es";
   languageOptions: Array<{
     code: "en" | "es";
@@ -41,6 +45,7 @@ export function FooterSocial({
   cookies,
   languageTitle,
   languageClose,
+  languageModalI18n,
   currentLocale,
   languageOptions,
 }: FooterSocialProps) {
@@ -64,6 +69,7 @@ export function FooterSocial({
           buttonLabel={language}
           modalTitle={languageTitle}
           closeLabel={languageClose}
+          modalI18n={languageModalI18n}
           currentLocale={currentLocale}
           options={languageOptions}
         />

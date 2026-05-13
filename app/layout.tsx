@@ -1,3 +1,4 @@
+import { ModalProvider } from "@molecule/modal/modal-provider";
 import { CookieConsentBanner } from "@organism/cookies/cookie-consent";
 import SmoothScrollProvider from "@provider/SmoothScrollProvider";
 import type { Metadata } from "next";
@@ -38,7 +39,9 @@ export default async function RootLayout({
     >
       <body className="min-h-full bg-background text-foreground">
         <NextIntlClientProvider messages={messages}>
-          <SmoothScrollProvider>{children}</SmoothScrollProvider>
+          <SmoothScrollProvider>
+            <ModalProvider>{children}</ModalProvider>
+          </SmoothScrollProvider>
           <CookieConsentBanner />
         </NextIntlClientProvider>
       </body>

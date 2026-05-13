@@ -43,6 +43,7 @@ export async function CtaSection() {
               width={1824}
               height={1080}
               src="/dashboard.png"
+              loading="eager"
               alt={t("imageAlt")}
               className="mx-auto h-full w-full max-w-xl rounded-md bg-white/5 object-cover ring-1 ring-white/10 lg:absolute lg:top-0 lg:left-0 lg:h-auto lg:w-228 lg:max-w-none lg:object-contain"
             />

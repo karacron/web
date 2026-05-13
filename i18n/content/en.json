@@ -170,6 +170,16 @@
       "button": "Language",
       "modalTitle": "Choose your language",
       "close": "Close",
+      "modal": {
+        "heading": "Language",
+        "description": "Choose your preferred interface language.",
+        "searchPlaceholder": "Search languages",
+        "clearSearchLabel": "Clear search",
+        "activeLabel": "Active",
+        "updatingLabel": "Updating...",
+        "noResultsTitle": "No languages found.",
+        "noResultsHint": "Try another name or locale code."
+      },
       "options": {
         "en": "English",
         "es": "Spanish"

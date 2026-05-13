@@ -88,6 +88,16 @@ export async function Footer() {
             cookies={t("cookies")}
             languageTitle={t("language.modalTitle")}
             languageClose={t("language.close")}
+            languageModalI18n={{
+              heading: t("language.modal.heading"),
+              description: t("language.modal.description"),
+              searchPlaceholder: t("language.modal.searchPlaceholder"),
+              clearSearchLabel: t("language.modal.clearSearchLabel"),
+              activeLabel: t("language.modal.activeLabel"),
+              updatingLabel: t("language.modal.updatingLabel"),
+              noResultsTitle: t("language.modal.noResultsTitle"),
+              noResultsHint: t("language.modal.noResultsHint"),
+            }}
             currentLocale={locale}
             languageOptions={[
               { code: "en", label: t("language.options.en") },
