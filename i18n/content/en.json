@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "title": "Kara — Work less. Enjoy more.",
+    "description": "Kara is a local-first AI desktop assistant for businesses, SMBs and everyday people who want private automation without giving up control."
+  },
+  "nav": {
+    "features": "Why Kara",
+    "orchestration": "Desktop flow",
+    "integrations": "Early access",
+    "execution": "Privacy",
+    "cta": "Join the waitlist"
+  },
+  "hero": {
+    "badge": "In development. Launching in 2026.",
+    "badgeLink": "Get early access updates",
+    "title": "Work less. Enjoy more.",
+    "subtitle": "Kara is the local-first AI desktop assistant that helps businesses, lean teams and normal humans get real work done without throwing their private data around the internet.",
+    "primary": "Join the waitlist",
+    "secondary": "See what makes Kara different"
+  },
+  "features": {
+    "eyebrow": "Why Kara",
+    "title": "Private AI that still feels fast, useful and human",
+    "subtitle": "Built for businesses and SMBs first, but friendly enough for anyone who wants fewer tabs, less busywork and more done before lunch.",
+    "items": {
+      "privacy": {
+        "title": "Private by default",
+        "description": "Sensitive notes, client context and internal docs stay closer to your machine instead of being sprayed across random tools."
+      },
+      "business": {
+        "title": "Made for real work",
+        "description": "From follow-ups and ops to documentation and support, Kara is aimed at work that pays the bills, not toy demos."
+      },
+      "teams": {
+        "title": "Perfect for lean teams",
+        "description": "Small teams and growing companies can automate repetitive work without needing a whole AI task force to babysit it."
+      },
+      "everyday": {
+        "title": "Also great for normal life",
+        "description": "Kara can help with planning, writing, organizing and the messy digital chores you never wanted to do yourself."
+      }
+    }
+  },
+  "orchestration": {
+    "eyebrow": "Desktop flow",
+    "title": "One assistant. Your rules.",
+    "subtitle": "Kara keeps the core flow close to your desk, knows when to stay local and only reaches for outside services when the task truly needs extra muscle.",
+    "items": {
+      "local": {
+        "title": "Local first.",
+        "description": "Private work starts on-device, so drafts, customer notes and internal context do not need to leave home on every request."
+      },
+      "teams": {
+        "title": "Built for business teams.",
+        "description": "Founders, ops, sales, support and small teams get one calm place to automate repeat work without duct-taping five different apps."
+      },
+      "escalation": {
+        "title": "Cloud only when it helps.",
+        "description": "When a task needs more reach, Kara can call services and models on purpose instead of making every workflow cloud-first by default."
+      }
+    },
+    "imageAlt": "Kara desktop workspace preview"
+  },
+  "integrations": {
+    "eyebrow": "Early access",
+    "title": "Kara is cooking. Want in first?",
+    "subtitle": "We are building the desktop experience now. Join the waitlist for launch news, private previews and early access before the public release planned for late 2026, or earlier if we move fast.",
+    "primary": "Join the waitlist",
+    "secondary": "Talk to us",
+    "imageAlt": "Kara early access preview",
+    "marquee": {
+      "googleDrive": {
+        "description": "Shared files and docs"
+      },
+      "github": {
+        "description": "Repos, PRs and issues"
+      },
+      "notion": {
+        "description": "Notes, wikis and tasks"
+      },
+      "discord": {
+        "description": "Messaging and communities"
+      },
+      "dropbox": {
+        "description": "Folder sync and backup"
+      },
+      "linear": {
+        "description": "Product tracking"
+      },
+      "trello": {
+        "description": "Simple Kanban boards"
+      },
+      "slack": {
+        "description": "Channels and internal automation"
+      },
+      "figma": {
+        "description": "Design and collaborative handoff"
+      },
+      "jira": {
+        "description": "Tickets and dev roadmap"
+      },
+      "asana": {
+        "description": "Project and task management"
+      },
+      "hubspot": {
+        "description": "CRM and sales follow-up"
+      },
+      "zendesk": {
+        "description": "Support and customer care"
+      },
+      "stripe": {
+        "description": "Payments and subscriptions"
+      },
+      "shopify": {
+        "description": "Ecommerce and online catalog"
+      },
+      "airtable": {
+        "description": "No-code databases"
+      },
+      "clickup": {
+        "description": "Operations and productivity"
+      }
+    }
+  },
+  "execution": {
+    "eyebrow": "Privacy without drama",
+    "title": "Keep control of the work, not just the window",
+    "cards": {
+      "interface": {
+        "title": "Quiet interface",
+        "description": "A focused desktop experience built to help you think clearly, move fast and avoid dashboard overload."
+      },
+      "speed": {
+        "title": "Local speed",
+        "description": "Less bouncing between services means quicker answers and a workflow that feels close to the task."
+      },
+      "privacy": {
+        "title": "Privacy first",
+        "description": "Kara is designed so sensitive work can stay private by default, with control where it matters most."
+      },
+      "stack": {
+        "title": "Ready for your stack",
+        "description": "Use Kara as a desktop app and service layer that can plug into the way your team already works."
+      }
+    }
+  },
+  "cta": {
+    "title": "Private AI for work that actually moves.",
+    "subtitle": "Kara helps teams, SMBs and curious humans automate the boring parts while keeping control close.",
+    "action": "Join the waitlist"
+  },
+  "footer": {
+    "title": "Private AI for work that actually moves.",
+    "subtitle": "Kara helps teams, SMBs and curious humans automate the boring parts while keeping control close.",
+    "sections": {
+      "product": "Explore",
+      "company": "Company"
+    },
+    "links": {
+      "features": "Why Kara",
+      "orchestration": "Desktop flow",
+      "integrations": "Early access",
+      "execution": "Privacy",
+      "about": "About Kara",
+      "roadmap": "Roadmap",
+      "privacy": "Privacy",
+      "contact": "Contact"
+    },
+    "language": {
+      "button": "Language",
+      "modalTitle": "Choose your language",
+      "close": "Close",
+      "options": {
+        "en": "English",
+        "es": "Spanish"
+      }
+    },
+    "cookies": "Cookies",
+    "rights": "All rights reserved. Built by AuthUser."
+  }
+}

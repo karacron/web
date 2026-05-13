@@ -1,0 +1,18 @@
+---
+title: "Mistral Small in Hybrid Stacks"
+description: "How to use a compact model for background processing and retries."
+date: "2026-05-08"
+tags:
+  - models
+  - hybrid
+---
+
+## Where it fits
+
+This model is useful for asynchronous summarization, tagging and retry-safe tasks.
+
+## Operational pattern
+
+- Keep prompts strict and schema-first.
+- Run post-validation before writing side effects.
+- Store inference traces for debugging.

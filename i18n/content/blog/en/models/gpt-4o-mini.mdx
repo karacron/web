@@ -1,0 +1,23 @@
+---
+title: "GPT-4o mini for Fast Routing"
+description: "A practical baseline model for low-latency orchestration decisions."
+date: "2026-05-09"
+tags:
+  - models
+  - routing
+---
+
+## Ideal usage
+
+Use this model for intent detection, lightweight classification and first-pass routing.
+It keeps cost and latency predictable.
+
+## Design note
+
+For critical actions, chain this model with explicit policy validation and human approval.
+
+## Metrics to track
+
+- Intent classification precision.
+- Escalation rate to larger models.
+- End-to-end completion time.

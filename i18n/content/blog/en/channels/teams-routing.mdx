@@ -1,0 +1,23 @@
+---
+title: "Teams Routing Patterns"
+description: "Map team channels to orchestration intents and ownership."
+date: "2026-05-10"
+tags:
+  - channels
+  - teams
+---
+
+## Routing by ownership
+
+Use explicit ownership rules so each intent reaches one clear destination.
+Avoid broad broadcasts for operational actions.
+
+## Suggested mapping
+
+- `#platform-ops` for deployment actions.
+- `#customer-escalation` for urgent customer workflows.
+- `#data-governance` for policy and compliance checks.
+
+## Guardrails
+
+Add a preflight step that validates user role and request context before execution.
