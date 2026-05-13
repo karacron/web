@@ -1,7 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
+import { WaitlistCtaButton } from "@/components/atoms/waitlist-cta-button";
 
-const WAITLIST_MAILTO = "mailto:sgonzalez@authuser.org?subject=Kara%20waitlist";
 const TEAM_MAILTO =
   "mailto:sgonzalez@authuser.org?subject=Kara%20for%20my%20team";
 
@@ -23,12 +23,7 @@ export async function CtaSection() {
               {t("subtitle")}
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
-              <a
-                href={WAITLIST_MAILTO}
-                className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
-              >
-                {t("primary")}
-              </a>
+              <WaitlistCtaButton label={t("primary")} variant="primary" />
               <a
                 href={TEAM_MAILTO}
                 className="text-sm/6 font-semibold text-white hover:text-gray-100"

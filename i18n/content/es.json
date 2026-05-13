@@ -187,5 +187,29 @@
     },
     "cookies": "Cookies",
     "rights": "Todos los derechos reservados. Desarrollado por AuthUser."
+  },
+  "waitlist": {
+    "nameLabel": "Nombre",
+    "namePlaceholder": "Tu nombre",
+    "typeLabel": "¿Eres una persona o una empresa?",
+    "typePersonal": "Persona individual",
+    "typeCompany": "Empresa",
+    "companyNameLabel": "Nombre de la empresa",
+    "companyNamePlaceholder": "Ej: Acme Corp",
+    "employeeRangeLabel": "Rango de empleados",
+    "employeeRangeDefault": "Selecciona un rango",
+    "employees": "empleados",
+    "emailLabel": "Correo electrónico",
+    "emailPlaceholder": "tu@email.com",
+    "messageLabel": "Mensaje o comentarios",
+    "messagePlaceholder": "Cuéntanos qué desafíos enfrenta tu equipo o por qué estás interesado en Kara",
+    "consentLabel": "Acepto la política de privacidad y deseo recibir actualizaciones sobre Kara",
+    "submitButton": "Unirme a la lista",
+    "submitting": "Enviando...",
+    "validationError": "Por favor revisa los errores en el formulario",
+    "rateLimitError": "Demasiadas solicitudes. Por favor intenta más tarde.",
+    "duplicateEmailError": "Este email ya está registrado en nuestra lista de espera",
+    "genericError": "Algo salió mal. Por favor intenta de nuevo.",
+    "networkError": "Error de conexión. Por favor revisa tu conexión a internet."
   }
 }

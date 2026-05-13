@@ -187,5 +187,29 @@
     },
     "cookies": "Cookies",
     "rights": "All rights reserved. Built by AuthUser."
+  },
+  "waitlist": {
+    "nameLabel": "Name",
+    "namePlaceholder": "Your name",
+    "typeLabel": "Are you joining as an individual or a company?",
+    "typePersonal": "Individual",
+    "typeCompany": "Company",
+    "companyNameLabel": "Company name",
+    "companyNamePlaceholder": "E.g: Acme Corp",
+    "employeeRangeLabel": "Employee range",
+    "employeeRangeDefault": "Select a range",
+    "employees": "employees",
+    "emailLabel": "Email address",
+    "emailPlaceholder": "you@email.com",
+    "messageLabel": "Message or comments",
+    "messagePlaceholder": "Tell us what challenges your team faces or why you're interested in Kara",
+    "consentLabel": "I accept the privacy policy and would like to receive updates about Kara",
+    "submitButton": "Join the waitlist",
+    "submitting": "Sending...",
+    "validationError": "Please check the errors in the form",
+    "rateLimitError": "Too many requests. Please try again later.",
+    "duplicateEmailError": "This email is already on our waitlist",
+    "genericError": "Something went wrong. Please try again.",
+    "networkError": "Connection error. Please check your internet connection."
   }
 }

@@ -49,3 +49,30 @@ git push origin v0.1.1
 2. The workflow in `.github/workflows/release.yml` creates a GitHub Release automatically with generated notes.
 
 You can also run the workflow manually from GitHub using `workflow_dispatch`.
+
+## Database (Prisma 7 + PostgreSQL)
+
+1. Create a local environment file from the example and set your DigitalOcean credentials:
+
+```bash
+cp .env.example .env
+```
+
+2. Generate Prisma client and validate schema:
+
+```bash
+pnpm db:generate
+pnpm db:validate
+```
+
+3. Run the first migration:
+
+```bash
+pnpm db:migrate --name init
+```
+
+4. Optional: inspect data with Prisma Studio:
+
+```bash
+pnpm db:studio
+```

@@ -2,6 +2,8 @@
 
 import { motion, type Variants } from "framer-motion";
 import { FaApple, FaDocker, FaLinux, FaWindows } from "react-icons/fa";
+import { useModal } from "@/components/molecules/modal/use-modal";
+import { WaitlistForm } from "@/components/molecules/forms/waitlist-form";
 
 const PLATFORM_ICONS = [
   { name: "Windows", Icon: FaWindows },
@@ -9,8 +11,6 @@ const PLATFORM_ICONS = [
   { name: "Linux", Icon: FaLinux },
   { name: "Docker", Icon: FaDocker },
 ] as const;
-
-const WAITLIST_MAILTO = "mailto:sgonzalez@authuser.org?subject=Kara%20waitlist";
 
 const container: Variants = {
   hidden: {},
@@ -54,6 +54,15 @@ export function HeroAnimated({
   primaryLabel,
   availableLabel,
 }: HeroAnimatedProps) {
+  const { openModal, closeModal } = useModal();
+
+  const handleOpenWaitlistModal = () => {
+    openModal({
+      title: "Únete a la lista de espera",
+      content: <WaitlistForm closeModal={closeModal} />,
+    });
+  };
+
   return (
     <motion.div
       className="text-center"
@@ -121,12 +130,12 @@ export function HeroAnimated({
         variants={fadeUp}
         className="mt-10 flex items-center justify-center gap-x-6"
       >
-        <a
-          href={WAITLIST_MAILTO}
+        <button
+          onClick={handleOpenWaitlistModal}
           className="rounded-md bg-indigo-500 px-8 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
         >
           {primaryLabel}
-        </a>
+        </button>
       </motion.div>
     </motion.div>
   );
