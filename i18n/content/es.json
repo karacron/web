@@ -213,5 +213,25 @@
 		"duplicateEmailError": "Este email ya está registrado en nuestra lista de espera",
 		"genericError": "Algo salió mal. Por favor intenta de nuevo.",
 		"networkError": "Error de conexión. Por favor revisa tu conexión a internet."
+	},
+	"featureContent": {
+		"eyebrow": "Funciones clave",
+		"title": "Haz más con tu voz, tu tiempo y tu creatividad",
+		"subtitle": "Kara te permite interactuar directamente hablando, programar tareas cotidianas y generar contenido multimedia sin esfuerzo extra.",
+		"imageAlt": "Vista previa de la interacción por voz y multimedia en Kara",
+		"items": {
+			"voice": {
+				"title": "Habla y actúa",
+				"description": "Controla Kara y obtén respuestas usando solo tu voz, sin depender del teclado."
+			},
+			"tasks": {
+				"title": "Tareas cotidianas automáticas",
+				"description": "Programa recordatorios, eventos y rutinas diarias para que no se te escape nada."
+			},
+			"media": {
+				"title": "Crea contenido multimedia",
+				"description": "Genera imágenes, audio y video para tus proyectos o redes sociales en segundos."
+			}
+		}
 	}
 }
