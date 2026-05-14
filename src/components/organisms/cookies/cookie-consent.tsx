@@ -2,16 +2,13 @@
 
 import { useEffect } from "react";
 
-const GOOGLE_ANALYTICS_ID = "G-574MS48GZX";
-
 type CookieConsentCategoryCookie = {
   categories?: string[];
 };
 
 type GoogleAnalyticsWindow = Window & {
-  dataLayer?: unknown[];
   gtag?: (...args: unknown[]) => void;
-  __karaGoogleAnalyticsLoaded?: boolean;
+  __karaAnalyticsConsentGranted?: boolean;
 };
 
 function hasAnalyticsConsent(cookie: CookieConsentCategoryCookie | undefined) {
@@ -20,6 +17,7 @@ function hasAnalyticsConsent(cookie: CookieConsentCategoryCookie | undefined) {
 
 function updateGoogleAnalyticsConsent(allowed: boolean) {
   const globalWindow = window as GoogleAnalyticsWindow;
+  globalWindow.__karaAnalyticsConsentGranted = allowed;
 
   if (typeof globalWindow.gtag !== "function") {
     return;
@@ -27,36 +25,10 @@ function updateGoogleAnalyticsConsent(allowed: boolean) {
 
   globalWindow.gtag("consent", "update", {
     analytics_storage: allowed ? "granted" : "denied",
+    ad_storage: "denied",
+    ad_user_data: "denied",
+    ad_personalization: "denied",
   });
-}
-
-function loadGoogleAnalytics() {
-  const globalWindow = window as GoogleAnalyticsWindow;
-
-  if (globalWindow.__karaGoogleAnalyticsLoaded) {
-    return;
-  }
-
-  globalWindow.__karaGoogleAnalyticsLoaded = true;
-  globalWindow.dataLayer = globalWindow.dataLayer ?? [];
-  globalWindow.gtag = function gtag(...args: unknown[]) {
-    globalWindow.dataLayer?.push(args);
-  };
-
-  const script = document.createElement("script");
-  script.async = true;
-  script.src = `https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ANALYTICS_ID}`;
-
-  script.onload = () => {
-    globalWindow.gtag?.("js", new Date());
-    globalWindow.gtag?.("config", GOOGLE_ANALYTICS_ID);
-  };
-
-  script.onerror = () => {
-    globalWindow.__karaGoogleAnalyticsLoaded = false;
-  };
-
-  document.head.appendChild(script);
 }
 
 export function CookieConsentBanner() {
@@ -76,13 +48,7 @@ export function CookieConsentBanner() {
 
       const syncGoogleAnalytics = (cookie: CookieConsentCategoryCookie) => {
         const analyticsEnabled = hasAnalyticsConsent(cookie);
-
-        if (!analyticsEnabled) {
-          updateGoogleAnalyticsConsent(false);
-          return;
-        }
-
-        loadGoogleAnalytics();
+        updateGoogleAnalyticsConsent(analyticsEnabled);
       };
 
       await CookieConsent.run({
