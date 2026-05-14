@@ -1,412 +1,412 @@
 {
-  "meta": {
-    "title": "Kara – Werk minder. Geniet meer.",
-    "description": "Kara is een lokale AI-desktopassistent voor bedrijven, MKB-bedrijven en gewone mensen die privéautomatisering willen zonder de controle op te geven."
-  },
-  "nav": {
-    "features": "Waarom Kara",
-    "orchestration": "Desktopstroom",
-    "featureContent": "Belangrijkste kenmerken",
-    "integrations": "Vroege toegang",
-    "functions": "Wat het kan doen",
-    "roadmap": "Routekaart",
-    "execution": "Privacy",
-    "cta": "Sluit u aan bij de wachtlijst"
-  },
-  "hero": {
-    "badge": "In ontwikkeling. Lancering in 2026.",
-    "badgeLink": "Ontvang updates voor vroege toegang",
-    "title": "Minder werken. Geniet meer.",
-    "subtitle": "Kara is de lokale AI-desktopassistent die bedrijven, lean teams en normale mensen helpt echt werk gedaan te krijgen zonder hun privégegevens op internet te gooien.",
-    "primary": "Sluit u aan bij de wachtlijst",
-    "secondary": "Ontdek wat Kara anders maakt"
-  },
-  "features": {
-    "eyebrow": "Waarom Kara",
-    "title": "Privé-AI die toch snel, nuttig en menselijk aanvoelt",
-    "subtitle": "In de eerste plaats gebouwd voor bedrijven en MKB-bedrijven, maar vriendelijk genoeg voor iedereen die minder tabbladen wil, minder druk werk en meer gedaan wil hebben voor de lunch.",
-    "items": {
-      "privacy": {
-        "title": "Standaard privé",
-        "description": "Gevoelige notities, klantcontext en interne documenten blijven dichter bij uw machine en worden niet over willekeurige tools verspreid."
-      },
-      "business": {
-        "title": "Gemaakt voor het echte werk",
-        "description": "Van follow-ups en operaties tot documentatie en ondersteuning, Kara is gericht op werk waarmee de rekeningen worden betaald, en niet op speelgoeddemonstraties."
-      },
-      "teams": {
-        "title": "Perfect voor lean-teams",
-        "description": "Kleine teams en groeiende bedrijven kunnen repetitief werk automatiseren zonder dat er een hele AI-taskforce voor nodig is om erop te passen."
-      },
-      "everyday": {
-        "title": "Ook geweldig voor het normale leven",
-        "description": "Kara kan je helpen met plannen, schrijven, organiseren en de rommelige digitale klusjes die je nooit zelf had willen doen."
-      }
-    }
-  },
-  "orchestration": {
-    "eyebrow": "Desktopstroom",
-    "title": "Eén assistent. Jouw regels.",
-    "subtitle": "Kara houdt de kernstroom dicht bij uw bureau, weet wanneer ze lokaal moet blijven en schakelt alleen externe diensten in als de taak echt extra kracht nodig heeft.",
-    "items": {
-      "local": {
-        "title": "Lokaal eerst.",
-        "description": "Privéwerk begint op het apparaat, dus concepten, klantnotities en interne context hoeven niet bij elk verzoek de deur uit."
-      },
-      "teams": {
-        "title": "Gebouwd voor zakelijke teams.",
-        "description": "Oprichters, operationele medewerkers, verkoop, ondersteuning en kleine teams krijgen één rustige plek om herhaald werk te automatiseren zonder vijf verschillende apps vast te plakken."
-      },
-      "escalation": {
-        "title": "Cloud alleen als het helpt.",
-        "description": "Wanneer een taak meer bereik nodig heeft, kan Kara expres services en modellen oproepen in plaats van elke workflow standaard cloud-first te maken."
-      }
-    },
-    "imageAlt": "Voorbeeld van Kara-desktopwerkruimte"
-  },
-  "integrations": {
-    "eyebrow": "Vroege toegang",
-    "title": "Kara is aan het koken. Wil je eerst binnen?",
-    "subtitle": "We bouwen nu aan de desktopervaring. Sluit u aan op de wachtlijst voor lanceringsnieuws, privépreviews en vroege toegang vóór de publieke release gepland voor eind 2026, of eerder als we snel handelen.",
-    "primary": "Sluit u aan bij de wachtlijst",
-    "secondary": "Praat met ons",
-    "imageAlt": "Preview van Kara vroege toegang",
-    "marquee": {
-      "googleDrive": {
-        "description": "Gedeelde bestanden en documenten"
-      },
-      "github": {
-        "description": "Repo's, PR's en problemen"
-      },
-      "notion": {
-        "description": "Notities, wiki's en taken"
-      },
-      "discord": {
-        "description": "Berichten en gemeenschappen"
-      },
-      "dropbox": {
-        "description": "Mapsynchronisatie en back-up"
-      },
-      "linear": {
-        "description": "Producttracking"
-      },
-      "trello": {
-        "description": "Eenvoudige Kanban-borden"
-      },
-      "slack": {
-        "description": "Kanalen en interne automatisering"
-      },
-      "figma": {
-        "description": "Ontwerp en gezamenlijke overdracht"
-      },
-      "jira": {
-        "description": "Tickets en ontwikkelroutekaart"
-      },
-      "asana": {
-        "description": "Project- en taakbeheer"
-      },
-      "hubspot": {
-        "description": "CRM en verkoopopvolging"
-      },
-      "zendesk": {
-        "description": "Ondersteuning en klantenservice"
-      },
-      "stripe": {
-        "description": "Betalingen en abonnementen"
-      },
-      "shopify": {
-        "description": "E-commerce en online catalogus"
-      },
-      "airtable": {
-        "description": "Databases zonder code"
-      },
-      "clickup": {
-        "description": "Operaties en productiviteit"
-      }
-    }
-  },
-  "execution": {
-    "eyebrow": "Privacy zonder drama",
-    "title": "Houd de controle over het werk, niet alleen over het raam",
-    "cards": {
-      "interface": {
-        "title": "Stille interface",
-        "description": "Een gerichte desktopervaring die is gebouwd om u te helpen helder te denken, snel te handelen en overbelasting van het dashboard te voorkomen."
-      },
-      "speed": {
-        "title": "Lokale snelheid",
-        "description": "Minder heen en weer springen tussen services betekent snellere antwoorden en een workflow die nauw aansluit bij de taak."
-      },
-      "privacy": {
-        "title": "Privacy voorop",
-        "description": "Kara is zo ontworpen dat gevoelig werk standaard privé kan blijven, met controle waar dat het belangrijkst is."
-      },
-      "stack": {
-        "title": "Klaar voor je stapel",
-        "description": "Gebruik Kara als desktop-app en servicelaag die kan worden aangesloten op de manier waarop uw team al werkt."
-      }
-    }
-  },
-  "cta": {
-    "title": "Private AI voor werk dat daadwerkelijk beweegt.",
-    "subtitle": "Kara helpt teams, MKB-bedrijven en nieuwsgierige mensen de saaie onderdelen te automatiseren en tegelijkertijd de controle dichtbij te houden.",
-    "action": "Sluit u aan bij de wachtlijst"
-  },
-  "roadmap": {
-    "hero": {
-      "badge": "Productroadmap 2026",
-      "title": "Hoe Kara verzendt van mei tot december",
-      "subtitle": "Een gericht traject van multiplatformfundament naar cloudintegraties, met een concrete MVP in augustus 2026.",
-      "cards": {
-        "timeline": {
-          "label": "Tijdlijn",
-          "value": "1 mei 2026 -> 1 december 2026"
-        },
-        "mvp": {
-          "label": "MVP-mijlpaal",
-          "value": "Augustus 2026"
-        },
-        "goal": {
-          "label": "Resultaat",
-          "value": "Desktop-first AI-platform klaar om te schalen"
-        }
-      }
-    },
-    "timeline": {
-      "eyebrow": "Ontwikkelingsfasen",
-      "title": "Maandelijkse routekaart met verzendmijlpalen",
-      "subtitle": "Elke maand heeft een duidelijke focus, leveringsdoelstelling en releasecriteria.",
-      "items": {
-        "may": {
-          "month": "Mei 2026",
-          "status": "Fundering",
-          "goal": "Zet de multiplatformbasis op voor Windows, macOS, Linux en Docker.",
-          "deliverable": "Desktopruntime en build-pijplijn gevalideerd voor alle doelen."
-        },
-        "jun": {
-          "month": "Juni 2026",
-          "status": "UXv1",
-          "goal": "Bouw de eerste complete desktopinterface met hoofdnavigatie en operationele weergaven.",
-          "deliverable": "UI v1 klaar voor dagelijks intern gebruik."
-        },
-        "jul": {
-          "month": "Juli 2026",
-          "status": "Operaties",
-          "goal": "Verzendupdatesysteem v1, taalondersteuning en initiële webdocumentatie.",
-          "deliverable": "Gecontroleerde app-updates en tweetalige bediening ingeschakeld."
-        },
-        "aug": {
-          "month": "Augustus 2026",
-          "status": "MVP",
-          "goal": "Geef Kara MVP vrij voor early adopters met lokale modelstromen en initiële communicatie-integraties.",
-          "deliverable": "Getagde MVP-release en pilot-feedbacklus actief."
-        },
-        "sep": {
-          "month": "September 2026",
-          "status": "Kanalen",
-          "goal": "Breid de communicatiekanalen uit met Telegram, Discord, Slack en WhatsApp (wave 1).",
-          "deliverable": "Eerste kanaalconnectoren met traceerbaarheid van gebeurtenissen."
-        },
-        "oct": {
-          "month": "Oktober 2026",
-          "status": "AI-tooling",
-          "goal": "Geavanceerde Kara AI-tools (Cron, Media, Voices, TTS) met betrouwbaarheidscontroles.",
-          "deliverable": "Herbruikbare automatiseringen die kanalen en AI-tools combineren."
-        },
-        "nov": {
-          "month": "november 2026",
-          "status": "Wolk",
-          "goal": "Integreer cloudmodellen en eerste cloudtools (Notion, Figma, GitHub).",
-          "deliverable": "Hybride lokale cloudstromen beschikbaar onder gecontroleerde uitrol."
-        },
-        "dec": {
-          "month": "1 december 2026",
-          "status": "Go/No-Go",
-          "goal": "Sluit de fase af en keur de volgende roadmapcyclus goed.",
-          "deliverable": "Formeel besluit met geprioriteerde achterstand in de volgende fase."
-        }
-      }
-    },
-    "mvp": {
-      "eyebrow": "Kern mijlpaal",
-      "title": "MVP-scope in augustus 2026",
-      "subtitle": "De MVP wordt gedefinieerd door wat gebruikers end-to-end kunnen uitvoeren, niet door toekomstige beloften.",
-      "includedTitle": "Inbegrepen in MVP",
-      "excludedTitle": "Buiten MVP-bereik",
-      "included": {
-        "desktop": "Desktop-app werkt op Windows, macOS en Linux.",
-        "ui": "Stabiele gebruikersinterface v1 voor configuratie en dagelijks gebruik.",
-        "updates": "Applicatie-updatesysteem v1.",
-        "i18n": "Tweetalige ondersteuning (Engels en Spaans).",
-        "docs": "Webdocumentatie v1 voor onboarding en installatie.",
-        "localModels": "Begeleide lokale modeldownloadstroom v1.",
-        "channels": "Initiële communicatiekanaalintegraties.",
-        "tools": "Basislijn AI-tools: Cron, Media, Voices en TTS."
-      },
-      "excluded": {
-        "fullCloud": "Volledige catalogus met cloudconnectoren en geavanceerde providerdekking.",
-        "enterprise": "Geavanceerd bedrijfsbeheer en diepgaande automatisering van observatie."
-      }
-    },
-    "phases": {
-      "eyebrow": "Executie rijstroken",
-      "title": "De tracks die de bezorging structureren",
-      "subtitle": "Kara evolueert via gecoördineerde trajecten die ervoor zorgen dat product, techniek en bedrijfsvoering op één lijn blijven.",
-      "items": {
-        "platform": {
-          "title": "Runtime op meerdere platforms",
-          "description": "Desktop binaire bestanden en Docker-ondersteuning met reproduceerbare builds."
-        },
-        "experience": {
-          "title": "Gebruikerservaring",
-          "description": "Gesegmenteerde interface, duidelijke navigatie en operationeel inzicht."
-        },
-        "trust": {
-          "title": "Updates en betrouwbaarheid",
-          "description": "Gecontroleerde releases, rollback-paden en stabiele updatekanalen."
-        },
-        "language": {
-          "title": "Meertalig product",
-          "description": "Engelse en Spaanse gelijkheid in de belangrijkste gebruikerstrajecten."
-        },
-        "ai": {
-          "title": "Orkestratie van AI-tools",
-          "description": "Cron-, media- en voicetooling georkestreerd voor praktische automatisering."
-        },
-        "cloud": {
-          "title": "Cloud-integraties",
-          "description": "Hybride lokale cloudmodelrouting plus toolintegraties zoals Notion, Figma en GitHub."
-        },
-        "launch": {
-          "title": "Start gereedheid",
-          "description": "MVP-validatie, pilotfeedback en go/no-go-beslissingen voor de volgende cyclus."
-        }
-      }
-    },
-    "cta": {
-      "eyebrow": "Volgende stap",
-      "title": "Wilt u lanceringsupdates zodra deze fasen worden verzonden?",
-      "subtitle": "Neem deel aan vroege toegang om elke mijlpaal te volgen en de volgende fase van Kara vorm te geven.",
-      "primary": "Neem deel aan vroege toegang",
-      "secondary": "Terug naar startpagina"
-    }
-  },
-  "footer": {
-    "title": "Private AI voor werk dat daadwerkelijk beweegt.",
-    "subtitle": "Kara helpt teams, MKB-bedrijven en nieuwsgierige mensen de saaie onderdelen te automatiseren en tegelijkertijd de controle dichtbij te houden.",
-    "sections": {
-      "product": "Ontdekken",
-      "company": "Bedrijf"
-    },
-    "links": {
-      "features": "Waarom Kara",
-      "featureContent": "Belangrijkste kenmerken",
-      "orchestration": "Desktopstroom",
-      "integrations": "Vroege toegang",
-      "functions": "Wat het kan doen",
-      "execution": "Privacy",
-      "about": "Over Kara",
-      "roadmap": "Routekaart",
-      "privacy": "Privacy",
-      "contact": "Contact"
-    },
-    "language": {
-      "button": "Taal",
-      "modalTitle": "Kies uw taal",
-      "close": "Dichtbij",
-      "modal": {
-        "heading": "Taal",
-        "description": "Kies de interfacetaal van uw voorkeur.",
-        "searchPlaceholder": "Zoek talen",
-        "clearSearchLabel": "Duidelijke zoekopdracht",
-        "activeLabel": "Actief",
-        "updatingLabel": "Updaten...",
-        "noResultsTitle": "Geen talen gevonden.",
-        "noResultsHint": "Probeer een andere naam of landcode."
-      },
-      "options": {
-        "en": "English",
-        "es": "Español",
-        "zh": "中文",
-        "nl": "Nederlands",
-        "fr": "Français",
-        "ja": "日本語",
-        "de": "Deutsch",
-        "it": "Italiano",
-        "hi": "हिन्दी",
-        "ar": "العربية",
-        "ru": "Русский",
-        "tr": "Türkçe"
-      }
-    },
-    "cookies": "Koekjes",
-    "rights": "Alle rechten voorbehouden. Gebouwd door AuthUser."
-  },
-  "waitlist": {
-    "nameLabel": "Naam",
-    "namePlaceholder": "Jouw naam",
-    "typeLabel": "Sluit u zich aan als particulier of als bedrijf?",
-    "typePersonal": "Individueel",
-    "typeCompany": "Bedrijf",
-    "companyNameLabel": "Bedrijfsnaam",
-    "companyNamePlaceholder": "Bijvoorbeeld: Acme Corp",
-    "employeeRangeLabel": "Werknemersbereik",
-    "employeeRangeDefault": "Selecteer een bereik",
-    "employees": "medewerkers",
-    "emailLabel": "E-mailadres",
-    "emailPlaceholder": "jij@email.com",
-    "messageLabel": "Bericht of opmerkingen",
-    "messagePlaceholder": "Vertel ons met welke uitdagingen uw team wordt geconfronteerd of waarom u geïnteresseerd bent in Kara",
-    "consentLabel": "Ik accepteer het privacybeleid en ontvang graag updates over Kara",
-    "submitButton": "Sluit u aan bij de wachtlijst",
-    "submitting": "Verzenden...",
-    "validationError": "Controleer de fouten in het formulier",
-    "rateLimitError": "Te veel verzoeken. Probeer het later opnieuw.",
-    "duplicateEmailError": "Deze e-mail staat al op onze wachtlijst",
-    "genericError": "Er is iets misgegaan. Probeer het opnieuw.",
-    "networkError": "Verbindingsfout. Controleer uw internetverbinding."
-  },
-  "featureContent": {
-    "eyebrow": "Belangrijkste kenmerken",
-    "title": "Doe meer met uw stem, uw tijd en uw creativiteit",
-    "subtitle": "Met Kara kunt u rechtstreeks via uw stem communiceren, dagelijkse taken plannen en moeiteloos multimedia-inhoud genereren.",
-    "imageAlt": "Preview van spraak- en multimedia-interactie in Kara",
-    "items": {
-      "voice": {
-        "title": "Spreek en handel",
-        "description": "Bedien Kara en krijg antwoorden met alleen je stem, geen toetsenbord nodig."
-      },
-      "tasks": {
-        "title": "Automatiseer dagelijkse taken",
-        "description": "Plan herinneringen, evenementen en dagelijkse routines, zodat niets door de kieren glipt."
-      },
-      "media": {
-        "title": "Creëer multimedia-inhoud",
-        "description": "Genereer binnen enkele seconden afbeeldingen, audio en video voor uw projecten of sociale media."
-      }
-    }
-  },
-  "functions": {
-    "eyebrow": "Wat het kan doen",
-    "title": "Mogelijkheden ontworpen om 24/7 te draaien",
-    "subtitle": "Kara combineert spraakgesprekken, chatconnectors en proactieve automatisering, zodat u elke dag betere beslissingen kunt nemen.",
-    "items": {
-      "voice": {
-        "title": "Realtime tweerichtingsstem",
-        "description": "Je kunt rechtstreeks met Kara praten en Kara kan met je stem antwoorden om de workflow natuurlijk, snel en probleemloos te houden."
-      },
-      "channels": {
-        "title": "Chat-integraties klaar voor gebruik",
-        "description": "Integreert chatproviders zoals Telegram, Teams, WhatsApp en Discord, zodat u gesprekken en acties op één plek kunt centraliseren."
-      },
-      "media": {
-        "title": "Multimedia-generatie",
-        "description": "Genereer multimedia-inhoud voor berichtenuitwisseling, ondersteuning, verkoop en bedrijfsvoering zonder uw workflow te verlaten."
-      },
-      "assistant": {
-        "title": "Passieve en proactieve hulp",
-        "description": "Opereert als passieve en/of proactieve assistent om de besluitvorming te verbeteren en de bedrijfsvoering 24/7 draaiende te houden."
-      }
-    }
-  }
+	"meta": {
+		"title": "Kara – Werk minder. Geniet meer.",
+		"description": "Kara is een lokale AI-desktopassistent voor bedrijven, MKB-bedrijven en gewone mensen die privéautomatisering willen zonder de controle op te geven."
+	},
+	"nav": {
+		"features": "Waarom Kara",
+		"orchestration": "Desktopstroom",
+		"featureContent": "Belangrijkste kenmerken",
+		"integrations": "Vroege toegang",
+		"functions": "Wat het kan doen",
+		"roadmap": "Routekaart",
+		"execution": "Privacy",
+		"cta": "Sluit u aan bij de wachtlijst"
+	},
+	"hero": {
+		"badge": "In ontwikkeling. Lancering in 2026.",
+		"badgeLink": "Ontvang updates voor vroege toegang",
+		"title": "Minder werken. Geniet meer.",
+		"subtitle": "Kara is de lokale AI-desktopassistent die bedrijven, lean teams en normale mensen helpt echt werk gedaan te krijgen zonder hun privégegevens op internet te gooien.",
+		"primary": "Sluit u aan bij de wachtlijst",
+		"secondary": "Ontdek wat Kara anders maakt"
+	},
+	"features": {
+		"eyebrow": "Waarom Kara",
+		"title": "Privé-AI die toch snel, nuttig en menselijk aanvoelt",
+		"subtitle": "In de eerste plaats gebouwd voor bedrijven en MKB-bedrijven, maar vriendelijk genoeg voor iedereen die minder tabbladen wil, minder druk werk en meer gedaan wil hebben voor de lunch.",
+		"items": {
+			"privacy": {
+				"title": "Standaard privé",
+				"description": "Gevoelige notities, klantcontext en interne documenten blijven dichter bij uw machine en worden niet over willekeurige tools verspreid."
+			},
+			"business": {
+				"title": "Gemaakt voor het echte werk",
+				"description": "Van follow-ups en operaties tot documentatie en ondersteuning, Kara is gericht op werk waarmee de rekeningen worden betaald, en niet op speelgoeddemonstraties."
+			},
+			"teams": {
+				"title": "Perfect voor lean-teams",
+				"description": "Kleine teams en groeiende bedrijven kunnen repetitief werk automatiseren zonder dat er een hele AI-taskforce voor nodig is om erop te passen."
+			},
+			"everyday": {
+				"title": "Ook geweldig voor het normale leven",
+				"description": "Kara kan je helpen met plannen, schrijven, organiseren en de rommelige digitale klusjes die je nooit zelf had willen doen."
+			}
+		}
+	},
+	"orchestration": {
+		"eyebrow": "Desktopstroom",
+		"title": "Eén assistent. Jouw regels.",
+		"subtitle": "Kara houdt de kernstroom dicht bij uw bureau, weet wanneer ze lokaal moet blijven en schakelt alleen externe diensten in als de taak echt extra kracht nodig heeft.",
+		"items": {
+			"local": {
+				"title": "Lokaal eerst.",
+				"description": "Privéwerk begint op het apparaat, dus concepten, klantnotities en interne context hoeven niet bij elk verzoek de deur uit."
+			},
+			"teams": {
+				"title": "Gebouwd voor zakelijke teams.",
+				"description": "Oprichters, operationele medewerkers, verkoop, ondersteuning en kleine teams krijgen één rustige plek om herhaald werk te automatiseren zonder vijf verschillende apps vast te plakken."
+			},
+			"escalation": {
+				"title": "Cloud alleen als het helpt.",
+				"description": "Wanneer een taak meer bereik nodig heeft, kan Kara expres services en modellen oproepen in plaats van elke workflow standaard cloud-first te maken."
+			}
+		},
+		"imageAlt": "Voorbeeld van Kara-desktopwerkruimte"
+	},
+	"integrations": {
+		"eyebrow": "Vroege toegang",
+		"title": "Kara is aan het koken. Wil je eerst binnen?",
+		"subtitle": "We bouwen nu aan de desktopervaring. Sluit u aan op de wachtlijst voor lanceringsnieuws, privépreviews en vroege toegang vóór de publieke release gepland voor eind 2026, of eerder als we snel handelen.",
+		"primary": "Sluit u aan bij de wachtlijst",
+		"secondary": "Praat met ons",
+		"imageAlt": "Preview van Kara vroege toegang",
+		"marquee": {
+			"googleDrive": {
+				"description": "Gedeelde bestanden en documenten"
+			},
+			"github": {
+				"description": "Repo's, PR's en problemen"
+			},
+			"notion": {
+				"description": "Notities, wiki's en taken"
+			},
+			"discord": {
+				"description": "Berichten en gemeenschappen"
+			},
+			"dropbox": {
+				"description": "Mapsynchronisatie en back-up"
+			},
+			"linear": {
+				"description": "Producttracking"
+			},
+			"trello": {
+				"description": "Eenvoudige Kanban-borden"
+			},
+			"slack": {
+				"description": "Kanalen en interne automatisering"
+			},
+			"figma": {
+				"description": "Ontwerp en gezamenlijke overdracht"
+			},
+			"jira": {
+				"description": "Tickets en ontwikkelroutekaart"
+			},
+			"asana": {
+				"description": "Project- en taakbeheer"
+			},
+			"hubspot": {
+				"description": "CRM en verkoopopvolging"
+			},
+			"zendesk": {
+				"description": "Ondersteuning en klantenservice"
+			},
+			"stripe": {
+				"description": "Betalingen en abonnementen"
+			},
+			"shopify": {
+				"description": "E-commerce en online catalogus"
+			},
+			"airtable": {
+				"description": "Databases zonder code"
+			},
+			"clickup": {
+				"description": "Operaties en productiviteit"
+			}
+		}
+	},
+	"execution": {
+		"eyebrow": "Privacy zonder drama",
+		"title": "Houd de controle over het werk, niet alleen over het raam",
+		"cards": {
+			"interface": {
+				"title": "Stille interface",
+				"description": "Een gerichte desktopervaring die is gebouwd om u te helpen helder te denken, snel te handelen en overbelasting van het dashboard te voorkomen."
+			},
+			"speed": {
+				"title": "Lokale snelheid",
+				"description": "Minder heen en weer springen tussen services betekent snellere antwoorden en een workflow die nauw aansluit bij de taak."
+			},
+			"privacy": {
+				"title": "Privacy voorop",
+				"description": "Kara is zo ontworpen dat gevoelig werk standaard privé kan blijven, met controle waar dat het belangrijkst is."
+			},
+			"stack": {
+				"title": "Klaar voor je stapel",
+				"description": "Gebruik Kara als desktop-app en servicelaag die kan worden aangesloten op de manier waarop uw team al werkt."
+			}
+		}
+	},
+	"cta": {
+		"title": "Private AI voor werk dat daadwerkelijk beweegt.",
+		"subtitle": "Kara helpt teams, MKB-bedrijven en nieuwsgierige mensen de saaie onderdelen te automatiseren en tegelijkertijd de controle dichtbij te houden.",
+		"action": "Sluit u aan bij de wachtlijst"
+	},
+	"roadmap": {
+		"hero": {
+			"badge": "Productroadmap 2026",
+			"title": "Hoe Kara verzendt van mei tot december",
+			"subtitle": "Een gericht traject van multiplatformfundament naar cloudintegraties, met een concrete MVP in augustus 2026.",
+			"cards": {
+				"timeline": {
+					"label": "Tijdlijn",
+					"value": "1 mei 2026 -> 1 december 2026"
+				},
+				"mvp": {
+					"label": "MVP-mijlpaal",
+					"value": "Augustus 2026"
+				},
+				"goal": {
+					"label": "Resultaat",
+					"value": "Desktop-first AI-platform klaar om te schalen"
+				}
+			}
+		},
+		"timeline": {
+			"eyebrow": "Ontwikkelingsfasen",
+			"title": "Maandelijkse routekaart met verzendmijlpalen",
+			"subtitle": "Elke maand heeft een duidelijke focus, leveringsdoelstelling en releasecriteria.",
+			"items": {
+				"may": {
+					"month": "Mei 2026",
+					"status": "Fundering",
+					"goal": "Zet de multiplatformbasis op voor Windows, macOS, Linux en Docker.",
+					"deliverable": "Desktopruntime en build-pijplijn gevalideerd voor alle doelen."
+				},
+				"jun": {
+					"month": "Juni 2026",
+					"status": "UXv1",
+					"goal": "Bouw de eerste complete desktopinterface met hoofdnavigatie en operationele weergaven.",
+					"deliverable": "UI v1 klaar voor dagelijks intern gebruik."
+				},
+				"jul": {
+					"month": "Juli 2026",
+					"status": "Operaties",
+					"goal": "Verzendupdatesysteem v1, taalondersteuning en initiële webdocumentatie.",
+					"deliverable": "Gecontroleerde app-updates en tweetalige bediening ingeschakeld."
+				},
+				"aug": {
+					"month": "Augustus 2026",
+					"status": "MVP",
+					"goal": "Geef Kara MVP vrij voor early adopters met lokale modelstromen en initiële communicatie-integraties.",
+					"deliverable": "Getagde MVP-release en pilot-feedbacklus actief."
+				},
+				"sep": {
+					"month": "September 2026",
+					"status": "Kanalen",
+					"goal": "Breid de communicatiekanalen uit met Telegram, Discord, Slack en WhatsApp (wave 1).",
+					"deliverable": "Eerste kanaalconnectoren met traceerbaarheid van gebeurtenissen."
+				},
+				"oct": {
+					"month": "Oktober 2026",
+					"status": "AI-tooling",
+					"goal": "Geavanceerde Kara AI-tools (Cron, Media, Voices, TTS) met betrouwbaarheidscontroles.",
+					"deliverable": "Herbruikbare automatiseringen die kanalen en AI-tools combineren."
+				},
+				"nov": {
+					"month": "november 2026",
+					"status": "Wolk",
+					"goal": "Integreer cloudmodellen en eerste cloudtools (Notion, Figma, GitHub).",
+					"deliverable": "Hybride lokale cloudstromen beschikbaar onder gecontroleerde uitrol."
+				},
+				"dec": {
+					"month": "1 december 2026",
+					"status": "Go/No-Go",
+					"goal": "Sluit de fase af en keur de volgende roadmapcyclus goed.",
+					"deliverable": "Formeel besluit met geprioriteerde achterstand in de volgende fase."
+				}
+			}
+		},
+		"mvp": {
+			"eyebrow": "Kern mijlpaal",
+			"title": "MVP-scope in augustus 2026",
+			"subtitle": "De MVP wordt gedefinieerd door wat gebruikers end-to-end kunnen uitvoeren, niet door toekomstige beloften.",
+			"includedTitle": "Inbegrepen in MVP",
+			"excludedTitle": "Buiten MVP-bereik",
+			"included": {
+				"desktop": "Desktop-app werkt op Windows, macOS en Linux.",
+				"ui": "Stabiele gebruikersinterface v1 voor configuratie en dagelijks gebruik.",
+				"updates": "Applicatie-updatesysteem v1.",
+				"i18n": "Tweetalige ondersteuning (Engels en Spaans).",
+				"docs": "Webdocumentatie v1 voor onboarding en installatie.",
+				"localModels": "Begeleide lokale modeldownloadstroom v1.",
+				"channels": "Initiële communicatiekanaalintegraties.",
+				"tools": "Basislijn AI-tools: Cron, Media, Voices en TTS."
+			},
+			"excluded": {
+				"fullCloud": "Volledige catalogus met cloudconnectoren en geavanceerde providerdekking.",
+				"enterprise": "Geavanceerd bedrijfsbeheer en diepgaande automatisering van observatie."
+			}
+		},
+		"phases": {
+			"eyebrow": "Executie rijstroken",
+			"title": "De tracks die de bezorging structureren",
+			"subtitle": "Kara evolueert via gecoördineerde trajecten die ervoor zorgen dat product, techniek en bedrijfsvoering op één lijn blijven.",
+			"items": {
+				"platform": {
+					"title": "Runtime op meerdere platforms",
+					"description": "Desktop binaire bestanden en Docker-ondersteuning met reproduceerbare builds."
+				},
+				"experience": {
+					"title": "Gebruikerservaring",
+					"description": "Gesegmenteerde interface, duidelijke navigatie en operationeel inzicht."
+				},
+				"trust": {
+					"title": "Updates en betrouwbaarheid",
+					"description": "Gecontroleerde releases, rollback-paden en stabiele updatekanalen."
+				},
+				"language": {
+					"title": "Meertalig product",
+					"description": "Engelse en Spaanse gelijkheid in de belangrijkste gebruikerstrajecten."
+				},
+				"ai": {
+					"title": "Orkestratie van AI-tools",
+					"description": "Cron-, media- en voicetooling georkestreerd voor praktische automatisering."
+				},
+				"cloud": {
+					"title": "Cloud-integraties",
+					"description": "Hybride lokale cloudmodelrouting plus toolintegraties zoals Notion, Figma en GitHub."
+				},
+				"launch": {
+					"title": "Start gereedheid",
+					"description": "MVP-validatie, pilotfeedback en go/no-go-beslissingen voor de volgende cyclus."
+				}
+			}
+		},
+		"cta": {
+			"eyebrow": "Volgende stap",
+			"title": "Wilt u lanceringsupdates zodra deze fasen worden verzonden?",
+			"subtitle": "Neem deel aan vroege toegang om elke mijlpaal te volgen en de volgende fase van Kara vorm te geven.",
+			"primary": "Neem deel aan vroege toegang",
+			"secondary": "Terug naar startpagina"
+		}
+	},
+	"footer": {
+		"title": "Private AI voor werk dat daadwerkelijk beweegt.",
+		"subtitle": "Kara helpt teams, MKB-bedrijven en nieuwsgierige mensen de saaie onderdelen te automatiseren en tegelijkertijd de controle dichtbij te houden.",
+		"sections": {
+			"product": "Ontdekken",
+			"company": "Bedrijf"
+		},
+		"links": {
+			"features": "Waarom Kara",
+			"featureContent": "Belangrijkste kenmerken",
+			"orchestration": "Desktopstroom",
+			"integrations": "Vroege toegang",
+			"functions": "Wat het kan doen",
+			"execution": "Privacy",
+			"about": "Over Kara",
+			"roadmap": "Routekaart",
+			"privacy": "Privacy",
+			"contact": "Contact"
+		},
+		"language": {
+			"button": "Taal",
+			"modalTitle": "Kies uw taal",
+			"close": "Dichtbij",
+			"modal": {
+				"heading": "Taal",
+				"description": "Kies de interfacetaal van uw voorkeur.",
+				"searchPlaceholder": "Zoek talen",
+				"clearSearchLabel": "Duidelijke zoekopdracht",
+				"activeLabel": "Actief",
+				"updatingLabel": "Updaten...",
+				"noResultsTitle": "Geen talen gevonden.",
+				"noResultsHint": "Probeer een andere naam of landcode."
+			},
+			"options": {
+				"en": "English",
+				"es": "Español",
+				"zh": "中文",
+				"nl": "Nederlands",
+				"fr": "Français",
+				"ja": "日本語",
+				"de": "Deutsch",
+				"it": "Italiano",
+				"hi": "हिन्दी",
+				"ar": "العربية",
+				"ru": "Русский",
+				"tr": "Türkçe"
+			}
+		},
+		"cookies": "Koekjes",
+		"rights": "Alle rechten voorbehouden. Gebouwd door AuthUser."
+	},
+	"waitlist": {
+		"nameLabel": "Naam",
+		"namePlaceholder": "Jouw naam",
+		"typeLabel": "Sluit u zich aan als particulier of als bedrijf?",
+		"typePersonal": "Individueel",
+		"typeCompany": "Bedrijf",
+		"companyNameLabel": "Bedrijfsnaam",
+		"companyNamePlaceholder": "Bijvoorbeeld: Acme Corp",
+		"employeeRangeLabel": "Werknemersbereik",
+		"employeeRangeDefault": "Selecteer een bereik",
+		"employees": "medewerkers",
+		"emailLabel": "E-mailadres",
+		"emailPlaceholder": "jij@email.com",
+		"messageLabel": "Bericht of opmerkingen",
+		"messagePlaceholder": "Vertel ons met welke uitdagingen uw team wordt geconfronteerd of waarom u geïnteresseerd bent in Kara",
+		"consentLabel": "Ik accepteer het privacybeleid en ontvang graag updates over Kara",
+		"submitButton": "Sluit u aan bij de wachtlijst",
+		"submitting": "Verzenden...",
+		"validationError": "Controleer de fouten in het formulier",
+		"rateLimitError": "Te veel verzoeken. Probeer het later opnieuw.",
+		"duplicateEmailError": "Deze e-mail staat al op onze wachtlijst",
+		"genericError": "Er is iets misgegaan. Probeer het opnieuw.",
+		"networkError": "Verbindingsfout. Controleer uw internetverbinding."
+	},
+	"featureContent": {
+		"eyebrow": "Belangrijkste kenmerken",
+		"title": "Doe meer met uw stem, uw tijd en uw creativiteit",
+		"subtitle": "Met Kara kunt u rechtstreeks via uw stem communiceren, dagelijkse taken plannen en moeiteloos multimedia-inhoud genereren.",
+		"imageAlt": "Preview van spraak- en multimedia-interactie in Kara",
+		"items": {
+			"voice": {
+				"title": "Spreek en handel",
+				"description": "Bedien Kara en krijg antwoorden met alleen je stem, geen toetsenbord nodig."
+			},
+			"tasks": {
+				"title": "Automatiseer dagelijkse taken",
+				"description": "Plan herinneringen, evenementen en dagelijkse routines, zodat niets door de kieren glipt."
+			},
+			"media": {
+				"title": "Creëer multimedia-inhoud",
+				"description": "Genereer binnen enkele seconden afbeeldingen, audio en video voor uw projecten of sociale media."
+			}
+		}
+	},
+	"functions": {
+		"eyebrow": "Wat het kan doen",
+		"title": "Mogelijkheden ontworpen om 24/7 te draaien",
+		"subtitle": "Kara combineert spraakgesprekken, chatconnectors en proactieve automatisering, zodat u elke dag betere beslissingen kunt nemen.",
+		"items": {
+			"voice": {
+				"title": "Realtime tweerichtingsstem",
+				"description": "Je kunt rechtstreeks met Kara praten en Kara kan met je stem antwoorden om de workflow natuurlijk, snel en probleemloos te houden."
+			},
+			"channels": {
+				"title": "Chat-integraties klaar voor gebruik",
+				"description": "Integreert chatproviders zoals Telegram, Teams, WhatsApp en Discord, zodat u gesprekken en acties op één plek kunt centraliseren."
+			},
+			"media": {
+				"title": "Multimedia-generatie",
+				"description": "Genereer multimedia-inhoud voor berichtenuitwisseling, ondersteuning, verkoop en bedrijfsvoering zonder uw workflow te verlaten."
+			},
+			"assistant": {
+				"title": "Passieve en proactieve hulp",
+				"description": "Opereert als passieve en/of proactieve assistent om de besluitvorming te verbeteren en de bedrijfsvoering 24/7 draaiende te houden."
+			}
+		}
+	}
 }
