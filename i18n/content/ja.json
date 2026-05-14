@@ -311,18 +311,18 @@
       "contact": "Contact"
     },
     "language": {
-      "button": "Language",
-      "modalTitle": "Choose your language",
-      "close": "Close",
+      "button": "言語",
+      "modalTitle": "言語を選択",
+      "close": "閉じる",
       "modal": {
-        "heading": "Language",
-        "description": "Choose your preferred interface language.",
-        "searchPlaceholder": "Search languages",
-        "clearSearchLabel": "Clear search",
-        "activeLabel": "Active",
-        "updatingLabel": "Updating...",
-        "noResultsTitle": "No languages found.",
-        "noResultsHint": "Try another name or locale code."
+        "heading": "言語",
+        "description": "希望するインターフェース言語を選択してください。",
+        "searchPlaceholder": "言語を検索",
+        "clearSearchLabel": "検索をクリア",
+        "activeLabel": "使用中",
+        "updatingLabel": "更新中...",
+        "noResultsTitle": "言語が見つかりません。",
+        "noResultsHint": "別の名前または言語コードを試してください。"
       },
       "options": {
         "en": "English",

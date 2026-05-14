@@ -311,18 +311,18 @@
       "contact": "Contact"
     },
     "language": {
-      "button": "Language",
-      "modalTitle": "Choose your language",
-      "close": "Close",
+      "button": "اللغة",
+      "modalTitle": "اختر لغتك",
+      "close": "إغلاق",
       "modal": {
-        "heading": "Language",
-        "description": "Choose your preferred interface language.",
-        "searchPlaceholder": "Search languages",
-        "clearSearchLabel": "Clear search",
-        "activeLabel": "Active",
-        "updatingLabel": "Updating...",
-        "noResultsTitle": "No languages found.",
-        "noResultsHint": "Try another name or locale code."
+        "heading": "اللغة",
+        "description": "اختر لغة الواجهة المفضلة لديك.",
+        "searchPlaceholder": "ابحث عن اللغات",
+        "clearSearchLabel": "مسح البحث",
+        "activeLabel": "نشط",
+        "updatingLabel": "جارٍ التحديث...",
+        "noResultsTitle": "لم يتم العثور على لغات.",
+        "noResultsHint": "جرّب اسمًا آخر أو رمز لغة."
       },
       "options": {
         "en": "English",

@@ -65,6 +65,7 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
   const locale = await getLocale();
+  const direction = locale === "ar" ? "rtl" : "ltr";
   const messages = await getMessages();
   const gtmId = process.env.NEXT_PUBLIC_GTM_ID;
   const gaId = process.env.NEXT_PUBLIC_GA_ID;
@@ -72,6 +73,7 @@ export default async function RootLayout({
   return (
     <html
       lang={locale}
+      dir={direction}
       className={`${geistSans.variable} ${geistMono.variable} dark h-full antialiased`}
     >
       <body className="min-h-full bg-background text-foreground">

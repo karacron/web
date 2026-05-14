@@ -1,17 +1,18 @@
 "use client";
 
+import type { Locale } from "@i18n/routing";
 import { useModal } from "@molecule/modal/use-modal";
 import { Languages, X } from "lucide-react";
 import { useMemo, useState } from "react";
 import ReactCountryFlag from "react-country-flag";
 
 type LocaleOption = {
-  code: "en" | "es";
+  code: Locale;
   label: string;
 };
 
 type FooterLanguageSwitcherProps = {
-  currentLocale: "en" | "es";
+  currentLocale: Locale;
   buttonLabel: string;
   modalTitle: string;
   closeLabel: string;
@@ -31,29 +32,41 @@ export type LanguageModalI18n = {
 };
 
 type LanguageModalContentProps = {
-  currentLocale: "en" | "es";
+  currentLocale: Locale;
   options: LocaleOption[];
   closeModal: () => void;
   i18n: LanguageModalI18n;
 };
 
+const LOCALE_TO_COUNTRY: Record<Locale, string> = {
+  en: "US",
+  es: "ES",
+  zh: "CN",
+  nl: "NL",
+  fr: "FR",
+  ja: "JP",
+  de: "DE",
+  it: "IT",
+  hi: "IN",
+  ar: "SA",
+  ru: "RU",
+  tr: "TR",
+};
+
 function getCountryCode(localeCode: string): string {
-  const normalized = localeCode.toLowerCase();
+  const normalized = localeCode.toLowerCase() as Locale;
 
-  if (normalized === "en") {
-    return "US";
+  const mappedCountry = LOCALE_TO_COUNTRY[normalized];
+  if (mappedCountry) {
+    return mappedCountry;
   }
 
-  if (normalized === "es") {
-    return "ES";
-  }
-
-  const [, region] = normalized.split("-");
+  const [, region] = localeCode.split("-");
   if (region && region.length === 2) {
     return region.toUpperCase();
   }
 
-  return normalized.slice(0, 2).toUpperCase();
+  return "US";
 }
 
 function LanguageModalContent({
@@ -62,7 +75,7 @@ function LanguageModalContent({
   closeModal,
   i18n,
 }: LanguageModalContentProps) {
-  const [pendingLocale, setPendingLocale] = useState<"en" | "es" | null>(null);
+  const [pendingLocale, setPendingLocale] = useState<Locale | null>(null);
   const [query, setQuery] = useState("");
 
   const normalizedQuery = query.trim().toLowerCase();
@@ -85,7 +98,7 @@ function LanguageModalContent({
     );
   }, [currentLocale, normalizedQuery, options]);
 
-  async function selectLocale(nextLocale: "en" | "es") {
+  async function selectLocale(nextLocale: Locale) {
     if (nextLocale === currentLocale) {
       closeModal();
       return;
@@ -118,14 +131,15 @@ function LanguageModalContent({
           value={query}
           onChange={(event) => setQuery(event.target.value)}
           placeholder={i18n.searchPlaceholder}
-          className="h-10 w-full rounded-lg border border-white/12 bg-white/4 pl-4 pr-10 text-sm text-white outline-none transition placeholder:text-white/35 focus:border-indigo-400/70 focus:bg-indigo-500/7"
+          className="h-10 w-full rounded-lg border border-white/12 bg-white/4 ps-4 pe-10 text-sm text-white outline-none transition placeholder:text-white/35 focus:border-indigo-400/70 focus:bg-indigo-500/7"
         />
         {query ? (
           <button
             type="button"
             onClick={() => setQuery("")}
             aria-label={i18n.clearSearchLabel}
-            className="absolute top-1/2 right-2 inline-flex h-6 w-6 -translate-y-1/2 items-center justify-center rounded-md text-white/45 transition hover:bg-white/10 hover:text-white"
+            className="absolute top-1/2 inline-flex h-6 w-6 -translate-y-1/2 items-center justify-center rounded-md text-white/45 transition hover:bg-white/10 hover:text-white"
+            style={{ insetInlineEnd: "0.5rem" }}
           >
             <X size={14} strokeWidth={2} />
           </button>

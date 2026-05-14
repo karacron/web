@@ -114,6 +114,16 @@ export async function Footer() {
             languageOptions={[
               { code: "en", label: t("language.options.en") },
               { code: "es", label: t("language.options.es") },
+              { code: "zh", label: t("language.options.zh") },
+              { code: "nl", label: t("language.options.nl") },
+              { code: "fr", label: t("language.options.fr") },
+              { code: "ja", label: t("language.options.ja") },
+              { code: "de", label: t("language.options.de") },
+              { code: "it", label: t("language.options.it") },
+              { code: "hi", label: t("language.options.hi") },
+              { code: "ar", label: t("language.options.ar") },
+              { code: "ru", label: t("language.options.ru") },
+              { code: "tr", label: t("language.options.tr") },
             ]}
           />
         </div>

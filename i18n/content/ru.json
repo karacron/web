@@ -311,18 +311,18 @@
       "contact": "Contact"
     },
     "language": {
-      "button": "Language",
-      "modalTitle": "Choose your language",
-      "close": "Close",
+      "button": "Язык",
+      "modalTitle": "Выберите язык",
+      "close": "Закрыть",
       "modal": {
-        "heading": "Language",
-        "description": "Choose your preferred interface language.",
-        "searchPlaceholder": "Search languages",
-        "clearSearchLabel": "Clear search",
-        "activeLabel": "Active",
-        "updatingLabel": "Updating...",
-        "noResultsTitle": "No languages found.",
-        "noResultsHint": "Try another name or locale code."
+        "heading": "Язык",
+        "description": "Выберите предпочитаемый язык интерфейса.",
+        "searchPlaceholder": "Поиск языков",
+        "clearSearchLabel": "Очистить поиск",
+        "activeLabel": "Активен",
+        "updatingLabel": "Обновление...",
+        "noResultsTitle": "Языки не найдены.",
+        "noResultsHint": "Попробуйте другое название или код языка."
       },
       "options": {
         "en": "English",

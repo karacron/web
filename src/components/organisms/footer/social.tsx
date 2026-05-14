@@ -1,3 +1,4 @@
+import type { Locale } from "@i18n/routing";
 import { Cookie, Mail } from "lucide-react";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import {
@@ -32,9 +33,9 @@ type FooterSocialProps = {
   languageTitle: string;
   languageClose: string;
   languageModalI18n: LanguageModalI18n;
-  currentLocale: "en" | "es";
+  currentLocale: Locale;
   languageOptions: Array<{
-    code: "en" | "es";
+    code: Locale;
     label: string;
   }>;
 };

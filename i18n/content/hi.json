@@ -311,18 +311,18 @@
       "contact": "Contact"
     },
     "language": {
-      "button": "Language",
-      "modalTitle": "Choose your language",
-      "close": "Close",
+      "button": "भाषा",
+      "modalTitle": "अपनी भाषा चुनें",
+      "close": "बंद करें",
       "modal": {
-        "heading": "Language",
-        "description": "Choose your preferred interface language.",
-        "searchPlaceholder": "Search languages",
-        "clearSearchLabel": "Clear search",
-        "activeLabel": "Active",
-        "updatingLabel": "Updating...",
-        "noResultsTitle": "No languages found.",
-        "noResultsHint": "Try another name or locale code."
+        "heading": "भाषा",
+        "description": "अपनी पसंदीदा इंटरफ़ेस भाषा चुनें।",
+        "searchPlaceholder": "भाषाएं खोजें",
+        "clearSearchLabel": "खोज साफ़ करें",
+        "activeLabel": "सक्रिय",
+        "updatingLabel": "अपडेट हो रहा है...",
+        "noResultsTitle": "कोई भाषा नहीं मिली।",
+        "noResultsHint": "कोई और नाम या भाषा कोड आज़माएँ।"
       },
       "options": {
         "en": "English",

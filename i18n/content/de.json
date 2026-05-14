@@ -311,18 +311,18 @@
       "contact": "Contact"
     },
     "language": {
-      "button": "Language",
-      "modalTitle": "Choose your language",
-      "close": "Close",
+      "button": "Sprache",
+      "modalTitle": "Sprache auswählen",
+      "close": "Schließen",
       "modal": {
-        "heading": "Language",
-        "description": "Choose your preferred interface language.",
-        "searchPlaceholder": "Search languages",
-        "clearSearchLabel": "Clear search",
-        "activeLabel": "Active",
-        "updatingLabel": "Updating...",
-        "noResultsTitle": "No languages found.",
-        "noResultsHint": "Try another name or locale code."
+        "heading": "Sprache",
+        "description": "Wähle deine bevorzugte Oberflächensprache.",
+        "searchPlaceholder": "Sprachen suchen",
+        "clearSearchLabel": "Suche löschen",
+        "activeLabel": "Aktiv",
+        "updatingLabel": "Wird aktualisiert...",
+        "noResultsTitle": "Keine Sprachen gefunden.",
+        "noResultsHint": "Versuche einen anderen Namen oder Sprachcode."
       },
       "options": {
         "en": "English",

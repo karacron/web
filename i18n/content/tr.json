@@ -311,18 +311,18 @@
       "contact": "Contact"
     },
     "language": {
-      "button": "Language",
-      "modalTitle": "Choose your language",
-      "close": "Close",
+      "button": "Dil",
+      "modalTitle": "Dilini seç",
+      "close": "Kapat",
       "modal": {
-        "heading": "Language",
-        "description": "Choose your preferred interface language.",
-        "searchPlaceholder": "Search languages",
-        "clearSearchLabel": "Clear search",
-        "activeLabel": "Active",
-        "updatingLabel": "Updating...",
-        "noResultsTitle": "No languages found.",
-        "noResultsHint": "Try another name or locale code."
+        "heading": "Dil",
+        "description": "Tercih ettiğin arayüz dilini seç.",
+        "searchPlaceholder": "Dilleri ara",
+        "clearSearchLabel": "Aramayı temizle",
+        "activeLabel": "Aktif",
+        "updatingLabel": "Güncelleniyor...",
+        "noResultsTitle": "Dil bulunamadı.",
+        "noResultsHint": "Başka bir ad veya dil kodu deneyin."
       },
       "options": {
         "en": "English",
