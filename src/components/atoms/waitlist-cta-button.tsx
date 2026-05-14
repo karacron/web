@@ -1,8 +1,8 @@
 "use client";
 
+import { trackEvent } from "@lib/analytics";
 import { WaitlistForm } from "@molecule/forms/waitlist-form";
 import { useModal } from "@molecule/modal/use-modal";
-import { trackEvent } from "@lib/analytics";
 
 interface WaitlistCtaButtonProps {
   label: string;
