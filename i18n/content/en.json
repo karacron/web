@@ -1,237 +1,402 @@
 {
-	"meta": {
-		"title": "Kara — Work less. Enjoy more.",
-		"description": "Kara is a local-first AI desktop assistant for businesses, SMBs and everyday people who want private automation without giving up control."
-	},
-	"nav": {
-		"features": "Why Kara",
-		"orchestration": "Desktop flow",
-		"featureContent": "Key features",
-		"integrations": "Early access",
-		"execution": "Privacy",
-		"cta": "Join the waitlist"
-	},
-	"hero": {
-		"badge": "In development. Launching in 2026.",
-		"badgeLink": "Get early access updates",
-		"title": "Work less. Enjoy more.",
-		"subtitle": "Kara is the local-first AI desktop assistant that helps businesses, lean teams and normal humans get real work done without throwing their private data around the internet.",
-		"primary": "Join the waitlist",
-		"secondary": "See what makes Kara different"
-	},
-	"features": {
-		"eyebrow": "Why Kara",
-		"title": "Private AI that still feels fast, useful and human",
-		"subtitle": "Built for businesses and SMBs first, but friendly enough for anyone who wants fewer tabs, less busywork and more done before lunch.",
-		"items": {
-			"privacy": {
-				"title": "Private by default",
-				"description": "Sensitive notes, client context and internal docs stay closer to your machine instead of being sprayed across random tools."
-			},
-			"business": {
-				"title": "Made for real work",
-				"description": "From follow-ups and ops to documentation and support, Kara is aimed at work that pays the bills, not toy demos."
-			},
-			"teams": {
-				"title": "Perfect for lean teams",
-				"description": "Small teams and growing companies can automate repetitive work without needing a whole AI task force to babysit it."
-			},
-			"everyday": {
-				"title": "Also great for normal life",
-				"description": "Kara can help with planning, writing, organizing and the messy digital chores you never wanted to do yourself."
-			}
-		}
-	},
-	"orchestration": {
-		"eyebrow": "Desktop flow",
-		"title": "One assistant. Your rules.",
-		"subtitle": "Kara keeps the core flow close to your desk, knows when to stay local and only reaches for outside services when the task truly needs extra muscle.",
-		"items": {
-			"local": {
-				"title": "Local first.",
-				"description": "Private work starts on-device, so drafts, customer notes and internal context do not need to leave home on every request."
-			},
-			"teams": {
-				"title": "Built for business teams.",
-				"description": "Founders, ops, sales, support and small teams get one calm place to automate repeat work without duct-taping five different apps."
-			},
-			"escalation": {
-				"title": "Cloud only when it helps.",
-				"description": "When a task needs more reach, Kara can call services and models on purpose instead of making every workflow cloud-first by default."
-			}
-		},
-		"imageAlt": "Kara desktop workspace preview"
-	},
-	"integrations": {
-		"eyebrow": "Early access",
-		"title": "Kara is cooking. Want in first?",
-		"subtitle": "We are building the desktop experience now. Join the waitlist for launch news, private previews and early access before the public release planned for late 2026, or earlier if we move fast.",
-		"primary": "Join the waitlist",
-		"secondary": "Talk to us",
-		"imageAlt": "Kara early access preview",
-		"marquee": {
-			"googleDrive": {
-				"description": "Shared files and docs"
-			},
-			"github": {
-				"description": "Repos, PRs and issues"
-			},
-			"notion": {
-				"description": "Notes, wikis and tasks"
-			},
-			"discord": {
-				"description": "Messaging and communities"
-			},
-			"dropbox": {
-				"description": "Folder sync and backup"
-			},
-			"linear": {
-				"description": "Product tracking"
-			},
-			"trello": {
-				"description": "Simple Kanban boards"
-			},
-			"slack": {
-				"description": "Channels and internal automation"
-			},
-			"figma": {
-				"description": "Design and collaborative handoff"
-			},
-			"jira": {
-				"description": "Tickets and dev roadmap"
-			},
-			"asana": {
-				"description": "Project and task management"
-			},
-			"hubspot": {
-				"description": "CRM and sales follow-up"
-			},
-			"zendesk": {
-				"description": "Support and customer care"
-			},
-			"stripe": {
-				"description": "Payments and subscriptions"
-			},
-			"shopify": {
-				"description": "Ecommerce and online catalog"
-			},
-			"airtable": {
-				"description": "No-code databases"
-			},
-			"clickup": {
-				"description": "Operations and productivity"
-			}
-		}
-	},
-	"execution": {
-		"eyebrow": "Privacy without drama",
-		"title": "Keep control of the work, not just the window",
-		"cards": {
-			"interface": {
-				"title": "Quiet interface",
-				"description": "A focused desktop experience built to help you think clearly, move fast and avoid dashboard overload."
-			},
-			"speed": {
-				"title": "Local speed",
-				"description": "Less bouncing between services means quicker answers and a workflow that feels close to the task."
-			},
-			"privacy": {
-				"title": "Privacy first",
-				"description": "Kara is designed so sensitive work can stay private by default, with control where it matters most."
-			},
-			"stack": {
-				"title": "Ready for your stack",
-				"description": "Use Kara as a desktop app and service layer that can plug into the way your team already works."
-			}
-		}
-	},
-	"cta": {
-		"title": "Private AI for work that actually moves.",
-		"subtitle": "Kara helps teams, SMBs and curious humans automate the boring parts while keeping control close.",
-		"action": "Join the waitlist"
-	},
-	"footer": {
-		"title": "Private AI for work that actually moves.",
-		"subtitle": "Kara helps teams, SMBs and curious humans automate the boring parts while keeping control close.",
-		"sections": {
-			"product": "Explore",
-			"company": "Company"
-		},
-		"links": {
-			"features": "Why Kara",
-			"featureContent": "Key features",
-			"orchestration": "Desktop flow",
-			"integrations": "Early access",
-			"execution": "Privacy",
-			"about": "About Kara",
-			"roadmap": "Roadmap",
-			"privacy": "Privacy",
-			"contact": "Contact"
-		},
-		"language": {
-			"button": "Language",
-			"modalTitle": "Choose your language",
-			"close": "Close",
-			"modal": {
-				"heading": "Language",
-				"description": "Choose your preferred interface language.",
-				"searchPlaceholder": "Search languages",
-				"clearSearchLabel": "Clear search",
-				"activeLabel": "Active",
-				"updatingLabel": "Updating...",
-				"noResultsTitle": "No languages found.",
-				"noResultsHint": "Try another name or locale code."
-			},
-			"options": {
-				"en": "English",
-				"es": "Spanish"
-			}
-		},
-		"cookies": "Cookies",
-		"rights": "All rights reserved. Built by AuthUser."
-	},
-	"waitlist": {
-		"nameLabel": "Name",
-		"namePlaceholder": "Your name",
-		"typeLabel": "Are you joining as an individual or a company?",
-		"typePersonal": "Individual",
-		"typeCompany": "Company",
-		"companyNameLabel": "Company name",
-		"companyNamePlaceholder": "E.g: Acme Corp",
-		"employeeRangeLabel": "Employee range",
-		"employeeRangeDefault": "Select a range",
-		"employees": "employees",
-		"emailLabel": "Email address",
-		"emailPlaceholder": "you@email.com",
-		"messageLabel": "Message or comments",
-		"messagePlaceholder": "Tell us what challenges your team faces or why you're interested in Kara",
-		"consentLabel": "I accept the privacy policy and would like to receive updates about Kara",
-		"submitButton": "Join the waitlist",
-		"submitting": "Sending...",
-		"validationError": "Please check the errors in the form",
-		"rateLimitError": "Too many requests. Please try again later.",
-		"duplicateEmailError": "This email is already on our waitlist",
-		"genericError": "Something went wrong. Please try again.",
-		"networkError": "Connection error. Please check your internet connection."
-	},
-	"featureContent": {
-		"eyebrow": "Key features",
-		"title": "Do more with your voice, your time and your creativity",
-		"subtitle": "Kara lets you interact directly by voice, schedule daily tasks and generate multimedia content effortlessly.",
-		"imageAlt": "Preview of voice and multimedia interaction in Kara",
-		"items": {
-			"voice": {
-				"title": "Speak and act",
-				"description": "Control Kara and get answers using just your voice, no keyboard needed."
-			},
-			"tasks": {
-				"title": "Automate daily tasks",
-				"description": "Schedule reminders, events and daily routines so nothing slips through the cracks."
-			},
-			"media": {
-				"title": "Create multimedia content",
-				"description": "Generate images, audio and video for your projects or social media in seconds."
-			}
-		}
-	}
+  "meta": {
+    "title": "Kara — Work less. Enjoy more.",
+    "description": "Kara is a local-first AI desktop assistant for businesses, SMBs and everyday people who want private automation without giving up control."
+  },
+  "nav": {
+    "features": "Why Kara",
+    "orchestration": "Desktop flow",
+    "featureContent": "Key features",
+    "integrations": "Early access",
+    "functions": "What it can do",
+    "roadmap": "Roadmap",
+    "execution": "Privacy",
+    "cta": "Join the waitlist"
+  },
+  "hero": {
+    "badge": "In development. Launching in 2026.",
+    "badgeLink": "Get early access updates",
+    "title": "Work less. Enjoy more.",
+    "subtitle": "Kara is the local-first AI desktop assistant that helps businesses, lean teams and normal humans get real work done without throwing their private data around the internet.",
+    "primary": "Join the waitlist",
+    "secondary": "See what makes Kara different"
+  },
+  "features": {
+    "eyebrow": "Why Kara",
+    "title": "Private AI that still feels fast, useful and human",
+    "subtitle": "Built for businesses and SMBs first, but friendly enough for anyone who wants fewer tabs, less busywork and more done before lunch.",
+    "items": {
+      "privacy": {
+        "title": "Private by default",
+        "description": "Sensitive notes, client context and internal docs stay closer to your machine instead of being sprayed across random tools."
+      },
+      "business": {
+        "title": "Made for real work",
+        "description": "From follow-ups and ops to documentation and support, Kara is aimed at work that pays the bills, not toy demos."
+      },
+      "teams": {
+        "title": "Perfect for lean teams",
+        "description": "Small teams and growing companies can automate repetitive work without needing a whole AI task force to babysit it."
+      },
+      "everyday": {
+        "title": "Also great for normal life",
+        "description": "Kara can help with planning, writing, organizing and the messy digital chores you never wanted to do yourself."
+      }
+    }
+  },
+  "orchestration": {
+    "eyebrow": "Desktop flow",
+    "title": "One assistant. Your rules.",
+    "subtitle": "Kara keeps the core flow close to your desk, knows when to stay local and only reaches for outside services when the task truly needs extra muscle.",
+    "items": {
+      "local": {
+        "title": "Local first.",
+        "description": "Private work starts on-device, so drafts, customer notes and internal context do not need to leave home on every request."
+      },
+      "teams": {
+        "title": "Built for business teams.",
+        "description": "Founders, ops, sales, support and small teams get one calm place to automate repeat work without duct-taping five different apps."
+      },
+      "escalation": {
+        "title": "Cloud only when it helps.",
+        "description": "When a task needs more reach, Kara can call services and models on purpose instead of making every workflow cloud-first by default."
+      }
+    },
+    "imageAlt": "Kara desktop workspace preview"
+  },
+  "integrations": {
+    "eyebrow": "Early access",
+    "title": "Kara is cooking. Want in first?",
+    "subtitle": "We are building the desktop experience now. Join the waitlist for launch news, private previews and early access before the public release planned for late 2026, or earlier if we move fast.",
+    "primary": "Join the waitlist",
+    "secondary": "Talk to us",
+    "imageAlt": "Kara early access preview",
+    "marquee": {
+      "googleDrive": {
+        "description": "Shared files and docs"
+      },
+      "github": {
+        "description": "Repos, PRs and issues"
+      },
+      "notion": {
+        "description": "Notes, wikis and tasks"
+      },
+      "discord": {
+        "description": "Messaging and communities"
+      },
+      "dropbox": {
+        "description": "Folder sync and backup"
+      },
+      "linear": {
+        "description": "Product tracking"
+      },
+      "trello": {
+        "description": "Simple Kanban boards"
+      },
+      "slack": {
+        "description": "Channels and internal automation"
+      },
+      "figma": {
+        "description": "Design and collaborative handoff"
+      },
+      "jira": {
+        "description": "Tickets and dev roadmap"
+      },
+      "asana": {
+        "description": "Project and task management"
+      },
+      "hubspot": {
+        "description": "CRM and sales follow-up"
+      },
+      "zendesk": {
+        "description": "Support and customer care"
+      },
+      "stripe": {
+        "description": "Payments and subscriptions"
+      },
+      "shopify": {
+        "description": "Ecommerce and online catalog"
+      },
+      "airtable": {
+        "description": "No-code databases"
+      },
+      "clickup": {
+        "description": "Operations and productivity"
+      }
+    }
+  },
+  "execution": {
+    "eyebrow": "Privacy without drama",
+    "title": "Keep control of the work, not just the window",
+    "cards": {
+      "interface": {
+        "title": "Quiet interface",
+        "description": "A focused desktop experience built to help you think clearly, move fast and avoid dashboard overload."
+      },
+      "speed": {
+        "title": "Local speed",
+        "description": "Less bouncing between services means quicker answers and a workflow that feels close to the task."
+      },
+      "privacy": {
+        "title": "Privacy first",
+        "description": "Kara is designed so sensitive work can stay private by default, with control where it matters most."
+      },
+      "stack": {
+        "title": "Ready for your stack",
+        "description": "Use Kara as a desktop app and service layer that can plug into the way your team already works."
+      }
+    }
+  },
+  "cta": {
+    "title": "Private AI for work that actually moves.",
+    "subtitle": "Kara helps teams, SMBs and curious humans automate the boring parts while keeping control close.",
+    "action": "Join the waitlist"
+  },
+  "roadmap": {
+    "hero": {
+      "badge": "Product roadmap 2026",
+      "title": "How Kara ships from May to December",
+      "subtitle": "A focused path from multiplatform foundation to cloud integrations, with a concrete MVP in August 2026.",
+      "cards": {
+        "timeline": {
+          "label": "Timeline",
+          "value": "May 1, 2026 -> Dec 1, 2026"
+        },
+        "mvp": {
+          "label": "MVP milestone",
+          "value": "August 2026"
+        },
+        "goal": {
+          "label": "Outcome",
+          "value": "Desktop-first AI platform ready to scale"
+        }
+      }
+    },
+    "timeline": {
+      "eyebrow": "Development phases",
+      "title": "Monthly roadmap by shipping milestones",
+      "subtitle": "Every month has a clear focus, delivery target and release criteria.",
+      "items": {
+        "may": {
+          "month": "May 2026",
+          "status": "Foundation",
+          "goal": "Set up the multiplatform base for Windows, macOS, Linux and Docker.",
+          "deliverable": "Desktop runtime and build pipeline validated across all targets."
+        },
+        "jun": {
+          "month": "June 2026",
+          "status": "UX v1",
+          "goal": "Build the first complete desktop interface with main navigation and operational views.",
+          "deliverable": "UI v1 ready for daily internal usage."
+        },
+        "jul": {
+          "month": "July 2026",
+          "status": "Operations",
+          "goal": "Ship update system v1, language support and initial web documentation.",
+          "deliverable": "Controlled app updates and bilingual operation enabled."
+        },
+        "aug": {
+          "month": "August 2026",
+          "status": "MVP",
+          "goal": "Release Kara MVP for early adopters with local model flows and initial communication integrations.",
+          "deliverable": "Tagged MVP release and pilot feedback loop active."
+        },
+        "sep": {
+          "month": "September 2026",
+          "status": "Channels",
+          "goal": "Expand communication channels with Telegram, Discord, Slack and WhatsApp (wave 1).",
+          "deliverable": "First channel connectors running with event traceability."
+        },
+        "oct": {
+          "month": "October 2026",
+          "status": "AI tooling",
+          "goal": "Advance Kara AI tools (Cron, Media, Voices, TTS) with reliability controls.",
+          "deliverable": "Reusable automations combining channels and AI tools."
+        },
+        "nov": {
+          "month": "November 2026",
+          "status": "Cloud",
+          "goal": "Integrate cloud models and first cloud tools (Notion, Figma, GitHub).",
+          "deliverable": "Hybrid local-cloud flows available under controlled rollout."
+        },
+        "dec": {
+          "month": "Dec 1, 2026",
+          "status": "Go/No-Go",
+          "goal": "Close the phase and approve the next roadmap cycle.",
+          "deliverable": "Formal decision with prioritized next-phase backlog."
+        }
+      }
+    },
+    "mvp": {
+      "eyebrow": "Core milestone",
+      "title": "MVP scope in August 2026",
+      "subtitle": "The MVP is defined by what users can run end-to-end, not by future promises.",
+      "includedTitle": "Included in MVP",
+      "excludedTitle": "Out of MVP scope",
+      "included": {
+        "desktop": "Desktop app working on Windows, macOS and Linux.",
+        "ui": "Stable UI v1 for configuration and daily usage.",
+        "updates": "Application update system v1.",
+        "i18n": "Bilingual support (English and Spanish).",
+        "docs": "Web documentation v1 for onboarding and setup.",
+        "localModels": "Guided local model download flow v1.",
+        "channels": "Initial communication channel integrations.",
+        "tools": "AI tools baseline: Cron, Media, Voices and TTS."
+      },
+      "excluded": {
+        "fullCloud": "Full catalog of cloud connectors and advanced provider coverage.",
+        "enterprise": "Advanced enterprise governance and deep observability automation."
+      }
+    },
+    "phases": {
+      "eyebrow": "Execution lanes",
+      "title": "The tracks that structure delivery",
+      "subtitle": "Kara evolves through coordinated tracks that keep product, engineering and operations aligned.",
+      "items": {
+        "platform": {
+          "title": "Multiplatform runtime",
+          "description": "Desktop binaries and Docker support with reproducible builds."
+        },
+        "experience": {
+          "title": "User experience",
+          "description": "Sectioned interface, clear navigation and operational visibility."
+        },
+        "trust": {
+          "title": "Updates and reliability",
+          "description": "Controlled releases, rollback paths and stable update channels."
+        },
+        "language": {
+          "title": "Multilingual product",
+          "description": "English and Spanish parity in key user journeys."
+        },
+        "ai": {
+          "title": "AI tools orchestration",
+          "description": "Cron, media and voice tooling orchestrated for practical automation."
+        },
+        "cloud": {
+          "title": "Cloud integrations",
+          "description": "Hybrid local-cloud model routing plus tool integrations like Notion, Figma and GitHub."
+        },
+        "launch": {
+          "title": "Launch readiness",
+          "description": "MVP validation, pilot feedback and go/no-go decisions for the next cycle."
+        }
+      }
+    },
+    "cta": {
+      "eyebrow": "Next step",
+      "title": "Want launch updates as these phases ship?",
+      "subtitle": "Join early access to follow each milestone and help shape the next phase of Kara.",
+      "primary": "Join early access",
+      "secondary": "Back to homepage"
+    }
+  },
+  "footer": {
+    "title": "Private AI for work that actually moves.",
+    "subtitle": "Kara helps teams, SMBs and curious humans automate the boring parts while keeping control close.",
+    "sections": {
+      "product": "Explore",
+      "company": "Company"
+    },
+    "links": {
+      "features": "Why Kara",
+      "featureContent": "Key features",
+      "orchestration": "Desktop flow",
+      "integrations": "Early access",
+      "functions": "What it can do",
+      "execution": "Privacy",
+      "about": "About Kara",
+      "roadmap": "Roadmap",
+      "privacy": "Privacy",
+      "contact": "Contact"
+    },
+    "language": {
+      "button": "Language",
+      "modalTitle": "Choose your language",
+      "close": "Close",
+      "modal": {
+        "heading": "Language",
+        "description": "Choose your preferred interface language.",
+        "searchPlaceholder": "Search languages",
+        "clearSearchLabel": "Clear search",
+        "activeLabel": "Active",
+        "updatingLabel": "Updating...",
+        "noResultsTitle": "No languages found.",
+        "noResultsHint": "Try another name or locale code."
+      },
+      "options": {
+        "en": "English",
+        "es": "Spanish"
+      }
+    },
+    "cookies": "Cookies",
+    "rights": "All rights reserved. Built by AuthUser."
+  },
+  "waitlist": {
+    "nameLabel": "Name",
+    "namePlaceholder": "Your name",
+    "typeLabel": "Are you joining as an individual or a company?",
+    "typePersonal": "Individual",
+    "typeCompany": "Company",
+    "companyNameLabel": "Company name",
+    "companyNamePlaceholder": "E.g: Acme Corp",
+    "employeeRangeLabel": "Employee range",
+    "employeeRangeDefault": "Select a range",
+    "employees": "employees",
+    "emailLabel": "Email address",
+    "emailPlaceholder": "you@email.com",
+    "messageLabel": "Message or comments",
+    "messagePlaceholder": "Tell us what challenges your team faces or why you're interested in Kara",
+    "consentLabel": "I accept the privacy policy and would like to receive updates about Kara",
+    "submitButton": "Join the waitlist",
+    "submitting": "Sending...",
+    "validationError": "Please check the errors in the form",
+    "rateLimitError": "Too many requests. Please try again later.",
+    "duplicateEmailError": "This email is already on our waitlist",
+    "genericError": "Something went wrong. Please try again.",
+    "networkError": "Connection error. Please check your internet connection."
+  },
+  "featureContent": {
+    "eyebrow": "Key features",
+    "title": "Do more with your voice, your time and your creativity",
+    "subtitle": "Kara lets you interact directly by voice, schedule daily tasks and generate multimedia content effortlessly.",
+    "imageAlt": "Preview of voice and multimedia interaction in Kara",
+    "items": {
+      "voice": {
+        "title": "Speak and act",
+        "description": "Control Kara and get answers using just your voice, no keyboard needed."
+      },
+      "tasks": {
+        "title": "Automate daily tasks",
+        "description": "Schedule reminders, events and daily routines so nothing slips through the cracks."
+      },
+      "media": {
+        "title": "Create multimedia content",
+        "description": "Generate images, audio and video for your projects or social media in seconds."
+      }
+    }
+  },
+  "functions": {
+    "eyebrow": "What it can do",
+    "title": "Capabilities designed to run 24/7",
+    "subtitle": "Kara combines voice conversation, chat connectors and proactive automation to help you make better decisions every day.",
+    "items": {
+      "voice": {
+        "title": "Real-time two-way voice",
+        "description": "You can talk to Kara directly by voice and Kara can answer back by voice to keep the workflow natural, fast and frictionless."
+      },
+      "channels": {
+        "title": "Chat integrations ready to use",
+        "description": "Integrates chat providers such as Telegram, Teams, WhatsApp and Discord so you can centralize conversations and actions in one place."
+      },
+      "media": {
+        "title": "Multimedia generation",
+        "description": "Generate multimedia content for messaging, support, sales and operations without leaving your workflow."
+      },
+      "assistant": {
+        "title": "Passive and proactive assistance",
+        "description": "Operates as a passive and/or proactive assistant to improve decision-making and keep operations running 24/7."
+      }
+    }
+  }
 }
