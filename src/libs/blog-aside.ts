@@ -11,9 +11,8 @@ type AsideCopy = {
   quickLinks: AsideQuickLink[];
 };
 
-type AsideMenuConfig = {
+type AsideMenuConfig = Partial<Record<Locale, AsideCopy>> & {
   en: AsideCopy;
-  es: AsideCopy;
 };
 
 const DEFAULT_CONFIG: AsideMenuConfig = {

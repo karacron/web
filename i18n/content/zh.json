@@ -1,0 +1,412 @@
+{
+  "meta": {
+    "title": "卡拉——少工作。享受更多。",
+    "description": "Kara 是一款本地优先的人工智能桌面助手，适用于想要私人自动化而又不放弃控制权的企业、中小企业和普通人。"
+  },
+  "nav": {
+    "features": "为什么选择卡拉",
+    "orchestration": "桌面流程",
+    "featureContent": "主要特点",
+    "integrations": "抢先体验",
+    "functions": "它能做什么",
+    "roadmap": "路线图",
+    "execution": "隐私",
+    "cta": "加入候补名单"
+  },
+  "hero": {
+    "badge": "正在开发中。将于 2026 年推出。",
+    "badgeLink": "获取早期访问更新",
+    "title": "减少工作量。享受更多。",
+    "subtitle": "Kara 是本地优先的人工智能桌面助手，可以帮助企业、精益团队和普通人完成真正的工作，而无需将私人数据散布到互联网上。",
+    "primary": "加入候补名单",
+    "secondary": "看看卡拉有何不同"
+  },
+  "features": {
+    "eyebrow": "为什么选择卡拉",
+    "title": "私人人工智能仍然让人感觉快速、有用和人性化",
+    "subtitle": "首先是为企业和中小型企业打造的，但对于那些想要更少的标签、更少的繁琐工作以及在午餐前完成更多工作的人来说足够友好。",
+    "items": {
+      "privacy": {
+        "title": "默认为私有",
+        "description": "敏感注释、客户上下文和内部文档更靠近您的机器，而不是散布在随机工具中。"
+      },
+      "business": {
+        "title": "专为实际工作而设计",
+        "description": "从后续行动和操作到文档和支持，Kara 的目标是支付账单的工作，而不是玩具演示。"
+      },
+      "teams": {
+        "title": "非常适合精益团队",
+        "description": "小型团队和成长型公司可以自动执行重复性工作，而不需要整个人工智能工作组来照顾它。"
+      },
+      "everyday": {
+        "title": "也非常适合正常生活",
+        "description": "Kara 可以帮助您进行计划、写作、组织以及您不想自己做的杂乱的数字杂务。"
+      }
+    }
+  },
+  "orchestration": {
+    "eyebrow": "桌面流程",
+    "title": "助理一名。你的规则。",
+    "subtitle": "Kara 让核心流程靠近您的办公桌，知道何时留在本地，并且仅在任务确实需要额外力量时才寻求外部服务。",
+    "items": {
+      "local": {
+        "title": "本地优先。",
+        "description": "私人工作在设备上开始，因此草稿、客户注释和内部上下文不需要在每次请求时都离开家。"
+      },
+      "teams": {
+        "title": "专为业务团队打造。",
+        "description": "创始人、运营人员、销售人员、支持人员和小型团队可以在一个安静的地方自动执行重复工作，而无需用胶带封堵五个不同的应用程序。"
+      },
+      "escalation": {
+        "title": "仅在有帮助时才使用云。",
+        "description": "当任务需要更大范围时，Kara 可以有目的地调用服务和模型，而不是默认将每个工作流程设为云优先。"
+      }
+    },
+    "imageAlt": "Kara 桌面工作区预览"
+  },
+  "integrations": {
+    "eyebrow": "抢先体验",
+    "title": "卡拉正在做饭。要先进去吗？",
+    "subtitle": "我们现在正在构建桌面体验。在计划于 2026 年年底或更早（如果我们行动迅速）公开发布之前，请加入等候名单，以获取发布新闻、私人预览和抢先体验。",
+    "primary": "加入候补名单",
+    "secondary": "与我们交谈",
+    "imageAlt": "卡拉抢先体验预览",
+    "marquee": {
+      "googleDrive": {
+        "description": "共享文件和文档"
+      },
+      "github": {
+        "description": "回购协议、PR 和问题"
+      },
+      "notion": {
+        "description": "注释、wiki 和任务"
+      },
+      "discord": {
+        "description": "消息传递和社区"
+      },
+      "dropbox": {
+        "description": "文件夹同步和备份"
+      },
+      "linear": {
+        "description": "产品追踪"
+      },
+      "trello": {
+        "description": "简单的看板"
+      },
+      "slack": {
+        "description": "渠道和内部自动化"
+      },
+      "figma": {
+        "description": "设计和协作交接"
+      },
+      "jira": {
+        "description": "门票和开发路线图"
+      },
+      "asana": {
+        "description": "项目和任务管理"
+      },
+      "hubspot": {
+        "description": "CRM和销售跟进"
+      },
+      "zendesk": {
+        "description": "支持和客户关怀"
+      },
+      "stripe": {
+        "description": "付款和订阅"
+      },
+      "shopify": {
+        "description": "电子商务和在线目录"
+      },
+      "airtable": {
+        "description": "无代码数据库"
+      },
+      "clickup": {
+        "description": "运营和生产力"
+      }
+    }
+  },
+  "execution": {
+    "eyebrow": "Privacy without drama",
+    "title": "控制工作，而不仅仅是窗口",
+    "cards": {
+      "interface": {
+        "title": "Quiet interface",
+        "description": "专注的桌面体验旨在帮助您清晰思考、快速行动并避免仪表板过载。"
+      },
+      "speed": {
+        "title": "Local speed",
+        "description": "服务之间的跳动更少意味着更快的答案和感觉更贴近任务的工作流程。"
+      },
+      "privacy": {
+        "title": "Privacy first",
+        "description": "Kara 的设计使敏感工作默认保持私密，并在最重要的地方进行控制。"
+      },
+      "stack": {
+        "title": "Ready for your stack",
+        "description": "使用 Kara 作为桌面应用程序和服务层，可以插入您团队现有的工作方式。"
+      }
+    }
+  },
+  "cta": {
+    "title": "用于实际移动工作的私人人工智能。",
+    "subtitle": "Kara 帮助团队、中小型企业和好奇的人们自动化无聊的部分，同时保持密切的控制。",
+    "action": "加入候补名单"
+  },
+  "roadmap": {
+    "hero": {
+      "badge": "Product roadmap 2026",
+      "title": "Kara 从 5 月到 12 月如何运送",
+      "subtitle": "从多平台基础到云集成的重点路径，将于 2026 年 8 月推出具体的 MVP。",
+      "cards": {
+        "timeline": {
+          "label": "时间轴",
+          "value": "2026年5月1日 -> 2026年12月1日"
+        },
+        "mvp": {
+          "label": "MVP milestone",
+          "value": "2026 年 8 月"
+        },
+        "goal": {
+          "label": "结果",
+          "value": "桌面优先的人工智能平台已准备好扩展"
+        }
+      }
+    },
+    "timeline": {
+      "eyebrow": "Development phases",
+      "title": "按运输里程碑划分的每月路线图",
+      "subtitle": "每个月都有明确的重点、交付目标和发布标准。",
+      "items": {
+        "may": {
+          "month": "2026年5月",
+          "status": "基础",
+          "goal": "为 Windows、macOS、Linux 和 Docker 建立多平台基础。",
+          "deliverable": "桌面运行时和构建管道在所有目标上进行了验证。"
+        },
+        "jun": {
+          "month": "2026年6月",
+          "status": "UX v1",
+          "goal": "构建第一个完整的桌面界面，包含主导航和操作视图。",
+          "deliverable": "UI v1 可供日常内部使用。"
+        },
+        "jul": {
+          "month": "2026 年 7 月",
+          "status": "运营",
+          "goal": "发布更新系统 v1、语言支持和初始 Web 文档。",
+          "deliverable": "受控应用程序更新和双语操作启用。"
+        },
+        "aug": {
+          "month": "2026 年 8 月",
+          "status": "MVP",
+          "goal": "为早期采用者发布 Kara MVP，提供本地模型流程和初始通信集成。",
+          "deliverable": "已标记 MVP 发布和试点反馈循环处于活动状态。"
+        },
+        "sep": {
+          "month": "2026 年 9 月",
+          "status": "渠道",
+          "goal": "通过 Telegram、Discord、Slack 和 WhatsApp（第一波）拓展沟通渠道。",
+          "deliverable": "第一个通道连接器运行时具有事件可追溯性。"
+        },
+        "oct": {
+          "month": "2026 年 10 月",
+          "status": "AI tooling",
+          "goal": "具有可靠性控制的高级 Kara AI 工具（Cron、媒体、语音、TTS）。",
+          "deliverable": "结合渠道和人工智能工具的可重复使用的自动化。"
+        },
+        "nov": {
+          "month": "2026 年 11 月",
+          "status": "云",
+          "goal": "集成云模型和第一个云工具（Notion、Figma、GitHub）。",
+          "deliverable": "混合本地云流在受控部署下可用。"
+        },
+        "dec": {
+          "month": "Dec 1, 2026",
+          "status": "Go/No-Go",
+          "goal": "结束该阶段并批准下一个路线图周期。",
+          "deliverable": "正式决策，并确定下一阶段待办事项的优先顺序。"
+        }
+      }
+    },
+    "mvp": {
+      "eyebrow": "核心里程碑",
+      "title": "2026 年 8 月 MVP 范围",
+      "subtitle": "MVP 是由用户可以端到端运行的内容来定义的，而不是由未来的承诺来定义。",
+      "includedTitle": "包含在 MVP 中",
+      "excludedTitle": "超出 MVP 范围",
+      "included": {
+        "desktop": "适用于 Windows、macOS 和 Linux 的桌面应用程序。",
+        "ui": "用于配置和日常使用的稳定 UI v1。",
+        "updates": "应用程序更新系统v1.",
+        "i18n": "双语支持（英语和西班牙语）。",
+        "docs": "用于入门和设置的 Web 文档 v1。",
+        "localModels": "引导式本地模型下载流程 v1.",
+        "channels": "初始沟通渠道整合。",
+        "tools": "AI 工具基线：Cron、媒体、语音和 TTS。"
+      },
+      "excluded": {
+        "fullCloud": "云连接器的完整目录和高级提供商覆盖范围。",
+        "enterprise": "先进的企业治理和深度可观察性自动化。"
+      }
+    },
+    "phases": {
+      "eyebrow": "执行通道",
+      "title": "构建交付的轨道",
+      "subtitle": "Kara 通过协调一致的轨道不断发展，使产品、工程和运营保持一致。",
+      "items": {
+        "platform": {
+          "title": "多平台运行时",
+          "description": "桌面二进制文件和 Docker 支持可重现的构建。"
+        },
+        "experience": {
+          "title": "用户体验",
+          "description": "分段式界面、清晰的导航和操作可见性。"
+        },
+        "trust": {
+          "title": "更新和可靠性",
+          "description": "受控的发布、回滚路径和稳定的更新通道。"
+        },
+        "language": {
+          "title": "多语言产品",
+          "description": "关键用户旅程中的英语和西班牙语同等。"
+        },
+        "ai": {
+          "title": "AI工具编排",
+          "description": "Cron、媒体和语音工具专为实际自动化而精心设计。"
+        },
+        "cloud": {
+          "title": "云集成",
+          "description": "混合本地云模型路由以及 Notion、Figma 和 GitHub 等工具集成。"
+        },
+        "launch": {
+          "title": "发射准备",
+          "description": "MVP 验证、试点反馈以及下一个周期的继续/不继续决策。"
+        }
+      }
+    },
+    "cta": {
+      "eyebrow": "下一步",
+      "title": "想要在这些阶段发布时发布更新吗？",
+      "subtitle": "加入早期访问以跟踪每个里程碑并帮助塑造卡拉的下一阶段。",
+      "primary": "加入抢先体验",
+      "secondary": "返回首页"
+    }
+  },
+  "footer": {
+    "title": "用于实际移动工作的私人人工智能。",
+    "subtitle": "Kara 帮助团队、中小型企业和好奇的人们自动化无聊的部分，同时保持密切的控制。",
+    "sections": {
+      "product": "探索",
+      "company": "公司"
+    },
+    "links": {
+      "features": "为什么选择卡拉",
+      "featureContent": "主要特点",
+      "orchestration": "桌面流程",
+      "integrations": "抢先体验",
+      "functions": "它能做什么",
+      "execution": "隐私",
+      "about": "关于卡拉",
+      "roadmap": "路线图",
+      "privacy": "隐私",
+      "contact": "接触"
+    },
+    "language": {
+      "button": "语言",
+      "modalTitle": "选择您的语言",
+      "close": "关闭",
+      "modal": {
+        "heading": "语言",
+        "description": "选择您喜欢的界面语言。",
+        "searchPlaceholder": "搜索语言",
+        "clearSearchLabel": "清除搜索",
+        "activeLabel": "积极的",
+        "updatingLabel": "更新中...",
+        "noResultsTitle": "No languages found.",
+        "noResultsHint": "尝试其他名称或区域设置代码。"
+      },
+      "options": {
+        "en": "English",
+        "es": "Español",
+        "zh": "中文",
+        "nl": "Nederlands",
+        "fr": "Français",
+        "ja": "日本語",
+        "de": "Deutsch",
+        "it": "Italiano",
+        "hi": "हिन्दी",
+        "ar": "العربية",
+        "ru": "Русский",
+        "tr": "Türkçe"
+      }
+    },
+    "cookies": "曲奇饼",
+    "rights": "版权所有。 Built by AuthUser."
+  },
+  "waitlist": {
+    "nameLabel": "姓名",
+    "namePlaceholder": "Your name",
+    "typeLabel": "您是以个人还是公司的身份加入？",
+    "typePersonal": "个人",
+    "typeCompany": "公司",
+    "companyNameLabel": "公司名称",
+    "companyNamePlaceholder": "E.g: Acme Corp",
+    "employeeRangeLabel": "Employee range",
+    "employeeRangeDefault": "选择范围",
+    "employees": "雇员",
+    "emailLabel": "电子邮件",
+    "emailPlaceholder": "你@email.com",
+    "messageLabel": "留言或评论",
+    "messagePlaceholder": "告诉我们您的团队面临哪些挑战或者您为什么对 Kara 感兴趣",
+    "consentLabel": "我接受隐私政策并希望收到有关 Kara 的更新",
+    "submitButton": "加入候补名单",
+    "submitting": "正在发送...",
+    "validationError": "请检查表格中的错误",
+    "rateLimitError": "请求太多。请稍后重试。",
+    "duplicateEmailError": "该电子邮件已在我们的候补名单上",
+    "genericError": "出了点问题。请再试一次。",
+    "networkError": "连接错误。请检查您的互联网连接。"
+  },
+  "featureContent": {
+    "eyebrow": "主要特点",
+    "title": "利用您的声音、时间和创造力做更多事情",
+    "subtitle": "Kara 可让您直接通过语音进行交互、安排日常任务并轻松生成多媒体内容。",
+    "imageAlt": "Kara 中的语音和多媒体交互预览",
+    "items": {
+      "voice": {
+        "title": "Speak and act",
+        "description": "只需使用语音即可控制 Kara 并获得答案，无需键盘。"
+      },
+      "tasks": {
+        "title": "Automate daily tasks",
+        "description": "安排好提醒、活动和日常事务，确保万无一失。"
+      },
+      "media": {
+        "title": "创建多媒体内容",
+        "description": "在几秒钟内为您的项目或社交媒体生成图像、音频和视频。"
+      }
+    }
+  },
+  "functions": {
+    "eyebrow": "它能做什么",
+    "title": "专为 24/7 运行而设计的功能",
+    "subtitle": "Kara 结合了语音对话、聊天连接器和主动自动化，帮助您每天做出更好的决策。",
+    "items": {
+      "voice": {
+        "title": "实时双向语音",
+        "description": "您可以直接通过语音与 Kara 交谈，Kara 也可以通过语音进行回复，以保持工作流程自然、快速、顺畅。"
+      },
+      "channels": {
+        "title": "聊天集成可供使用",
+        "description": "集成 Telegram、Teams、WhatsApp 和 Discord 等聊天提供商，以便您可以将对话和操作集中在一处。"
+      },
+      "media": {
+        "title": "多媒体生成",
+        "description": "无需离开您的工作流程即可生成用于消息传递、支持、销售和运营的多媒体内容。"
+      },
+      "assistant": {
+        "title": "被动和主动帮助",
+        "description": "作为被动和/或主动助手来改进决策并保持运营 24/7 运行。"
+      }
+    }
+  }
+}

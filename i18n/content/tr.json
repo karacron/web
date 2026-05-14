@@ -1,0 +1,412 @@
+{
+	"meta": {
+		"title": "Kara — Daha az çalış. Daha çok keyif al.",
+		"description": "Kara, kontrolü bırakmadan özel otomasyon isteyen işletmeler, KOBİ'ler ve gündelik kullanıcılar için yerel öncelikli bir yapay zeka masaüstü asistanıdır."
+	},
+	"nav": {
+		"features": "Neden Kara",
+		"orchestration": "Masaüstü akışı",
+		"featureContent": "Temel özellikler",
+		"integrations": "Erken erişim",
+		"functions": "Neler yapabilir",
+		"roadmap": "Yol haritası",
+		"execution": "Gizlilik",
+		"cta": "Bekleme listesine katıl"
+	},
+	"hero": {
+		"badge": "Geliştirme aşamasında. 2026'da yayında.",
+		"badgeLink": "Erken erişim güncellemelerini al",
+		"title": "Daha az çalış. Daha çok keyif al.",
+		"subtitle": "Kara, işletmelerin, yalın ekiplerin ve sıradan insanların özel verilerini internete saçmadan gerçek işi tamamlamasına yardımcı olan yerel öncelikli yapay zeka masaüstü asistanıdır.",
+		"primary": "Bekleme listesine katıl",
+		"secondary": "Kara'yı farklı yapanı gör"
+	},
+	"features": {
+		"eyebrow": "Neden Kara",
+		"title": "Hızlı, kullanışlı ve insani hissettirmeye devam eden özel yapay zeka",
+		"subtitle": "Önce işletmeler ve KOBİ'ler için geliştirildi; ama daha az sekme, daha az angarya ve öğlene kadar daha çok iş isteyen herkes için yeterince kullanıcı dostu.",
+		"items": {
+			"privacy": {
+				"title": "Varsayılan olarak özel",
+				"description": "Hassas notlar, müşteri bağlamı ve dahili belgeler rastgele araçlara dağılmak yerine cihazınıza daha yakın kalır."
+			},
+			"business": {
+				"title": "Gerçek iş için üretildi",
+				"description": "Takip ve operasyonlardan dokümantasyon ve desteğe kadar Kara, oyuncak demoları değil, faturaları ödeyen gerçek işleri hedefler."
+			},
+			"teams": {
+				"title": "Yalın ekipler için ideal",
+				"description": "Küçük ekipler ve büyüyen şirketler, başında bekleyecek tam bir yapay zeka ekibine ihtiyaç duymadan tekrarlı işleri otomatikleştirebilir."
+			},
+			"everyday": {
+				"title": "Gündelik hayat için de harika",
+				"description": "Kara; planlama, yazma, düzenleme ve asla kendin yapmak istemediğin dağınık dijital işlerde yardımcı olabilir."
+			}
+		}
+	},
+	"orchestration": {
+		"eyebrow": "Masaüstü akışı",
+		"title": "Tek asistan. Senin kuralların.",
+		"subtitle": "Kara temel akışı masana yakın tutar, ne zaman yerelde kalması gerektiğini bilir ve yalnızca görev gerçekten ek güce ihtiyaç duyduğunda dış servisleri kullanır.",
+		"items": {
+			"local": {
+				"title": "Önce yerel.",
+				"description": "Özel iş cihazda başlar; bu yüzden taslakların, müşteri notlarının ve dahili bağlamın her istekte dışarı çıkması gerekmez."
+			},
+			"teams": {
+				"title": "İş ekipleri için tasarlandı.",
+				"description": "Kurucular, operasyon, satış, destek ve küçük ekipler; beş farklı uygulamayı birbirine bantlamadan tekrarlı işleri otomatikleştirebilecekleri tek ve sakin bir alana sahip olur."
+			},
+			"escalation": {
+				"title": "Bulut sadece gerektiğinde.",
+				"description": "Bir görev daha fazla kapsama ihtiyaç duyduğunda Kara, her iş akışını varsayılan olarak bulut öncelikli yapmak yerine servisleri ve modelleri bilinçli şekilde çağırabilir."
+			}
+		},
+		"imageAlt": "Kara masaüstü çalışma alanı önizlemesi"
+	},
+	"integrations": {
+		"eyebrow": "Erken erişim",
+		"title": "Kara hazırlanıyor. İlk sen mi olmak istiyorsun?",
+		"subtitle": "Masaüstü deneyimini şu anda geliştiriyoruz. 2026 sonu için planlanan genel sürümden önce (ve hızlı ilerlersek daha da erken) lansman haberleri, özel önizlemeler ve erken erişim için bekleme listesine katıl.",
+		"primary": "Bekleme listesine katıl",
+		"secondary": "Bizimle konuş",
+		"imageAlt": "Kara erken erişim önizlemesi",
+		"marquee": {
+			"googleDrive": {
+				"description": "Paylaşılan dosyalar ve dokümanlar"
+			},
+			"github": {
+				"description": "Depolar, PR'lar ve sorunlar"
+			},
+			"notion": {
+				"description": "Notlar, wikiler ve görevler"
+			},
+			"discord": {
+				"description": "Mesajlaşma ve topluluklar"
+			},
+			"dropbox": {
+				"description": "Klasör eşitleme ve yedekleme"
+			},
+			"linear": {
+				"description": "Ürün takibi"
+			},
+			"trello": {
+				"description": "Basit Kanban panoları"
+			},
+			"slack": {
+				"description": "Kanallar ve iç otomasyon"
+			},
+			"figma": {
+				"description": "Tasarım ve işbirlikçi teslim"
+			},
+			"jira": {
+				"description": "Biletler ve geliştirme yol haritası"
+			},
+			"asana": {
+				"description": "Proje ve görev yönetimi"
+			},
+			"hubspot": {
+				"description": "CRM ve satış takibi"
+			},
+			"zendesk": {
+				"description": "Destek ve müşteri hizmetleri"
+			},
+			"stripe": {
+				"description": "Ödemeler ve abonelikler"
+			},
+			"shopify": {
+				"description": "E-ticaret ve çevrimiçi katalog"
+			},
+			"airtable": {
+				"description": "Kodsuz veritabanları"
+			},
+			"clickup": {
+				"description": "Operasyon ve verimlilik"
+			}
+		}
+	},
+	"execution": {
+		"eyebrow": "Drama olmadan gizlilik",
+		"title": "Sadece pencereyi değil, işi de kontrol et",
+		"cards": {
+			"interface": {
+				"title": "Sade arayüz",
+				"description": "Net düşünmene, hızlı hareket etmene ve panel kalabalığından kaçınmana yardımcı olmak için tasarlanmış odaklı bir masaüstü deneyimi."
+			},
+			"speed": {
+				"title": "Yerel hız",
+				"description": "Servisler arasında daha az gidip gelmek, daha hızlı yanıtlar ve göreve daha yakın hissettiren bir iş akışı demektir."
+			},
+			"privacy": {
+				"title": "Önce gizlilik",
+				"description": "Kara, hassas işlerin varsayılan olarak özel kalması ve kontrolün en önemli yerde olması için tasarlanmıştır."
+			},
+			"stack": {
+				"title": "Yığınınıza hazır",
+				"description": "Kara'yı ekibinin hâlihazırda çalıştığı düzene entegre olabilen bir masaüstü uygulaması ve servis katmanı olarak kullan."
+			}
+		}
+	},
+	"cta": {
+		"title": "Gerçekten ilerleyen işler için özel yapay zeka.",
+		"subtitle": "Kara; ekiplerin, KOBİ'lerin ve meraklı insanların sıkıcı kısımları otomatikleştirirken kontrolü elde tutmasına yardımcı olur.",
+		"action": "Bekleme listesine katıl"
+	},
+	"roadmap": {
+		"hero": {
+			"badge": "Ürün yol haritası 2026",
+			"title": "Kara'nın Mayıs'tan Aralık'a teslim planı",
+			"subtitle": "Çoklu platform temelinden bulut entegrasyonlarına uzanan odaklı bir yol; Ağustos 2026'da somut bir MVP ile.",
+			"cards": {
+				"timeline": {
+					"label": "Zaman çizelgesi",
+					"value": "1 Mayıs 2026 -> 1 Aralık 2026"
+				},
+				"mvp": {
+					"label": "MVP kilometre taşı",
+					"value": "Ağustos 2026"
+				},
+				"goal": {
+					"label": "Çıktı",
+					"value": "Ölçeklenmeye hazır masaüstü öncelikli yapay zeka platformu"
+				}
+			}
+		},
+		"timeline": {
+			"eyebrow": "Geliştirme aşamaları",
+			"title": "Teslim kilometre taşlarına göre aylık yol haritası",
+			"subtitle": "Her ayın net bir odağı, teslim hedefi ve yayın kriterleri vardır.",
+			"items": {
+				"may": {
+					"month": "Mayıs 2026",
+					"status": "Temel",
+					"goal": "Windows, macOS, Linux ve Docker için çoklu platform temelini kur.",
+					"deliverable": "Masaüstü çalışma zamanı ve derleme hattı tüm hedeflerde doğrulandı."
+				},
+				"jun": {
+					"month": "Haziran 2026",
+					"status": "UX v1",
+					"goal": "Ana gezinme ve operasyon görünümleriyle ilk tam masaüstü arayüzünü oluştur.",
+					"deliverable": "Günlük dahili kullanım için hazır UI v1."
+				},
+				"jul": {
+					"month": "Temmuz 2026",
+					"status": "Operasyon",
+					"goal": "Güncelleme sistemi v1, dil desteği ve ilk web dokümantasyonunu yayınla.",
+					"deliverable": "Kontrollü uygulama güncellemeleri ve iki dilli kullanım etkin."
+				},
+				"aug": {
+					"month": "Ağustos 2026",
+					"status": "MVP",
+					"goal": "Yerel model akışları ve ilk iletişim entegrasyonlarıyla erken kullanıcılar için Kara MVP'sini yayınla.",
+					"deliverable": "Etiketlenmiş MVP sürümü ve aktif pilot geri bildirim döngüsü."
+				},
+				"sep": {
+					"month": "Eylül 2026",
+					"status": "Kanallar",
+					"goal": "Telegram, Discord, Slack ve WhatsApp ile iletişim kanallarını genişlet (dalga 1).",
+					"deliverable": "Olay izlenebilirliğiyle çalışan ilk kanal bağlayıcıları."
+				},
+				"oct": {
+					"month": "Ekim 2026",
+					"status": "Yapay zeka araçları",
+					"goal": "Kara AI araçlarını (Cron, Media, Voices, TTS) güvenilirlik kontrolleriyle geliştir.",
+					"deliverable": "Kanalları ve AI araçlarını birleştiren yeniden kullanılabilir otomasyonlar."
+				},
+				"nov": {
+					"month": "Kasım 2026",
+					"status": "Bulut",
+					"goal": "Bulut modellerini ve ilk bulut araçlarını (Notion, Figma, GitHub) entegre et.",
+					"deliverable": "Kontrollü dağıtım altında hibrit yerel-bulut akışları kullanılabilir."
+				},
+				"dec": {
+					"month": "1 Aralık 2026",
+					"status": "Go/No-Go",
+					"goal": "Fazı kapat ve bir sonraki yol haritası döngüsünü onayla.",
+					"deliverable": "Önceliklendirilmiş sonraki faz backlog'u ile resmi karar."
+				}
+			}
+		},
+		"mvp": {
+			"eyebrow": "Temel kilometre taşı",
+			"title": "Ağustos 2026'da MVP kapsamı",
+			"subtitle": "MVP, gelecekteki vaatlerle değil; kullanıcıların uçtan uca çalıştırabildiği şeylerle tanımlanır.",
+			"includedTitle": "MVP'ye dahil",
+			"excludedTitle": "MVP kapsamı dışında",
+			"included": {
+				"desktop": "Windows, macOS ve Linux'ta çalışan masaüstü uygulaması.",
+				"ui": "Yapılandırma ve günlük kullanım için kararlı UI v1.",
+				"updates": "Uygulama güncelleme sistemi v1.",
+				"i18n": "İki dilli destek (İngilizce ve İspanyolca).",
+				"docs": "Onboarding ve kurulum için web dokümantasyonu v1.",
+				"localModels": "Yönlendirmeli yerel model indirme akışı v1.",
+				"channels": "İlk iletişim kanalı entegrasyonları.",
+				"tools": "AI araç temeli: Cron, Media, Voices ve TTS."
+			},
+			"excluded": {
+				"fullCloud": "Bulut bağlayıcılarının tam kataloğu ve gelişmiş sağlayıcı kapsamı.",
+				"enterprise": "Gelişmiş kurumsal yönetişim ve derin gözlemlenebilirlik otomasyonu."
+			}
+		},
+		"phases": {
+			"eyebrow": "Uygulama hatları",
+			"title": "Teslimatı yapılandıran izler",
+			"subtitle": "Kara; ürün, mühendislik ve operasyon ekiplerini hizalı tutan koordineli izler üzerinden gelişir.",
+			"items": {
+				"platform": {
+					"title": "Çoklu platform çalışma zamanı",
+					"description": "Yeniden üretilebilir derlemelerle masaüstü ikilileri ve Docker desteği."
+				},
+				"experience": {
+					"title": "Kullanıcı deneyimi",
+					"description": "Bölümlenmiş arayüz, net gezinme ve operasyonel görünürlük."
+				},
+				"trust": {
+					"title": "Güncellemeler ve güvenilirlik",
+					"description": "Kontrollü sürümler, geri alma yolları ve kararlı güncelleme kanalları."
+				},
+				"language": {
+					"title": "Çok dilli ürün",
+					"description": "Temel kullanıcı yolculuklarında İngilizce ve İspanyolca eşitliği."
+				},
+				"ai": {
+					"title": "Yapay zeka araç orkestrasyonu",
+					"description": "Pratik otomasyon için orkestre edilen cron, medya ve ses araçları."
+				},
+				"cloud": {
+					"title": "Bulut entegrasyonları",
+					"description": "Notion, Figma ve GitHub gibi araç entegrasyonlarına ek hibrit yerel-bulut model yönlendirmesi."
+				},
+				"launch": {
+					"title": "Lansman hazırlığı",
+					"description": "Sonraki döngü için MVP doğrulaması, pilot geri bildirimi ve go/no-go kararları."
+				}
+			}
+		},
+		"cta": {
+			"eyebrow": "Sonraki adım",
+			"title": "Bu fazlar yayınlanırken lansman güncellemelerini almak ister misin?",
+			"subtitle": "Her kilometre taşını takip etmek ve Kara'nın sonraki fazını şekillendirmeye yardımcı olmak için erken erişime katıl.",
+			"primary": "Erken erişime katıl",
+			"secondary": "Ana sayfaya dön"
+		}
+	},
+	"footer": {
+		"title": "Gerçekten ilerleyen işler için özel yapay zeka.",
+		"subtitle": "Kara; ekiplerin, KOBİ'lerin ve meraklı insanların sıkıcı kısımları otomatikleştirirken kontrolü elde tutmasına yardımcı olur.",
+		"sections": {
+			"product": "Keşfet",
+			"company": "Şirket"
+		},
+		"links": {
+			"features": "Neden Kara",
+			"featureContent": "Temel özellikler",
+			"orchestration": "Masaüstü akışı",
+			"integrations": "Erken erişim",
+			"functions": "Neler yapabilir",
+			"execution": "Gizlilik",
+			"about": "Kara hakkında",
+			"roadmap": "Yol haritası",
+			"privacy": "Gizlilik",
+			"contact": "İletişim"
+		},
+		"language": {
+			"button": "Dil",
+			"modalTitle": "Dilini seç",
+			"close": "Kapat",
+			"modal": {
+				"heading": "Dil",
+				"description": "Tercih ettiğin arayüz dilini seç.",
+				"searchPlaceholder": "Dilleri ara",
+				"clearSearchLabel": "Aramayı temizle",
+				"activeLabel": "Aktif",
+				"updatingLabel": "Güncelleniyor...",
+				"noResultsTitle": "Dil bulunamadı.",
+				"noResultsHint": "Başka bir ad veya dil kodu deneyin."
+			},
+			"options": {
+				"en": "English",
+				"es": "Español",
+				"zh": "中文",
+				"nl": "Nederlands",
+				"fr": "Français",
+				"ja": "日本語",
+				"de": "Deutsch",
+				"it": "Italiano",
+				"hi": "हिन्दी",
+				"ar": "العربية",
+				"ru": "Русский",
+				"tr": "Türkçe"
+			}
+		},
+		"cookies": "Çerezler",
+		"rights": "Tüm hakları saklıdır. AuthUser tarafından oluşturuldu."
+	},
+	"waitlist": {
+		"nameLabel": "Ad",
+		"namePlaceholder": "Adın",
+		"typeLabel": "Birey olarak mı yoksa şirket olarak mı katılıyorsun?",
+		"typePersonal": "Birey",
+		"typeCompany": "Şirket",
+		"companyNameLabel": "Şirket adı",
+		"companyNamePlaceholder": "Örn: Acme Corp",
+		"employeeRangeLabel": "Çalışan aralığı",
+		"employeeRangeDefault": "Bir aralık seç",
+		"employees": "çalışan",
+		"emailLabel": "E-posta adresi",
+		"emailPlaceholder": "you@email.com",
+		"messageLabel": "Mesaj veya yorumlar",
+		"messagePlaceholder": "Ekibinin hangi zorluklarla karşılaştığını veya neden Kara ile ilgilendiğini bize anlat",
+		"consentLabel": "Gizlilik politikasını kabul ediyorum ve Kara hakkında güncellemeler almak istiyorum",
+		"submitButton": "Bekleme listesine katıl",
+		"submitting": "Gönderiliyor...",
+		"validationError": "Lütfen formdaki hataları kontrol et",
+		"rateLimitError": "Çok fazla istek. Lütfen daha sonra tekrar dene.",
+		"duplicateEmailError": "Bu e-posta zaten bekleme listemizde mevcut",
+		"genericError": "Bir şeyler ters gitti. Lütfen tekrar dene.",
+		"networkError": "Bağlantı hatası. Lütfen internet bağlantını kontrol et."
+	},
+	"featureContent": {
+		"eyebrow": "Temel özellikler",
+		"title": "Sesin, zamanın ve yaratıcılığınla daha fazlasını yap",
+		"subtitle": "Kara; sesle doğrudan etkileşim kurmanı, günlük görevleri planlamanı ve multimedya içerikleri zahmetsizce üretmeni sağlar.",
+		"imageAlt": "Kara'da sesli ve multimedya etkileşimi önizlemesi",
+		"items": {
+			"voice": {
+				"title": "Konuş ve harekete geç",
+				"description": "Kara'yı sadece sesinle kontrol et ve yanıt al; klavyeye gerek yok."
+			},
+			"tasks": {
+				"title": "Günlük görevleri otomatikleştir",
+				"description": "Hatırlatıcıları, etkinlikleri ve günlük rutinleri planla ki hiçbir şey aradan kaynamasın."
+			},
+			"media": {
+				"title": "Multimedya içerik oluştur",
+				"description": "Projelerin veya sosyal medya için saniyeler içinde görsel, ses ve video üret."
+			}
+		}
+	},
+	"functions": {
+		"eyebrow": "Neler yapabilir",
+		"title": "7/24 çalışacak şekilde tasarlanmış yetenekler",
+		"subtitle": "Kara; sesli konuşma, sohbet bağlayıcıları ve proaktif otomasyonu birleştirerek her gün daha iyi kararlar almanı sağlar.",
+		"items": {
+			"voice": {
+				"title": "Gerçek zamanlı çift yönlü ses",
+				"description": "Kara ile doğrudan sesli konuşabilirsin; Kara da sana sesli yanıt vererek iş akışını doğal, hızlı ve sürtünmesiz tutar."
+			},
+			"channels": {
+				"title": "Kullanıma hazır sohbet entegrasyonları",
+				"description": "Telegram, Teams, WhatsApp ve Discord gibi sohbet sağlayıcılarını entegre eder; böylece konuşmaları ve aksiyonları tek yerde merkezileştirebilirsin."
+			},
+			"media": {
+				"title": "Multimedya üretimi",
+				"description": "İş akışından çıkmadan mesajlaşma, destek, satış ve operasyon için multimedya içerikleri üret."
+			},
+			"assistant": {
+				"title": "Pasif ve proaktif asistanlık",
+				"description": "Karar alma süreçlerini iyileştirmek ve operasyonları 7/24 sürdürmek için pasif ve/veya proaktif bir asistan olarak çalışır."
+			}
+		}
+	}
+}

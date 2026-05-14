@@ -326,7 +326,17 @@
       },
       "options": {
         "en": "Inglés",
-        "es": "Español"
+        "es": "Español",
+        "zh": "中文",
+        "nl": "Nederlands",
+        "fr": "Français",
+        "ja": "日本語",
+        "de": "Deutsch",
+        "it": "Italiano",
+        "hi": "हिन्दी",
+        "ar": "العربية",
+        "ru": "Русский",
+        "tr": "Türkçe"
       }
     },
     "cookies": "Cookies",
