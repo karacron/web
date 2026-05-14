@@ -34,6 +34,7 @@ export default async function RootLayout({
   const locale = await getLocale();
   const messages = await getMessages();
   const gtmId = process.env.NEXT_PUBLIC_GTM_ID;
+  const gaId = process.env.NEXT_PUBLIC_GA_ID;
 
   return (
     <html
@@ -41,7 +42,7 @@ export default async function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} dark h-full antialiased`}
     >
       <body className="min-h-full bg-background text-foreground">
-        {gtmId ? (
+        {gtmId || gaId ? (
           <>
             <Script id="gtm-consent-default" strategy="beforeInteractive">
               {`
@@ -57,15 +58,34 @@ export default async function RootLayout({
                 });
               `}
             </Script>
-            <Script id="gtm-base" strategy="beforeInteractive">
-              {`
-                (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-                })(window,document,'script','dataLayer','${gtmId}');
-              `}
-            </Script>
+            {gtmId ? (
+              <Script id="gtm-base" strategy="beforeInteractive">
+                {`
+                  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                  })(window,document,'script','dataLayer','${gtmId}');
+                `}
+              </Script>
+            ) : null}
+            {gaId ? (
+              <>
+                <Script
+                  id="ga4-lib"
+                  src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
+                  strategy="beforeInteractive"
+                />
+                <Script id="ga4-config" strategy="beforeInteractive">
+                  {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', '${gaId}', { send_page_view: false });
+                  `}
+                </Script>
+              </>
+            ) : null}
           </>
         ) : null}
         <NextIntlClientProvider messages={messages}>
