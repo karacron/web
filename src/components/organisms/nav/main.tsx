@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import Link from "next/link";
+import { FaGithub } from "react-icons/fa";
 import { NavWaitlistButton } from "./nav-waitlist-button";
 
 export async function MainNav() {
@@ -52,7 +53,18 @@ export async function MainNav() {
           )}
         </div>
 
-        <NavWaitlistButton label={t("cta")} />
+        <div className="hidden items-center gap-2 sm:flex">
+          <a
+            href="https://github.com/karacron/app"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+            className="inline-flex h-9 w-9 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-white/75 transition hover:border-white/20 hover:bg-white/10 hover:text-white"
+          >
+            <FaGithub size={16} />
+          </a>
+          <NavWaitlistButton label={t("cta")} />
+        </div>
       </div>
     </nav>
   );
