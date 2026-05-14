@@ -13,7 +13,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     listSlugsByContent("models"),
   ]);
 
-  const staticPaths = ["/", "/channels", "/models"];
+  const staticPaths = ["/", "/roadmap", "/channels", "/models"];
   const channelPaths = channelSlugs.map((slug) => `/channels/${slug}`);
   const modelPaths = modelSlugs.map((slug) => `/models/${slug}`);
 

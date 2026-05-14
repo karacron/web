@@ -1,8 +1,9 @@
 "use client";
 
+import { trackEvent } from "@lib/analytics";
 import { EmployeeRangeSheet } from "@molecule/forms/employee-range-sheet";
 import { useLocale, useTranslations } from "next-intl";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export interface WaitlistFormProps {
   closeModal: () => void;
@@ -55,6 +56,11 @@ export function WaitlistForm({ closeModal }: WaitlistFormProps) {
       ...prev,
       [name]: value,
     }));
+
+    if (name === "type" && value !== "company") {
+      setIsEmployeeRangeSheetOpen(false);
+    }
+
     // Clear field error when user starts typing
     if (fieldErrors[name]) {
       setFieldErrors((prev) => {
@@ -93,14 +99,40 @@ export function WaitlistForm({ closeModal }: WaitlistFormProps) {
           }
           setFieldErrors(newFieldErrors);
           setError(t("validationError"));
+          trackEvent("waitlist_submit_error", {
+            error_type: "validation",
+            locale,
+            submit_type: formData.type,
+          });
         } else if (response.status === 429) {
           setError(t("rateLimitError"));
+          trackEvent("waitlist_submit_error", {
+            error_type: "rate_limit",
+            locale,
+            submit_type: formData.type,
+          });
         } else if (response.status === 409) {
           setError(t("duplicateEmailError"));
+          trackEvent("waitlist_submit_error", {
+            error_type: "duplicate",
+            locale,
+            submit_type: formData.type,
+          });
         } else {
           setError(data.error || t("genericError"));
+          trackEvent("waitlist_submit_error", {
+            error_type: "unknown",
+            locale,
+            submit_type: formData.type,
+            status_code: response.status,
+          });
         }
       } else {
+        trackEvent("waitlist_submit_success", {
+          locale,
+          submit_type: formData.type,
+        });
+
         // Success
         setFormData({
           name: "",
@@ -120,16 +152,15 @@ export function WaitlistForm({ closeModal }: WaitlistFormProps) {
     } catch (err) {
       console.error("Form submission error:", err);
       setError(t("networkError"));
+      trackEvent("waitlist_submit_error", {
+        error_type: "network",
+        locale,
+        submit_type: formData.type,
+      });
     } finally {
       setLoading(false);
     }
   };
-
-  useEffect(() => {
-    if (formData.type !== "company") {
-      setIsEmployeeRangeSheetOpen(false);
-    }
-  }, [formData.type]);
 
   const selectedEmployeeRangeLabel =
     formData.employeeRange || t("employeeRangeDefault");
@@ -321,7 +352,7 @@ export function WaitlistForm({ closeModal }: WaitlistFormProps) {
       </div>
 
       {/* Consent */}
-      <div className="rounded-lg border border-white/10 bg-white/5 px-3 py-3">
+      <div className="rounded-lg  py-3">
         <div className="flex items-start gap-3">
           <input
             id="consentPrivacy"

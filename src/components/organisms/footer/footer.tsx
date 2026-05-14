@@ -1,12 +1,13 @@
 import type { Locale } from "@i18n/routing";
 import { getLocale, getTranslations } from "next-intl/server";
 import Image from "next/image";
+import Link from "next/link";
 import { FooterSocial } from "./social";
 
 const COMPANY_LINKS = {
-  about: "#top",
-  roadmap: "#integrations",
-  privacy: "#execution",
+  about: "/",
+  roadmap: "/roadmap",
+  /*  privacy: "#execution", */
   contact: "mailto:sgonzalez@authuser.org",
 } as const;
 
@@ -14,10 +15,12 @@ export async function Footer() {
   const t = await getTranslations("footer");
   const locale = (await getLocale()) as Locale;
   const productLinks = [
-    { key: "features", href: "#features" },
-    { key: "orchestration", href: "#orchestration" },
-    { key: "integrations", href: "#integrations" },
-    { key: "execution", href: "#execution" },
+    { key: "features", href: "/#features" },
+    /* { key: 'featureContent', href: '#feature-content' }, */
+    { key: "orchestration", href: "/#orchestration" },
+    { key: "integrations", href: "/#integrations" },
+    { key: "functions", href: "/#functions" },
+    /*  { key: "execution", href: "#execution" }, */
   ] as const;
   const companyLinks = ["about", "roadmap", "contact"] as const;
 
@@ -69,12 +72,21 @@ export async function Footer() {
               <ul className="mt-4 space-y-3 text-sm text-gray-300">
                 {companyLinks.map((link) => (
                   <li key={link}>
-                    <a
-                      href={COMPANY_LINKS[link]}
-                      className="transition hover:text-white"
-                    >
-                      {t(`links.${link}`)}
-                    </a>
+                    {COMPANY_LINKS[link].startsWith("/") ? (
+                      <Link
+                        href={COMPANY_LINKS[link]}
+                        className="transition hover:text-white"
+                      >
+                        {t(`links.${link}`)}
+                      </Link>
+                    ) : (
+                      <a
+                        href={COMPANY_LINKS[link]}
+                        className="transition hover:text-white"
+                      >
+                        {t(`links.${link}`)}
+                      </a>
+                    )}
                   </li>
                 ))}
               </ul>

@@ -1,5 +1,6 @@
 "use client";
 
+import { trackEvent } from "@lib/analytics";
 import { WaitlistForm } from "@molecule/forms/waitlist-form";
 import { useModal } from "@molecule/modal/use-modal";
 
@@ -15,6 +16,11 @@ export function WaitlistCtaButton({
   const { openModal, closeModal } = useModal();
 
   const handleOpenWaitlistModal = () => {
+    trackEvent("click_cta_waitlist", {
+      cta_variant: variant,
+      cta_label: label,
+    });
+
     openModal({
       title: "Únete a la lista de espera",
       content: <WaitlistForm closeModal={closeModal} />,
